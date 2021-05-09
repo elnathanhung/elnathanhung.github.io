@@ -43,6 +43,7 @@ body {
     color: white;
     font-family: Open, Arial, Helvetica, sans-serif;
     font-weight: 100;
+    height: 50vh
 }
 
 .nav {
@@ -242,7 +243,12 @@ p {
     }
 }
 
-@media only screen and (min-width: 551px){
+@media only screen and (min-width: 900px){
+
+    .body {
+        height: 100vh;
+        overflow: hidden;
+    }
 
     .nav {
         grid-template-columns: 1fr 1fr;
