@@ -37,6 +37,7 @@ a:hover {
 
 body {
     /* width: 90%; */
+    width: 100%;
     background: #363636 url(../assets/bg/BG_Graphic.png);
     background-repeat: repeat;
     background-size: auto 200px;
