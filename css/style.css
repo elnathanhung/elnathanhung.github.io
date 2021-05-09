@@ -67,7 +67,7 @@ body {
 
 .home img:hover {
     cursor: pointer;
-    z-index: 2;
+    z-index: 4;
 }
 
 .ham {
