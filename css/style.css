@@ -1,6 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 footer {
@@ -43,7 +45,7 @@ body {
     color: white;
     font-family: Open, Arial, Helvetica, sans-serif;
     font-weight: 100;
-    height: 50vh
+    min-height: 100vh;
 }
 
 .nav {
@@ -226,7 +228,7 @@ p {
     z-index: 2;
 }
 
-@media only screen and (min-width: 550px){
+/* @media only screen and (min-width: 550px){
 
     .portfolio{
         padding-left: 10%;
@@ -241,7 +243,7 @@ p {
         padding-left: 37%;
         padding-top: 10vh;
     }
-}
+} */
 
 @media only screen and (min-width: 900px){
 
@@ -391,9 +393,8 @@ p {
     }
 }
 
-@media only screen and (min-width: 1000px){
+/* @media only screen and (min-width: 1000px){
     .home{
-        /* background-color: black; */
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -406,25 +407,11 @@ p {
         width: 560px;
         height: 315px;
     }
+} */
 
-    /* .ig img{
-        width: 150px;
-        height: auto;
-        padding-top: 15vh;
-        padding-left: 40%
-    }
-    
-    .youtube img{
-        width: 225px;
-        height: 150px;
-        padding-left: 35%;
-        padding-top: 15vh;
-    } */
-}
-
-@media only screen and (min-width: 1200px){
+/* @media only screen and (min-width: 1200px){
     .home{
-        /* background-color: pink; */
+
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -436,7 +423,7 @@ p {
 
 @media only screen and (min-width: 1200px){
     .home{
-        /* background-color: pink; */
+
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -448,7 +435,7 @@ p {
 
 @media only screen and (min-width: 1400px){
     .home{
-        /* background-color: blue; */
+
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -461,7 +448,7 @@ p {
         padding-left: 35%;
         width: 300px;
         height: auto;
-        /* background:cornflowerblue; */
+
     }
 
 }
@@ -469,4 +456,4 @@ p {
     .portfolio {
         padding-left: 25%;
     }
-}
+} */
