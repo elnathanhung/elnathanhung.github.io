@@ -1,8 +1,6 @@
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -38,7 +36,7 @@ a:hover {
 }
 
 body {
-    margin: 0;
+    /* width: 90%; */
     background: #363636 url(../assets/bg/BG_Graphic.png);
     background-repeat: repeat;
     background-size: auto 200px;
@@ -395,6 +393,7 @@ p {
 
 @media only screen and (min-width: 1000px){
     .home{
+        /* background-color: black; */
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -407,14 +406,28 @@ p {
         width: 560px;
         height: 315px;
     }
+
+    /* .ig img{
+        width: 150px;
+        height: auto;
+        padding-top: 15vh;
+        padding-left: 40%
+    }
+    
+    .youtube img{
+        width: 225px;
+        height: 150px;
+        padding-left: 35%;
+        padding-top: 15vh;
+    } */
 }
 
 @media only screen and (min-width: 1200px){
     .home{
-
+        /* background-color: pink; */
     }
     .dropdown-content {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .portfolio {
         padding-left: 12%;
@@ -423,7 +436,7 @@ p {
 
 @media only screen and (min-width: 1400px){
     .home{
-
+        /* background-color: blue; */
     }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -436,7 +449,7 @@ p {
         padding-left: 35%;
         width: 300px;
         height: auto;
-
+        /* background:cornflowerblue; */
     }
 
 }
