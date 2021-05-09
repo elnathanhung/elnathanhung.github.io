@@ -127,14 +127,14 @@ background-color:rgba(24, 20, 45);
 
 .portfolio {
     /* background: white; */
-    padding-top: 30vh;
+    padding-top: 70vh;
 }
 
 .portfolio img {
-    width: 300px;
+    width: 500px;
     height: auto;
     align-self: center;
-    padding-left: 20%;
+    padding-left: 15%;
     /* background:chocolate */
 }
 
@@ -153,8 +153,8 @@ background-color:rgba(24, 20, 45);
 
 .title img{
     padding: 4%;
-    padding-left: 30%;
-    width: 200px;
+    padding-left: 20%;
+    width: 500px;
     height: auto;
 }
 
@@ -168,7 +168,7 @@ background-color:rgba(24, 20, 45);
     z-index: 1;
     position: relative;
     padding: 3%;
-    padding-left: 20%;
+    padding-left: 3%;
     border: rgb(204, 157, 204);
 }
 
@@ -176,13 +176,10 @@ background-color:rgba(24, 20, 45);
     z-index: 1;
     position: relative;
     padding: 3%;
-    padding-left:5%;
     border: rgb(204, 157, 204);
 }
 
 iframe {
-    width: 265px;
-    height: 157px;
     filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
 }
 
