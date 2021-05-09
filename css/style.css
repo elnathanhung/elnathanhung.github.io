@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 3%;
+    background: rgba(24, 20, 45, 0.75);
+}
+h4{
+    padding-left: 20px;
+    font-family: Big Caslon, Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+h1{
+    font-family: Big Caslon, Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 3%;
+    padding-left: 37%;
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited 
+{
+    color: rgb(204, 157, 204);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+body {
+    /* width: 90%; */
+    background: #363636 url(../assets/bg/BG_Graphic.png);
+    background-repeat: repeat;
+    background-size: auto 200px;
+    color: white;
+    font-family: Open, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.nav {
+    z-index: 3;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: auto; */
+    padding: 30px;
+    /* background:chocolate; */
+}
+.home{
+    background-color: rgba(24, 20, 45, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: auto;
+    padding-left: 40%;
+}
+
+.home img:hover {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.ham {
+    position: absolute;
+    z-index: 3;
+    /* background: chocolate; */
+}
+
+.dropbtn {
+    position: relative;
+    z-index: 3;
+    background-color:indigo;
+    opacity: 0;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* .dropbtn:hover, .dropbtn:focus {
+opacity: 0.5;
+background-color:rgba(24, 20, 45);
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(24, 20, 45, 1);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 3;
+}
+
+.dropdown-content a {
+    font-family: Big Caslon, Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+.dropdown a:hover {
+    background-color: rgba(24, 20, 45);
+    border: 1px solid white;
+}
+
+.show {display: block;}
+
+
+.portfolio {
+    /* background: white; */
+    padding-top: 30vh;
+}
+
+.portfolio img {
+    width: 300px;
+    height: auto;
+    align-self: center;
+    padding-left: 20%;
+    /* background:chocolate */
+}
+
+.grid img {
+    width: 100vh;
+    height: auto;
+}
+
+#work1 #work2 #work3 #work4 #work5 {
+    padding-top: 10%;
+}
+
+.title {
+    /* background:chocolate; */
+}
+
+.title img{
+    padding: 4%;
+    padding-left: 30%;
+    width: 200px;
+    height: auto;
+}
+
+#title1 {
+}
+
+#title2{
+}
+
+#player {
+    z-index: 1;
+    position: relative;
+    padding: 3%;
+    padding-left: 20%;
+    border: rgb(204, 157, 204);
+}
+
+#frame {
+    z-index: 1;
+    position: relative;
+    padding: 3%;
+    padding-left:5%;
+    border: rgb(204, 157, 204);
+}
+
+iframe {
+    width: 265px;
+    height: 157px;
+    filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+}
+
+p {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.wrap_scroll {
+    padding: 3%;
+}
+
+.wrap {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    padding-top: 10vh;
+    padding-bottom: 25vh;
+}
+
+.ig img{
+    width: 100px;
+    height: auto;
+    padding-left: 40%;
+}
+
+.youtube img{
+    width: 150px;
+    height: 100px;
+    padding-left: 35%;
+    padding-top: 10vh;
+}
+
+.ig img:hover {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.youtube img:hover {
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 550px){
+
+    .portfolio{
+        padding-left: 10%;
+    }
+    
+    iframe {
+        padding-left: 7%;
+    }
+    .youtube img{
+        width: 150px;
+        height: 100px;
+        padding-left: 37%;
+        padding-top: 10vh;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    .nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home{
+        position: absolute;
+        z-index: 3;
+        width: 300vh;
+        height: auto;
+        background: rgba(24, 20, 45, 0.75);
+    }
+
+    .home img{
+        width: 150px;
+        height: auto;
+        padding-left: 2%;
+        padding-bottom: 0%;
+        z-index: 3;
+    }
+
+    .ham {
+        display: none;
+        z-index: 0;
+        background: rgba(0,0,0,0);
+    }
+    
+    
+    .dropdown {
+        position: fixed;
+        display: inline-block;
+        /* background: black; */
+        width: 1000px;
+        z-index: 4;
+        top: 30px;
+        padding-left: 20%;
+    }
+    
+    .dropdown-content {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: rgba(24, 20, 45, 0);
+        min-width: 500px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+        z-index: 5;
+    }
+    
+    .dropdown-content a {
+        text-align: center;
+        }
+    
+    .dropdown a:hover {
+        background-color: rgba(24, 20, 45, 0);
+        border: 1px solid white;
+    }
+    
+    .show {display: block;}
+    
+
+    .portfolio {
+        padding-top:40vh;
+        align-self: center;
+        padding-left: 3%;
+    }
+
+    .portfolio img {
+        width: 400px;
+        height: auto;
+        align-self: center;
+        /* background:chocolate */
+    }
+
+    .grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .columnrow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .title img{
+        padding-top: 20%;
+        padding-left: 15%;
+        width: 300px;
+        height: auto;
+        /* background:cornflowerblue; */
+    }
+
+    #title1 {
+        z-index: 2;
+    }
+
+    #title2{
+        z-index: 2;
+    }
+
+    #player {
+        padding: 5%;
+    }
+    iframe {
+        width: 460px;
+        height: 240px;
+        right: 30vh;
+    }
+
+
+    /* .wrap_scroll {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        align-content: center;
+        padding-top: 15vh;
+    } */
+
+    .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-content: center;
+    }
+    
+    .ig img{
+        width: 100px;
+        height: auto;
+        padding-top: 15vh;
+        padding-left: 40%
+    }
+    
+    .youtube img{
+        width: 150px;
+        height: 100px;
+        padding-left: 35%;
+        padding-top: 15vh;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .home{
+        /* background-color: black; */
+    }
+    .dropdown-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    }
+    .portfolio {
+        padding-left: 9%;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    /* .ig img{
+        width: 150px;
+        height: auto;
+        padding-top: 15vh;
+        padding-left: 40%
+    }
+    
+    .youtube img{
+        width: 225px;
+        height: 150px;
+        padding-left: 35%;
+        padding-top: 15vh;
+    } */
+}
+
+@media only screen and (min-width: 1200px){
+    .home{
+        /* background-color: pink; */
+    }
+    .dropdown-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .portfolio {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .home{
+        /* background-color: pink; */
+    }
+    .dropdown-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .portfolio {
+        padding-left: 12%;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .home{
+        /* background-color: blue; */
+    }
+    .dropdown-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .portfolio {
+        padding-left: 20%;
+    }
+    .title img{
+        padding-top: 20%;
+        padding-left: 35%;
+        width: 300px;
+        height: auto;
+        /* background:cornflowerblue; */
+    }
+
+}
+@media only screen and (min-width: 1600px){
+    .portfolio {
+        padding-left: 25%;
+    }
+}
