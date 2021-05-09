@@ -60,7 +60,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 100%;
     height: auto;
     padding-left: 40%;
 }
@@ -253,8 +253,9 @@ p {
     .home{
         position: absolute;
         z-index: 3;
-        width: 300vh;
+        width: 400vh;
         height: auto;
+        padding-top: 30px;
         background: rgba(24, 20, 45, 0.75);
     }
 
