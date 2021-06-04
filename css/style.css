@@ -124,17 +124,17 @@ background-color:rgba(24, 20, 45);
 
 .show {display: block;}
 
-
+/* * */
 .portfolio {
     /* background: white; */
-    padding-top: 50vh;
+    padding-top: 40vh;
 }
 
 .portfolio img {
-    width: 400px;
+    width: 300px;
     height: auto;
     align-self: center;
-    padding-left: 15%;
+    padding-left: 12%;
     /* background:chocolate */
 }
 
@@ -153,8 +153,8 @@ background-color:rgba(24, 20, 45);
 
 .title img{
     padding: 4%;
-    padding-left: 17%;
-    width: 400px;
+    padding-left: 10%;
+    width: 300px;
     height: auto;
 }
 
@@ -175,14 +175,16 @@ background-color:rgba(24, 20, 45);
     position: relative;
     border: rgb(204, 157, 204);
 }
-
+/* * */
 iframe {
     filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+    width: 50%;
+    height: 315px;
 }
-
+/* * */
 p {
     padding: 20px;
-    padding-right: 20%;
+    padding-right: 50%;
     text-align: left;
 }
 
@@ -205,8 +207,8 @@ p {
 }
 
 .youtube img{
-    width: 150px;
-    height: 100px;
+    width: 60%;
+    height: auto;
     padding-left: 35%;
     padding-top: 10vh;
 }
@@ -223,9 +225,13 @@ p {
 
 @media only screen and (min-width: 550px){
 
-    /* .portfolio{
-        padding-left: 10%;
-    } */
+    .portfolio img {
+        width: 300px;
+        height: auto;
+        align-self: center;
+        padding-left: 20%;
+        /* background:chocolate */
+    }
     
     iframe {
         padding-left: 3%;
@@ -317,6 +323,7 @@ p {
         width: 400px;
         height: auto;
         align-self: center;
+        padding-left: 25%;
         /* background:chocolate */
     }
 
@@ -385,9 +392,14 @@ p {
         padding-left: 35%;
         padding-top: 15vh;
     }
-/* }
 
-@media only screen and (min-width: 1000px){ */
+    p {
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1000px){
     .home{
         /* background-color: black; */
     }
@@ -437,9 +449,6 @@ p {
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    .portfolio {
-        padding-left: 20%;
-    }
     .title img{
         padding-top: 20%;
         padding-left: 35%;
@@ -450,7 +459,7 @@ p {
 
 }
 @media only screen and (min-width: 1600px){
-    .portfolio {
+    .portfolio img{
         padding-left: 25%;
     }
 }
