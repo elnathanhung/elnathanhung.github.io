@@ -196,7 +196,7 @@ p {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: auto;
-    padding-top: 10vh;
+    padding-top: 7vh;
     padding-bottom: 25vh;
 }
 
