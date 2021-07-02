@@ -238,7 +238,7 @@ p {
 @media only screen and (min-width: 550px){
 
     .home {
-        padding-left: 40%;
+        padding-left: 220px;
     }
 
     .socialtitle {
@@ -252,7 +252,7 @@ p {
         width: 300px;
         height: auto;
         align-self: center;
-        padding-left: 20%;
+        padding-left: 15%;
         /* background:chocolate */
     }
     
@@ -290,6 +290,7 @@ p {
         width: 400vh;
         height: auto;
         padding-top: 30px;
+        padding-left: 45%;
         background: rgba(24, 20, 45, 0.75);
     }
 
