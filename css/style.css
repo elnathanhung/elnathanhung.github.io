@@ -63,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    padding-left: 40%;
+    padding-left: 200px;
 }
 
 .home img:hover {
@@ -230,6 +230,10 @@ p {
 }
 
 @media only screen and (min-width: 550px){
+
+    .home {
+        padding-left: 40%;
+    }
 
     .socialtitle {
         font-family: Big Caslon, Arial, Helvetica, sans-serif;
