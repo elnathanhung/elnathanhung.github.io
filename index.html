@@ -15,11 +15,14 @@
                 <div id="myDropdown" class="dropdown-content">
                     <a href="index.html">Home</a> 
                     <a href="social.html">Social</a> 
-                    <a href="work1.html">Whackinator</a>
-                    <a href="work2.html">Place To Be</a> 
-                    <a href="work3.html">Laser Graffiti</a> 
+                    <a href="#empathybot">Empathy Bot</a>
+                    <a href="#nostalgiareworked"> Nostalgia Reworked</a>
+                    <a href="#whackinator">Whackinator</a>
+                    <a href="#placetobe">Place To Be</a> 
+                    <a href="otherwork.html">Other Projects</a>
+                    <!-- <a href="work3.html">Laser Graffiti</a> 
                     <a href="work4.html">The Day Before</a>
-                    <a href="work5.html">Terrain Project</a> 
+                    <a href="work5.html">Terrain Project</a>  -->
                     <!-- <ul>
                         <li> <a href="#Home">Home</a> </li>
                         <li> <a href="#About">About</a> </li>
@@ -49,14 +52,45 @@
                         <img src="assets/png/aboutme_title.png">
                     </div>
                     <div id="frame">
-                        <img src="assets/png/self_portrait.jpg" width="400" height="300">
+                        <img src="assets/png/Profile_Image.png" width="400" height="auto">
                     </div>
                 </section>
-                <p id="p1">Elnathan is an interactive media designer who undertakes programming and code art as a medium to create. His projects mainly cover various methods of interactive technology: computer vision, interactive environments, and digital spaces, and UI/UX. He is open to work with different coding languages and programming software as his projects would suggest. His education is in Interaction Design, a Design Art pathway in School of Art Design and Media, Nanyang Technological University. </p>
+                <section class="description">
+                <p id="p1">Elnathan is a designer with a background in Interaction Design. His expertise lies in creative coding and visual programming to engineering marketable and artistic products or projects. With experience in the arts, he is versed in designing visual platforms and curating environments for various pathways such as UI/UX, responsive websites, 3D modeling, and interactive spaces.
+                </p>
+                </section>
             </section>
-
             <section class="work1" id="work1">
-                <section class="columnrow">
+                <section class="columnrow" id="empathybot">
+                    <div class="title" id="title1">
+                        <img src="assets/png/EmpathyBot_Title.png">
+                    </div>
+                    <div id="player">
+                        <iframe width="979" height="560" src="https://www.youtube.com/embed/y_UhiLHkuvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </section>
+        </section>
+        <section class="description">
+        <p id="p1">The Empathy Bot is conceptually an AI assistant that is able to empathize with human emotions based on facial expression. It is aware of presences and invites users to interact with it. A happy face would trigger cause the robot to dance and whistle mimicking a positive feeling. However, an upset expression causes the robot to bow its head, expressing sadness.</p>
+        <p>In order to build a simple pan and tilt mechanism, 3D modeled parts were strategically designed and printed to stabilize and fit into the construction of the robot. The robot surveillances through a webcam while reading information from the user's facial expression, and sends information via OSC communication. The different emotional states are thus read and the robot reacts accordingly.</p>    
+    </section>
+        <section class="work1" id="work1">
+            <section class="columnrow" id="nostalgiareworked">
+                <div class="title" id="title1">
+                    <img src="assets/png/NOSTALGIA_REWORKED_TITLE.png">
+                </div>
+                <div id="player">
+                    <iframe width="884" height="506" src="https://www.youtube.com/embed/tiIzGKQIXjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </section>
+            </section>
+            <section class="description">
+            <p id="p1">“Nostalgia Reworked” is a speculative design for an exhibition installation that mixes elements of nostalgia with expressions of the contemporary. The project was designed to be situated within the Nanyang Technological University, School of Art, Design and Media Gallery, for an exhibition with the theme of “Singapore Dubbing”. This theme is inspired by the notion of Dub music; 
+                the blending of two ‘genres’ of spaces. Within the exhibition model, we see the dubbing of two points of view within the space; on one side we see visual elements from olden-day Singapore (e.g. shophouse windows), while on the other, we see hints of modern design (e.g. the Bauhaus Globe chair). As a result, the viewers walk into a space not exactly knowing which point in time they have entered.</p> 
+                <p>Click <a href="nostalgia.html" target="_blank">here</a> to see more.</p>
+            </section>
+        <section class="work1" id="work1">
+                <section class="columnrow" id="whackinator">
                     <div class="title" id="title1">
                         
                         <img src="assets/png/whackinator_title.png">
@@ -65,9 +99,10 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_8HH3o_IBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </section>
-                <p id="p1">“Monkey See, Monkey Do” refers to the act of imitation with the limited knowledge of consequences or reason. Playing on the idea that a small ripple can create a tsunami, Whackinator serves as a commentary on society need for inclusion and the hive mind mentality. The hands are sets of servo motors programmed with Raspberry Pi computers while the hand sensing is through Python Mediapipe which communicates to the servos via OSC message.</p>
+                <section class="description">
+                <p id="p1">“Monkey See, Monkey Do” refers to the act of imitation with the limited knowledge of consequences or reason. Playing on the idea that a small ripple can create a tsunami, Whackinator serves as a commentary on the societal need for inclusion and the hive mind mentality. The hands are sets of servo motors programmed with Raspberry Pi computers while the hand sensing is through Python Mediapipe which communicates to the servos via OSC message.</p>                </section>
             <section class="work2" id="work2">
-                <section class="columnrow">
+                <section class="columnrow" id="placetobe">
                     <div class="title" id="title2"> 
                         <img src="assets/png/placetobe_title.png"> 
                     </div>
@@ -75,10 +110,13 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/SzF0XVROZ4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
-                <p id="p2"> <em>Paya Lebar Airbase: the place to be…</em> but we can’t is an interactive website entailing history and personal encounters within the location, Paya Lebar Airbase (PLAB) in Singapore. As usual protocols for high security military airbases would suggest, PLAB is blocked from the public eye apart from open house event coverages and images posted on the internet (which are mostly given security clearance). Through this interactive narrative, I experiment with how one can experience a place where one cannot enter or see. </p> <p>This project pushes the boundaries of what we can find or document about a confidential location. The entire website is developed and coded from scratch. Chapter 1 documents some of the history of PLAB, chapter 2 is an imagining of the experience of the location as I narrate my own personal experiences within the base, and lastly, chapter 3 is an interactive activity where I invite you to plan the future of PLAB.</p>
-                <p>Visit the website: <a href="https://ehung001.github.io/" target="_blank">ThePlaceToBe.com</a></p>
+                <section class="description">
+                <p id="p2"> "Paya Lebar Airbase: the place to be… but we can’t" is an interactive website entailing history and personal encounters within the location, Paya Lebar Airbase (PLAB) in Singapore. As usual protocols for high-security military airbases would suggest, PLAB is blocked from the public eye apart from open house event coverages and images posted on the internet (which are mostly given security clearance). Through this interactive narrative, I experiment with how one can experience a place where one cannot enter or see.</p>
+                <p id="p2">This project pushes the boundaries of what we can find or document about a confidential location. The entire website is developed and coded from scratch. Chapter 1 documents some of the histories of PLAB, chapter 2 is an imagining of the experience of the location as I narrate my personal experiences within the base, and lastly, chapter 3 is an interactive activity where I invite you to plan the future of PLAB.</p>
+                <p>Visit the website: <a href="https://ehung001.github.io/" target="_blank">ThePlaceToBe.com</a> (disclaimer: this interactive experience was not designed for mobile)</p>
+                </section>
             </section>
-            <section class="work3" id="work3">
+            <!-- <section class="work3" id="work3">
                 <section class="columnrow">
                     <div class="title" id="title1"> 
                         <img src="assets/png/lasergraffiti_title.png"> 
@@ -87,9 +125,11 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/I36loD0bNf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
+                <section class="description">
                 <p id="p1">The goal of the work was to remake the Graffiti Research Lab laser graffiti project. I used TouchDesigner to recreate the graffiti through blob tracking and projection. The colours of the strokes are defined by a “noise operator”, resulting in a vibrant visual effect. Opencv allows us to map the webcam image input according to the projection output. The input image is distorted to fit the dimensions of the projection using a “stoner palette”.</p>
             </section>
-            <section class="work4" id="work4">
+            </section> -->
+            <!-- <section class="work4" id="work4">
                 <section class="columnrow">
                     <div class="title" id="title2"> 
                         <img src="assets/png/thedaybefore_title.png"> 
@@ -98,7 +138,9 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Dzw0ydhDUGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
+                <section class="description">
                 <p id="p2"><em>The Day Before</em> choose your own adventure narrative inspired by the film "Primer" (2004). This game was created with TouchDesigner using containers and buttons which form a basic user interface with selected paths. Imagine you are a broke inventor who is in desperate to win the lottery. Your only way to win is to lose first, travel back to the day before and submit the winning numbers. Things start to go wrong.</p>
+            </section>
             </section>
             <section class="work5" id="work5">
                 <section class="columnrow">
@@ -109,12 +151,15 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5Jf_3CZ6rZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
+                <section class="description">
                 <p id="p1"><em>The Terrain Project</em> is an visual sound-waves that response to audio signals done with TouchDesigner. These signals can be sourced from either an external microphone or instrument, which provide live input signals (or “Live In”), or signals from an internally stored playlist, mp3 tracks or movie files that are saved within the project directory. The signal to be channeled into the programming environment is analysed as 3 different patterns: high, middle, and low frequencies. These are translated into waves which are visualised as columns in a grid. The result is a moving three-dimensional oscilloscope (drawn in x, y, z axes) containing wave-like qualities.</p>
-            </section>
+            </section> -->
+            <!-- </section> -->
         </div>
         <footer>
-            <h4>Author: Elnathan Hung</h4>
-            <h4>Follow Me On Instagram: <a href="https://www.instagram.com/outa_spa.ce/" target="_blank">@outa_spa.ce</a></h4>
+            <h4>Email: hung.chenen@gmail.com </h4>
+            <h4>Instagram: <a href="https://www.instagram.com/outa_spa.ce/" target="_blank">@outa_spa.ce</a></h4>
+            <h4>Youtube: <a href="https://www.youtube.com/channel/UCi_e2kCkm_wCxrGtA7p4Ibw" target="_blank">Elnathan</a></h4>
         </footer>
 
         <script>
@@ -141,7 +186,9 @@
         <script>
             // 2. This code loads the IFrame Player API code asynchronously.
             var tag = document.createElement('script');
-        
+
+            tag.src ="https://www.youtube.com/embed/y_UhiLHkuvg";
+            tag.src = "https://www.youtube.com/embed/tiIzGKQIXjc";
             tag.src = "https://www.youtube.com/embed/_8HH3o_IBQQ";
             tag.src = "https://www.youtube.com/embed/SzF0XVROZ4E";
             tag.src = "https://www.youtube.com/embed/I36loD0bNf0";

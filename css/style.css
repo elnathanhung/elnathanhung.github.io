@@ -3,6 +3,30 @@
     padding: 0;
 }
 
+#floorplan {
+    padding-left: 7%;
+    padding-bottom: 7vh;
+}
+
+#floorplan img{
+    height: 40vh;
+    width: auto;
+}
+
+#pic1{
+    padding-left: 7%;
+    padding-bottom: 7vh;
+}
+
+#pic1 img{
+    height: 40vh;
+    width: auto;
+}
+
+#space {
+ padding-top: 20vh;
+}
+
 footer {
     padding: 9%;
     background: rgba(24, 20, 45, 0.75);
@@ -19,6 +43,14 @@ h1{
     color: white;
     padding: 3%;
     padding-left: 37%;
+}
+
+h6{
+    font-style: italic;
+    font-family: Big Caslon, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight:10;
+    font-size: 12px;
 }
 
 p{
@@ -40,6 +72,14 @@ a:visited
 
 a:hover {
     color: white;
+}
+
+.description {
+    padding: 5%;
+}
+
+.description2 {
+    padding-left: 10%;
 }
 
 body {
@@ -181,8 +221,13 @@ background-color:rgba(24, 20, 45);
     position: relative;
     border: rgb(204, 157, 204);
 }
+#frame img{
+    padding-left: 7%;
+    filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+}
 /* * */
 iframe {
+    padding-left: 7%;
     filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
     width: 50%;
     height: 315px;
@@ -213,9 +258,16 @@ p {
 }
 
 .ig img{
-    width: 100px;
+    width: 250px;
     height: auto;
-    padding-left: 23%;
+    padding-left: 15%;
+}
+
+.ig img:hover {
+    cursor: pointer;
+    width:300px;
+    padding-left: 13%;
+    z-index: 2;
 }
 
 .youtube img{
@@ -223,11 +275,6 @@ p {
     height: auto;
     padding-left: 21%;
     padding-top: 10vh;
-}
-
-.ig img:hover {
-    cursor: pointer;
-    z-index: 2;
 }
 
 .youtube img:hover {
@@ -238,6 +285,7 @@ p {
 @media only screen and (min-width: 550px){
 
     .home {
+
         padding-left: 220px;
     }
 
@@ -256,13 +304,16 @@ p {
         /* background:chocolate */
     }
     
-    iframe {
+    /* iframe {
         padding-left: 3%;
-    }
+    } */
 
     .ig img{
+        padding-left: 20%;
+    }
 
-        padding-left: 25%;
+    .ig img:hover {
+        padding-left: 17%;
     }
 
     .youtube img{
@@ -388,9 +439,9 @@ p {
         padding: 5%;
     }
     iframe {
-        width: 460px;
-        height: 240px;
-        right: 30vh;
+        width: 400px;
+        height: 300px;
+        /* right: 30vh; */
     }
 
 
@@ -417,10 +468,16 @@ p {
     }
 
     .ig img{
-        width: 100px;
+        width: 250px;
         height: auto;
-        padding-top: 15vh;
-        padding-left: 37%
+        padding-left: 37%;
+    }
+    
+    .ig img:hover {
+        cursor: pointer;
+        width:300px;
+        padding-left: 34%;
+        z-index: 2;
     }
     
     .youtube img{
@@ -433,6 +490,13 @@ p {
     p {
         padding: 20px;
         text-align: left;
+    }
+    #floorplan {
+        padding-left: 15%;
+    }
+
+    #pic1{
+        padding-left: 15%;
     }
 }
 
@@ -448,8 +512,8 @@ p {
     }
 
     iframe {
-        width: 560px;
-        height: 315px;
+        width: 400px;
+        height: 300px;
     }
 
     /* .ig img{
@@ -507,19 +571,54 @@ p {
         padding-left: 38%
     }
     
+    .ig img:hover {
+        padding-left: 35%;
+    }
+    
     .youtube img{
         padding-left: 33%;
+    }
+    
+    .description{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .title{
+        padding-left: 10%;
+    }
+    #floorplan {
+        padding-left: 43%;
+    }
+
+    #pic1{
+        padding-left: 43%;
     }
 
 }
 @media only screen and (min-width: 1600px){
     .portfolio img{
-        padding-left: 25%;
+        padding-left: 30%;
     }
 
     .youtube img{
         padding-left: 34%;
     }
+
+    #floorplan {
+        padding-left: 60%;
+    }
+
+    #pic1{
+        padding-left: 60%;
+    }
+
+    #pic1 img {
+        height: 60vh;
+    }
+    #floorplan img {
+        height: 60vh;
+    }
+
 }
 
 @media only screen and (min-width: 1600px){
