@@ -589,9 +589,16 @@ p {
     #floorplan {
         padding-left: 43%;
     }
+    #floorplan img {
+        height: 60vh;
+    }
 
     #pic1{
         padding-left: 43%;
+    }
+    #pic1 img{
+        height: 70vh;
+        width: auto;
     }
 
 }
@@ -611,10 +618,10 @@ p {
     #pic1{
         padding-left: 60%;
     }
-
+/* 
     #pic1 img {
         height: 60vh;
-    }
+    } */
     #floorplan img {
         height: 60vh;
     }
