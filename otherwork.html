@@ -1,35 +1,52 @@
 <!doctype html>
     <head>
         <title>Elnathan Hung</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/newstyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <section class="nav">
             <div class="dropdown">
-                <div class = "ham">
-                    <img src="assets/png/Hamburger.png" width="100%" height="100%">
-                </div>
                 <button onclick="myFunction()" class="dropbtn">
+                    <div class = "ham">
+                    </div>
+                    <div class = "ham">
+                    </div>
+                    <div class = "ham">
+                    </div>  
                 </button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="index.html">Home</a> 
-                    <a href="social.html">Social</a> 
-                    <a href="https://www.behance.net/elnathanhung/" target="_blank">UI/UX Work</a>
+                    <a href="About.html">About</a>
+                    <!-- <a href="social.html">Social</a>  -->
+                    <a href="uiux.html">UI/UX Projects</a>
+                    <a href="retrofuture.html">Retro Future</a>
+                    <a href="work2.html">Place To Be</a> 
                     <a href="empathybot.html">Empathy Bot</a>
                     <a href="nostalgia.html"> Nostalgia Reworked</a>
                     <a href="work1.html">Whackinator</a>
-                    <a href="work2.html">Place To Be</a> 
                     <a href="otherwork.html">Other Projects</a>
-
+                    <!-- <ul>
+                        <li> <a href="#Home">Home</a> </li>
+                        <li> <a href="#About">About</a> </li>
+                        <li> <a href="#Social">Social</a> </li>
+                        <li> <a href="#work1">Whackinator</a> </li>
+                        <li> <a href="#work2">Place To Be</a> </li>
+                        <li> <a href="#work3">Laser Graffiti</a> </li>
+                        <li> <a href="#work4">The Day Before</a> </li>
+                        <li> <a href="#work5">Terrain Project</a> </li>
+                    </ul> -->
                 </div>
             </div>
             <div class="home" id="home">
-                <a href="index.html"><img src="assets/png/Home_Button.png" width="30%" height="30%"> </a>
+                <a href="index.html"><img src="assets/png/Home_Button.png"> </a>
             </div>
         </section>
+        <!-- <section class="grid">  
+            <img src="assets/png/Perspective_Grid.png"> 
+        </section> -->
+        
         <div class="wrap_scroll" id="space">
-            <section class="work3" id="work3">
+            <section class="work1" id="work1">
                 <section class="columnrow">
                     <div class="title" id="title1"> 
                         <img src="assets/png/Not_A_Holiday.png"> 
@@ -38,23 +55,12 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/gZl4skyR0Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
                 </section>
                 <section class="description">
-                <p id="p1">"Quarantine Order Isn’t A Holiday" is a published Meta (Facebook) Story filter that prototypes a game that references Singapore’s Quarantine Order (QO) within 2019/2020, when the COVID-19 pandemic was still fresh. The game comedically references the idea of having to be sent to a QO site (typically a luxurious hotel) when tested positive for the virus, while promoting the notion of going out of one’s way to catch the virus. The game is a simple avoid target game, however, whether catching the virus is losing or winning the game is left ambiguous. The game prototype was built with the Meta software, SparkAR.</p>
+                <p id="p1">"Quarantine Order Isn’t A Holiday" is a published Meta (Facebook) Story filter that prototypes a game that references Singapore’s Quarantine Order (QO) within 2019/2020, when the COVID-19 pandemic was still fresh. </p> 
+                <p id="p1">The game comedically references the idea of having to be sent to a QO site (typically a luxurious hotel) when tested positive for the virus, while promoting the notion of going out of one’s way to catch the virus. The game is a simple avoid target game, however, whether catching the virus is losing or winning the game is left ambiguous. The game prototype was built with the Meta software, SparkAR.</p>
             </section>
             </section> 
-            <section class="work3" id="work3">
-                <section class="columnrow">
-                    <div class="title" id="title1"> 
-                        <img src="assets/png/ExplorerApp.png"> 
-                    </div>
-                    <div id="player">
-                        <iframe width="1191" height="673" src="https://www.youtube.com/embed/eoQvWdNRYow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                <p id="p1">"Explorer" is a prototype travel mobile application catered for young Singaporeans who need travel and activity inspiration. Within the app, you can experience the functionality of sharing inspiration through a social media section, the usability of an in-software shared planner, including the convenience of an e-commerce/booking platform. The app is an all-in-one system for travelers who wish to explore activities, lodging, air tickets, and F&B outlets for both local and abroad. Within the short video walkthrough, you will see a flow of the e-commerce section that demonstrates the UI and different functions of the details pages. The walkthrough is a glimpse of the seamless and minimal user experience behind the app design.</p>
-            </section>
-            </section> 
-            <section class="work3" id="work3">
+
+            <section class="work1" id="work1">
                 <section class="columnrow">
                     <div class="title" id="title1"> 
                         <img src="assets/png/lasergraffiti_title.png"> 
@@ -67,19 +73,7 @@
                 <p id="p1">The goal of the work was to remake the Graffiti Research Lab laser graffiti project. I used TouchDesigner to recreate the graffiti through blob tracking and projection. The colours of the strokes are defined by a “noise operator”, resulting in a vibrant visual effect. Opencv allows us to map the webcam image input according to the projection output. The input image is distorted to fit the dimensions of the projection using a “stoner palette”.</p>
             </section>
             </section> 
-            <section class="work4" id="work4">
-                <section class="columnrow">
-                    <div class="title" id="title2"> 
-                        <img src="assets/png/thedaybefore_title.png"> 
-                    </div>
-                    <div id="player">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dzw0ydhDUGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                <p id="p2">"The Day Before" is a 'choose-your-own-adventure' narrative inspired by the film "Primer" (2004). This game was created with TouchDesigner using containers and buttons which form a basic user interface with selected paths. Imagine you are a broke inventor who is in desperate to win the lottery. Your only way to win is to lose first, travel back to the day before and submit the winning numbers. Things start to go wrong.</p>
-            </section>
-            </section>
+
             <section class="work5" id="work5">
                 <section class="columnrow">
                     <div class="title" id="title1"> 
@@ -90,17 +84,18 @@
                     </div>
                 </section>
                 <section class="description">
-                <p id="p1">"The Terrain Project" is a visual sound-waves that response to audio signals done with TouchDesigner. These signals can be sourced from either an external microphone or instrument, which provides live input signals (or “Live In”), or signals from an internally stored playlist, mp3 tracks, or movie files that are saved within the project directory. The signal to be channeled into the programming environment is analyzed as 3 different patterns: high, middle, and low frequencies. These are translated into waves which are visualized as columns in a grid. The result is a moving three-dimensional oscilloscope (drawn in x, y, z axes) containing wave-like qualities.</p>
+                <p id="p1">"The Terrain Project" is a visual sound-waves that response to audio signals done with TouchDesigner. These signals can be sourced from either an external microphone or instrument, which provides live input signals (or “Live In”), or signals from an internally stored playlist, mp3 tracks, or movie files that are saved within the project directory. </p>
+                <p id="p1"> signal to be channeled into the programming environment is analyzed as 3 different patterns: high, middle, and low frequencies. These are translated into waves which are visualized as columns in a grid. The result is a moving three-dimensional oscilloscope (drawn in x, y, z axes) containing wave-like qualities.</p>
             </section>
             </section>
         </div>
-        <footer>
+        <!-- <footer>
             <h4>Written and published by Elnathan Hung</h4>
             <h4>Email: hung.chenen@gmail.com </h4>
             <h4>Behance: <a href="https://www.behance.net/elnathanhung/" target="_blank">www.behance.net/elnathanhung</a></h4>
             <h4>Instagram: <a href="https://www.instagram.com/outa_spa.ce/" target="_blank">@outa_spa.ce</a></h4>
             <h4>Youtube: <a href="https://www.youtube.com/channel/UCi_e2kCkm_wCxrGtA7p4Ibw" target="_blank">Elnathan</a></h4>
-        </footer>
+        </footer> -->
 
         <script>
             /* When the user clicks on the button, 

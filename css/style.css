@@ -95,7 +95,7 @@ body {
 
 .nav {
     z-index: 3;
-    position: fixed;
+    position: fixed
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* grid-template-rows: auto; */
@@ -282,8 +282,40 @@ p {
     z-index: 2;
 }
 
-@media only screen and (min-width: 550px){
 
+
+@media only screen and (min-width: 600px){
+
+/* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+/* 
     .home {
 
         padding-left: 220px;
@@ -301,14 +333,14 @@ p {
         height: auto;
         align-self: center;
         padding-left: 15%;
-        /* background:chocolate */
+        background:chocolate
     }
     
     /* iframe {
         padding-left: 3%;
     } */
 
-    .ig img{
+    /* .ig img{
         padding-left: 20%;
     }
 
@@ -317,188 +349,17 @@ p {
     }
 
     .youtube img{
-        /* width: 150px;
-        height: 100px; */
+        width: 150px;
+        height: 100px;
         padding-left: 23%;
         padding-top: 10vh;
     }
 }
 
-@media only screen and (min-width: 680px){
-
-    .body {
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .nav {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .home{
-        position: absolute;
-        z-index: 3;
-        width: 400vh;
-        height: auto;
-        padding-top: 30px;
-        padding-left: 45%;
-        background: rgba(24, 20, 45, 0.75);
-    }
-
-    .home img{
-        width: 150px;
-        height: auto;
-        padding-left: 2%;
-        padding-bottom: 0%;
-        z-index: 3;
-    }
-
-    .ham {
-        display: none;
-        z-index: 0;
-        background: rgba(0,0,0,0);
-    }
-    
-    
-    .dropdown {
-        position: fixed;
-        display: inline-block;
-        /* background: black; */
-        width: 1000px;
-        z-index: 4;
-        top: 30px;
-        padding-left: 20%;
-    }
-    
-    .dropdown-content {
-        position: absolute;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        background-color: rgba(24, 20, 45, 0);
-        min-width: 500px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
-        z-index: 5;
-    }
-    
-    .dropdown-content a {
-        text-align: center;
-        }
-    
-    .dropdown a:hover {
-        background-color: rgba(24, 20, 45, 0);
-        border: 1px solid white;
-    }
-    
-    .show {display: block;}
-    
-
-    .portfolio {
-        padding-top:40vh;
-        align-self: center;
-        padding-left: 3%;
-    }
-
-    .portfolio img {
-        width: 400px;
-        height: auto;
-        align-self: center;
-        padding-left: 25%;
-        /* background:chocolate */
-    }
-
-    .grid img {
-        width: 100%;
-        height: auto;
-    }
-
-    .columnrow {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    .title img{
-        padding-top: 20%;
-        padding-left: 15%;
-        width: 300px;
-        height: auto;
-        /* background:cornflowerblue; */
-    }
-
-    #title1 {
-        z-index: 2;
-    }
-
-    #title2{
-        z-index: 2;
-    }
-
-    #player {
-        padding: 5%;
-    }
-    iframe {
-        width: 400px;
-        height: 300px;
-        /* right: 30vh; */
-    }
+@media only screen and (min-width: 768px){
 
 
-    /* .wrap_scroll {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: auto;
-        align-content: center;
-        padding-top: 15vh;
-    } */
 
-    .wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        align-content: center;
-    }
-    
-    .socialtitle {
-        font-family: Big Caslon, Arial, Helvetica, sans-serif;
-        color: white;
-        padding: 3%;
-        padding-left: 40%;
-    }
-
-    .ig img{
-        width: 250px;
-        height: auto;
-        padding-left: 37%;
-    }
-    
-    .ig img:hover {
-        cursor: pointer;
-        width:300px;
-        padding-left: 34%;
-        z-index: 2;
-    }
-    
-    .youtube img{
-        width: 150px;
-        height: 100px;
-        padding-left: 30%;
-        padding-top: 15vh;
-    }
-
-    p {
-        padding: 20px;
-        text-align: left;
-    }
-    #floorplan {
-        padding-left: 15%;
-    }
-
-    #pic1{
-        padding-left: 15%;
-    }
-}
 
 @media only screen and (min-width: 1000px){
     .home{
@@ -514,9 +375,9 @@ p {
     iframe {
         width: 400px;
         height: 300px;
-    }
+    } 
 
-    /* .ig img{
+    ig img{
         width: 150px;
         height: auto;
         padding-top: 15vh;
@@ -528,13 +389,14 @@ p {
         height: 150px;
         padding-left: 35%;
         padding-top: 15vh;
-    } */
+    } 
 }
 
-@media only screen and (min-width: 1200px){
-    .home{
+
+/* @media only screen and (min-width: 1200px){
+    .home{ */
         /* background-color: pink; */
-    }
+    /* }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -553,9 +415,9 @@ p {
 }
 
 @media only screen and (min-width: 1400px){
-    .home{
+    .home{ */
         /* background-color: blue; */
-    }
+    /* }
     .dropdown-content {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -563,9 +425,9 @@ p {
         padding-top: 20%;
         padding-left: 35%;
         width: 300px;
-        height: auto;
+        height: auto; */
         /* background:cornflowerblue; */
-    }
+    /* }
 
     .ig img{
         padding-left: 38%
@@ -618,18 +480,10 @@ p {
     #pic1{
         padding-left: 60%;
     }
-/* 
-    #pic1 img {
-        height: 60vh;
-    } */
-    /* #floorplan img {
-        height: 70vh;
-    } */
-
 }
 
 @media only screen and (min-width: 1600px){
     .youtube img{
         padding-left: 35%;
     }
-}
+} */

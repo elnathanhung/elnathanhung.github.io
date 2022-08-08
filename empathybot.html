@@ -1,30 +1,35 @@
 <!doctype html>
     <head>
         <title>Elnathan Hung</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/newstyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <section class="nav">
             <div class="dropdown">
-                <div class = "ham">
-                    <img src="assets/png/Hamburger.png" width="100%" height="100%">
-                </div>
                 <button onclick="myFunction()" class="dropbtn">
+                    <div class = "ham">
+                    </div>
+                    <div class = "ham">
+                    </div>
+                    <div class = "ham">
+                    </div>  
                 </button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="index.html">Home</a> 
-                    <a href="social.html">Social</a> 
-                    <a href="https://www.behance.net/elnathanhung/" target="_blank">UI/UX Work</a>
+                    <a href="About.html">About</a>
+                    <!-- <a href="social.html">Social</a>  -->
+                    <a href="uiux.html">UI/UX Projects</a>
+                    <a href="retrofuture.html">Retro Future</a>
+                    <a href="work2.html">Place To Be</a> 
                     <a href="empathybot.html">Empathy Bot</a>
                     <a href="nostalgia.html"> Nostalgia Reworked</a>
                     <a href="work1.html">Whackinator</a>
-                    <a href="work2.html">Place To Be</a> 
                     <a href="otherwork.html">Other Projects</a>
                     <!-- <ul>
                         <li> <a href="#Home">Home</a> </li>
                         <li> <a href="#About">About</a> </li>
-                        <li> <a href="#Social">Social</a> </li>
+                        <li> <a href="
+                        #Social">Social</a> </li>
                         <li> <a href="#work1">Whackinator</a> </li>
                         <li> <a href="#work2">Place To Be</a> </li>
                         <li> <a href="#work3">Laser Graffiti</a> </li>
@@ -34,7 +39,7 @@
                 </div>
             </div>
             <div class="home" id="home">
-                <a href="index.html"><img src="assets/png/Home_Button.png" width="30%" height="30%"> </a>
+                <a href="index.html"><img src="assets/png/Home_Button.png"> </a>
             </div>
         </section>
         <div style="width:500px;height:170px;border:0px solid #000;"></div>
@@ -47,20 +52,14 @@
                     <div id="player">
                         <iframe width="979" height="560" src="https://www.youtube.com/embed/y_UhiLHkuvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                </section>
+                <section class="description">
+                    <p id="p1">The Empathy Bot is  AI assistant that is able to empathize with human emotions based on facial expression. It is aware of presences and invites users to interact with it. A happy face would trigger cause the robot to dance and whistle mimicking a positive feeling. However, an upset expression causes the robot to bow its head, expressing sadness.</p>
+                    <p>In order to build a simple pan and tilt mechanism, 3D modeled parts were strategically designed and printed to stabilize and fit into the construction of the robot. The robot surveillances through a webcam while reading information from the user's facial expression, and sends information via OSC communication. The different emotional states are thus read and the robot reacts accordingly.</p>    
+                </section>
             </section>
-        </section>
-        <section class="description">
-        <p id="p1">The Empathy Bot is conceptually an AI assistant that is able to empathize with human emotions based on facial expression. It is aware of presences and invites users to interact with it. A happy face would trigger cause the robot to dance and whistle mimicking a positive feeling. However, an upset expression causes the robot to bow its head, expressing sadness.</p>
-        <p>In order to build a simple pan and tilt mechanism, 3D modeled parts were strategically designed and printed to stabilize and fit into the construction of the robot. The robot surveillances through a webcam while reading information from the user's facial expression, and sends information via OSC communication. The different emotional states are thus read and the robot reacts accordingly.</p>    
-    </section>
         </div>
-        <footer>
-            <h4>Written and published by Elnathan Hung</h4>
-            <h4>Email: hung.chenen@gmail.com </h4>
-            <h4>Behance: <a href="https://www.behance.net/elnathanhung/" target="_blank">www.behance.net/elnathanhung</a></h4>
-            <h4>Instagram: <a href="https://www.instagram.com/outa_spa.ce/" target="_blank">@outa_spa.ce</a></h4>
-            <h4>Youtube: <a href="https://www.youtube.com/channel/UCi_e2kCkm_wCxrGtA7p4Ibw" target="_blank">Elnathan</a></h4>
-        </footer>
+
         <script>
             /* When the user clicks on the button, 
             toggle between hiding and showing the dropdown content */
