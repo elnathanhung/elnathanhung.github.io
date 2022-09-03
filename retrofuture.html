@@ -18,12 +18,12 @@
                 <div id="myDropdown" class="dropdown-content">
                     <a href="About.html">About</a>
                     <!-- <a href="social.html">Social</a>  -->
-                    <a href="uiux.html">UI/UX Projects</a>
                     <a href="retrofuture.html">Retro Future</a>
-                    <a href="work2.html">Place To Be</a> 
                     <a href="empathybot.html">Empathy Bot</a>
                     <a href="nostalgia.html"> Nostalgia Reworked</a>
                     <a href="work1.html">Whackinator</a>
+                    <a href="work2.html">Place To Be</a> 
+                    <a href="uiux.html">UI/UX Projects</a>
                     <a href="otherwork.html">Other Projects</a>
                     <!-- <ul>
                         <li> <a href="#Home">Home</a> </li>
@@ -54,9 +54,77 @@
                     </div>
                 </section>
                 <section class="description">
-                    <p id="p1">“Retro Future” is a World Building Game run on Unreal Engine 4. Imagine reliving your day over and over again. In a post apocalyptic future, robots dominate over society. Humans are left to die while cyborgs and robots triumph. Due to the war, the world becomes self-destructive and civilisation is soon brought to extinction. </p>
+                    <p id="p1">“Retro Future” is an exploration game run on Unreal Engine 4. Imagine reliving your day over and over again. In a post apocalyptic future, robots dominate over society. Humans are left to die while cyborgs and robots triumph. Due to the war, the world becomes self-destructive and civilisation is soon brought to extinction. </p>
                     <p id="p1">Our protagonist needs to find a way to prevent the invention of AI from ever happening. With time-travel technology, he need to find the creator and convince him/her to stop the invention.</p>  
                 </section>
+                <section class="columnrow">
+                <div id="pic1">
+
+                    <img id="myImg9" src="assets/png/RetroFuture/RetroFutureScreen1.png" alt="Protagonist enters into the future."> 
+                    <div id="myModal9" class="modal9">
+                        <span class="close9">&times;</span>
+                        <img class="modal-content9" id="img10" style="width:1000px;height:auto">
+                        <div id="caption9"></div>
+                    </div>
+                    <h6>Protagonist enters into the future.</h6>
+
+                </div>
+                <div id="pic1">
+
+                    <img id="myImg10" src="assets/png/RetroFuture/RetroFutureScreen2.png" alt="The end of the universe."> 
+                    <div id="myModal10" class="modal10">
+                        <span class="close10">&times;</span>
+                        <img class="modal-content10" id="img11" style="width:1000px;height:auto">
+                        <div id="caption10"></div>
+                    </div>
+                    <h6>The end of the universe.</h6>
+
+                </div>
+                <div id="pic1">
+
+                    <img id="myImg11" src="assets/png/RetroFuture/RetroFutureScreen3.png" alt="The boss fight."> 
+                    <div id="myModal11" class="modal11">
+                        <span class="close11">&times;</span>
+                        <img class="modal-content11" id="img12" style="width:1000px;height:auto">
+                        <div id="caption11"></div>
+                    </div>
+                    <h6>The "boss fight".</h6>
+
+                </div>
+                <div id="pic1">
+
+                    <img id="myImg12" src="assets/png/RetroFuture/RetroFutureScreen4.png" alt="The sewers."> 
+                    <div id="myModal12" class="modal12">
+                        <span class="close12">&times;</span>
+                        <img class="modal-content12" id="img13" style="width:1000px;height:auto">
+                        <div id="caption12"></div>
+                    </div>
+                    <h6>The sewers.</h6>
+
+                </div>
+                <div id="pic1">
+
+                    <img id="myImg13" src="assets/png/RetroFuture/RetroFutureScreen5.png" alt="The portal as a choose-your-own-adventure game choice"> 
+                    <div id="myModal13" class="modal13">
+                        <span class="close13">&times;</span>
+                        <img class="modal-content13" id="img14" style="width:1000px;height:auto">
+                        <div id="caption13"></div>
+                    </div>
+                    <h6>The portal as a choose-your-own-adventure game choice.</h6>
+
+                </div>
+                <div id="pic1">
+
+                    <img id="myImg14" src="assets/png/RetroFuture/RetroFutureScreen6.png" alt="The final battle."> 
+                    <div id="myModal14" class="modal14">
+                        <span class="close14">&times;</span>
+                        <img class="modal-content14" id="img15" style="width:1000px;height:auto">
+                        <div id="caption14"></div>
+                    </div>
+                    <h6>The final battle.</h6>
+
+                </div>
+            </section>
             </section>
         </div>
 
@@ -166,6 +234,141 @@
                 });
             });
             }).scroll();
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal9");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg9");
+            var modalImg = document.getElementById("img10");
+            var captionText = document.getElementById("caption9");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close9")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal10");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg10");
+            var modalImg = document.getElementById("img11");
+            var captionText = document.getElementById("caption10");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close10")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal11");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg11");
+            var modalImg = document.getElementById("img12");
+            var captionText = document.getElementById("caption11");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close11")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal12");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg12");
+            var modalImg = document.getElementById("img13");
+            var captionText = document.getElementById("caption12");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close12")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal13");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg13");
+            var modalImg = document.getElementById("img14");
+            var captionText = document.getElementById("caption13");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close13")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal14");
+        
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg14");
+            var modalImg = document.getElementById("img15");
+            var captionText = document.getElementById("caption14");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close14")[0];
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
         </script>
     </body>
 <html>
