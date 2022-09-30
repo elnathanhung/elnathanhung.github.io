@@ -56,13 +56,20 @@
 .modal-content , .modal-content1 , .modal-content2 , .modal-content3 , 
 .modal-content4 , .modal-content5 , .modal-content6 , .modal-content7 , 
 .modal-content8 , .modal-content9 , .modal-content10 , .modal-content11 ,
-.modal-content12 , .modal-content13 , .modal-content14 , .modal-content15 ,
-.modal-content16 , .modal-content17 , .modal-content18 , .modal-content19 {
+.modal-content12 , .modal-content13 , .modal-content14 , .modal-content15 , 
+.modal-content19 {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
+}
+
+.modal-content16 , .modal-content17 , .modal-content18 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 100px;
+}
   
   /* Caption of Modal Image */
   #caption , #caption1 , #caption2 ,  #caption3 , #caption4 , #caption5 , 
