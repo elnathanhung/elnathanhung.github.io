@@ -2,51 +2,34 @@
     <head>
         <title>Elnathan Hung</title>
         <link rel="stylesheet" href="css/newstyle.css">
+        <link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <section class="nav">
 
-            <div class="dropdown"> 
-                <button onclick="myFunction()" class="dropbtn">
-                    <!-- MENU -->
-                    <div class = "ham"></div>
-                    <div class = "ham"></div>
-                    <div class = "ham"></div>
-                </button>   
- 
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="About.html">About</a>
-                    <!-- <a href="social.html">Social</a>  -->
-                    <a href="https://www.behance.net/elnathanhung" target="_blank">UI/UX Projects</a>
-                    <a href="retrofuture.html">Retro Future</a>
-                    <a href="empathybot.html">Empathy Bot</a>
-                    <a href="nostalgia.html"> Nostalgia Reworked</a>
-                    <a href="work1.html">Whackinator</a>
-                    <a href="work2.html">Place To Be</a> 
-                    <a href="otherwork.html">Other Projects</a>
-                    <!-- <a href="work3.html">Laser Graffiti</a> 
-                    <a href="work4.html">The Day Before</a>
-                    <a href="work5.html">Terrain Project</a>  -->
-                    <!-- <ul>
-                        <li> <a href="#Home">Home</a> </li>
-                        <li> <a href="#About">About</a> </li>
-                        <li> <a href="#Social">Social</a> </li>
-                        <li> <a href="#work1">Whackinator</a> </li>
-                        <li> <a href="#work2">Place To Be</a> </li>
-                        <li> <a href="#work3">Laser Graffiti</a> </li>
-                        <li> <a href="#work4">The Day Before</a> </li>
-                        <li> <a href="#work5">Terrain Project</a> </li>
-                    </ul> -->
-                </div>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">About me</a>
+            <a href="reverberation.html"><i>Reverberation</i></a>
+            <a href="retrofuture.html"><i>Retro Future</i></a>
+            <a href="ttmh.html"><i>Talk To My Hands</i></a>
+            <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
+            <a href="empathybot.html"><i>Empathy Bot</i></a>
+            <a href="placetobe.html"><i>The Place To Be</i></a>
+            <a href="thedaybefore.html"><i>The Day Before</i></a>
+            <a href="rehab.html"><i>The Helping Hand</i></a>
+            <a href="https://www.behance.net/gallery/136296797/Explorer-User-Interface-Design" target="_blank"><i>Explorer</i></a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
             <div class="home" id="home">
-                <a href="index.html"><img src="assets/png/Home_Button.png"> </a>
+                <a href="index.html">
+                    <img src="assets/png/Logo/Logo.png"> 
+                </a>
             </div>
         </section>
-        <!-- <section class="portfolio">
-            <img src="assets/png/InteractiveIIProj_Title.png" width="100%">
-        </section>  -->
+
         <section class="grid">  
             <img src="assets/png/Perspective_Grid.png"> 
         </section>
@@ -56,394 +39,91 @@
             <section class="work1" id="profile">
                 <section class="columnrow">
                     <div class="title" id="title1">
-                        <img src="assets/png/aboutme_title.png">
+                        <h1>Hi, I'm a creative technologist!</h1>
+                        <h2>Scroll down to see my work</h2>
+                        <!-- <img src="assets/png/aboutme_title.png"> -->
                     </div>
                     <div id="frame"> 
-                        <a href="About.html">
-                        <img src="assets/png/IMG_3962-2.jpg" width="400" height="auto">
+                        <a href="index.html">
+                        <img src="assets/png/Profile.png" width="400" height="auto"> 
                         </a>
                     </div>
                 </section> 
                 <section class="description">
-                    <p id="p1">Elnathan is a designer with a background in interactive media. His expertise lies in designing environments and experiences within various spectrums of interaction; physical products and experiences, immersive spaces, virtual environments, augmented and mixed realities, and conventional and speculative UI/UX design. His practice includes making and programming robots, game environments, websites, application prototypes, and exhibition designs.
-                    </p>
+                    <p id="p1">Elnathan has a background in the interactive media and creative technology. His practice includes designing user experiences and programming and building them both in digital and hardware aspects. His expertise lies within various spectrums of creative work; UI/UX design, web and game design and development, virtual environments, immersive experiences, and creative robotics. </p>
                 </section>
             </section>
 
-            <section class="work1" id="work1">
-                <section class="columnrow" id="empathybot">
-                    <div class="title" id="title1">
-                        <img src="assets/png/retrofutureTitle.png">
-                    </div>
-                    <div id="player">
-                        <iframe width="950" height="475" src="https://www.youtube.com/embed/mQGXgfdRAv8" title="Retro Future (World Building Game Made With Unreal Engine 4)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                    <p id="p1">“Retro Future” is an exploration game run on Unreal Engine 4. Imagine reliving your day over and over again. In a post apocalyptic future, robots dominate over society. Humans are left to die while cyborgs and robots triumph. Due to the war, the world becomes self-destructive and civilisation is soon brought to extinction. </p>
-                    <p id="p1">Our protagonist needs to find a way to prevent the invention of AI from ever happening. With time-travel technology, he need to find the creator and convince him/her to stop the invention.</p>  
-                </section>
+
+            <section class="work1" id="profile">
                 <section class="columnrow">
-                <div id="pic1">
-
-                    <img id="myImg9" src="assets/png/RetroFuture/RetroFutureScreen1.png" alt="Protagonist enters into the future."> 
-                    <div id="myModal9" class="modal9">
-                        <span class="close9">&times;</span>
-                        <img class="modal-content9" id="img10" style="width:1000px;height:auto">
-                        <div id="caption9"></div>
-                    </div>
-                    <h6>Protagonist enters into the future.</h6>
-
-                </div>
-                <!-- <div id="pic1">
-
-                    <img id="myImg10" src="assets/png/RetroFuture/RetroFutureScreen2.png" alt="The end of the universe."> 
-                    <div id="myModal10" class="modal10">
-                        <span class="close10">&times;</span>
-                        <img class="modal-content10" id="img11" style="width:1000px;height:auto">
-                        <div id="caption10"></div>
-                    </div>
-                    <h6>The end of the universe.</h6>
-
-                </div> -->
-                <!-- <div id="pic1">
-
-                    <img id="myImg11" src="assets/png/RetroFuture/RetroFutureScreen3.png" alt="The boss fight."> 
-                    <div id="myModal11" class="modal11">
-                        <span class="close11">&times;</span>
-                        <img class="modal-content11" id="img12" style="width:1000px;height:auto">
-                        <div id="caption11"></div>
-                    </div>
-                    <h6>The "boss fight".</h6>
-
-                </div> -->
-                <div id="pic1">
-
-                    <img id="myImg12" src="assets/png/RetroFuture/RetroFutureScreen4.png" alt="The sewers."> 
-                    <div id="myModal12" class="modal12">
-                        <span class="close12">&times;</span>
-                        <img class="modal-content12" id="img13" style="width:1000px;height:auto">
-                        <div id="caption12"></div>
-                    </div>
-                    <h6>The sewers.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg13" src="assets/png/RetroFuture/RetroFutureScreen5.png" alt="The portal as a choose-your-own-adventure game choice"> 
-                    <div id="myModal13" class="modal13">
-                        <span class="close13">&times;</span>
-                        <img class="modal-content13" id="img14" style="width:1000px;height:auto">
-                        <div id="caption13"></div>
-                    </div>
-                    <h6>The portal as a choose-your-own-adventure game choice.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg14" src="assets/png/RetroFuture/RetroFutureScreen6.png" alt="The final battle."> 
-                    <div id="myModal14" class="modal14">
-                        <span class="close14">&times;</span>
-                        <img class="modal-content14" id="img15" style="width:1000px;height:auto">
-                        <div id="caption14"></div>
-                    </div>
-                    <h6>The final battle.</h6>
-
-                </div>
-            </section>
-            </section>
-
-            <section class="work1" id="work1">
-                <section class="columnrow" id="empathybot">
-                    <!-- <div class="title" id="title1">
-                        <img src="assets/png/retrofutureTitle.png">
-                    </div> -->
-                    <div id="player">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8FkmTAwkzvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                    <p id="p1">"Reverberation" is an audio-reactive sensory experience that explores human-robotic communication through sound and force feedback. Unlike traditional musical instruments, which require the user to interact with a device to produce sound, this experience transforms the concept of an instrument into a device that "plays you". Within this experience, an exoskeletal robotic glove reads and analyses frequency pulses from various sound ranges, translating them into forced movements. This provides a unique haptic experience for glove wearers and explores how sound can be felt on one's hand. This interactive experience provides further possibilities for visualising and experiencing sound through haptics. </p>
-                </section>
-            </section>
-
-
-
-            <section class="work1" id="work1">
-                <section class="columnrow" id="empathybot">
-                    <div class="title" id="title1">
-                        <img src="assets/png/EmpathyBot_Title.png">
-                    </div>
-                    <div id="player">
-                        <iframe width="979" height="560" src="https://www.youtube.com/embed/y_UhiLHkuvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                    <p id="p1">The Empathy Bot is an AI assistant that is able to detect human emotions based on facial expression. It is aware of presences and invites users to interact with it. A happy face would trigger cause the robot to dance and whistle mimicking a positive feeling. However, an upset expression causes the robot to bow its head, expressing sadness.</p>
-                    <p>3D modeled parts were strategically designed and printed to stabilize and fit into the construction of the robot that functions as a simple pan and tilt mechanism. The robot is programmed to surveillance its surroundings through a webcam while reading information from the user's facial expression. The information is sent to a computer via OSC communication while the different detected emotional states are trained through software. An emotional state triggers a reaction from the robot, thus resiprocating an emotion to the user.</p>    
-                </section>
-            <section class="columnrow">
-                <div id="pic1">
-
-                    <img id="myImg15" src="assets/png/EmpathyBot/3DPrinted.png" alt="Rhino 3D renders of 3D printed parts."> 
-                    <div id="myModal15" class="modal15">
-                        <span class="close15">&times;</span>
-                        <img class="modal-content15" id="img16" style="width:1000px;height:auto">
-                        <div id="caption15"></div>
-                    </div>
-                    <h6>Rhino 3D renders of 3D printed parts.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg16" src="assets/png/EmpathyBot/FaceNeutral.png" alt="Face when neutral."> 
-                    <div id="myModal16" class="modal16">
-                        <span class="close16">&times;</span>
-                        <img class="modal-content16" id="img17" style="width:1000px;height:auto">
-                        <div id="caption16"></div>
-                    </div>
-                    <h6>Face when neutral.</h6>
-
-                </div>
-                <section class="columnrow">
-                <div id="pic1">
-
-                    <img id="myImg17" src="assets/png/EmpathyBot/FaceHappy.png" alt="Face when happy."> 
-                    <div id="myModal17" class="modal17">
-                        <span class="close17">&times;</span>
-                        <img class="modal-content17" id="img18" style="width:1000px;height:auto">
-                        <div id="caption17"></div>
-                    </div>
-                    <h6>Face when happy.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg18" src="assets/png/EmpathyBot/FaceSad.png" alt="Face when sad."> 
-                    <div id="myModal18" class="modal18">
-                        <span class="close18">&times;</span>
-                        <img class="modal-content18" id="img19" style="width:1000px;height:auto">
-                        <div id="caption18"></div>
-                    </div>
-                    <h6>Face when sad.</h6>
-
-                </div>
-            </section>
-            <div id="pic1">
-
-                <img id="myImg19" src="assets/png/EmpathyBot/EmpathyBot_Thumbnail-768x432.jpeg" alt="Final Prototype."> 
-                <div id="myModal19" class="modal19">
-                    <span class="close19">&times;</span>
-                    <img class="modal-content19" id="img20" style="width:1000px;height:auto">
-                    <div id="caption19"></div>
-                </div>
-                <h6>Final Prototype.</h6>
-
-            </div>
-            </section>
-            </section>
-<!-- </div>  -->
-
-<!-- Bottom content -->
-<!-- <div class="wrap_scroll1"> -->
-            <section class="work1" id="work1">
-                <section class="columnrow" id="nostalgiareworked">
-                    <div class="title" id="title1">
-                        <img src="assets/png/NOSTALGIA_REWORKED_TITLE.png">
-                    </div>
-                    <div id="player">
-                        <iframe width="884" height="506" src="https://www.youtube.com/embed/tiIzGKQIXjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                <p id="p1">“Nostalgia Reworked” is a speculative design for an exhibition installation that mixes elements of nostalgia with expressions of the contemporary. The project was designed to be situated within the Nanyang Technological University, School of Art, Design and Media Gallery (ADM Gallery), for an exhibition with the theme of “Singapore Dubbing”. This theme is inspired by the notion of Dub music; 
-                    the blending of two ‘genres’ of spaces. </p>
-                    <p id="p1"> Within the exhibition model, we see the dubbing of two points of view within the space; on one side we see visual elements from olden-day Singapore (e.g. shophouse windows), while on the other, we see hints of modern design (e.g. the Bauhaus Globe chair). As a result, the viewers walk into a space not exactly knowing which point in time they have entered.</p> 
-                </section>
-                <section class="columnrow">
-                    <div id="pic1">
-
-                        <img id="myImg" src="assets/png/nostalgia/floorplan.png" alt="Floor plan demonstrating the visitor flow within the ADM Gallery.">
-                        <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01" style="width:1000px;height:auto">
-                            <div id="caption"></div>
-                        </div>
-                        <h6>Floor plan demonstrating the visitor flow within the ADM Gallery.</h6>
-
-                    </div>
-                    <div id="pic1">
-
-                        <img id="myImg1" src="assets/png/nostalgia/frame1.png" alt="Point of view when first entering the gallery."> 
-                        <div id="myModal1" class="modal1">
-                            <span class="close1">&times;</span>
-                            <img class="modal-content1" id="img02" style="width:1000px;height:auto">
-                            <div id="caption1"></div>
-                        </div>
-                        <h6>Point of view when first entering the gallery.</h6>
-
-                    </div>
-                    <div id="pic1">
-
-                        <img id="myImg2" src="assets/png/nostalgia/frame2.png" alt="View from the right side of point of entry."> 
-                        <div id="myModal2" class="modal2">
-                            <span class="close2">&times;</span>
-                            <img class="modal-content2" id="img03" style="width:1000px;height:auto">
-                            <div id="caption2"></div>
-                        </div>
-                        <h6>View from the right side of point of entry.</h6>
-
-                    </div>
-
-                    <div id="pic1">
-
-                        <img id="myImg3" src="assets/png/nostalgia/frame3.png" alt="Perspective from the back of the installation."> 
-                        <div id="myModal3" class="modal3">
-                            <span class="close3">&times;</span>
-                            <img class="modal-content3" id="img04" style="width:1000px;height:auto">
-                            <div id="caption3"></div>
-                        </div>
-                        <h6>Perspective from the back of the installation.</h6>
-
-                    </div>
-
-                    <div id="pic1">
-
-                        <img id="myImg4" src="assets/png/nostalgia/frame4.png" alt="Bird's eye view of the installation from the back."> 
-                        <div id="myModal4" class="modal4">
-                            <span class="close4">&times;</span>
-                            <img class="modal-content4" id="img05" style="width:1000px;height:auto">
-                            <div id="caption4"></div>
-                        </div>
-                        <h6>Bird's eye view of the installation from the back.</h6>
-
-                    </div>
-
-                    <div id="pic1">
-
-                        <img id="myImg5" src="assets/png/nostalgia/frame6.png" alt="View from the left side of point of entry."> 
-                        <div id="myModal5" class="modal4">
-                            <span class="close5">&times;</span>
-                            <img class="modal-content5" id="img06" style="width:1000px;height:auto">
-                            <div id="caption5"></div>
-                        </div>
-                        <h6>View from the left side of point of entry.</h6>
-
-                    </div>
-
-                    <div id="pic1">
-
-                        <img id="myImg6" src="assets/png/nostalgia/ObjectsCeiling.jpg" alt="Objects hanging from the ceiling."> 
-                        <div id="myModal6" class="modal6">
-                            <span class="close6">&times;</span>
-                            <img class="modal-content6" id="img07" style="width:1000px;height:auto">
-                            <div id="caption6"></div>
-                        </div>
-                        <h6>Objects hanging from the ceiling.</h6>
-
-                    </div>
-
-                    <div id="pic1">
-
-                        <img id="myImg7" src="assets/png/nostalgia/OobjectsLeft.jpg" alt="Found objects: vintage TV, ashtray, hardware tool, newspapers."> 
-                        <div id="myModal7" class="modal7">
-                            <span class="close7">&times;</span>
-                            <img class="modal-content7" id="img08" style="width:1000px;height:auto">
-                            <div id="caption7"></div>
-                        </div>
-                        <h6>Found objects: vintage TV, ashtray, hardware tool, newspapers.</h6>
-
-                    </div>
-
-                    <!-- <div id="pic1">
-
-                        <img id="myImg8" src="assets/png/" alt="Found objects: vintage TV, ashtray, hardware tool, newspapers."> 
-                        <div id="myModal8" class="modal8">
-                            <span class="close8">&times;</span>
-                            <img class="modal-content8" id="img09" style="width:1000px;height:auto">
-                            <div id="caption8"></div>
-                        </div>
-                        <h6>Found objects: vintage TV, ashtray, hardware tool, newspapers.</h6>
-
-                    </div> -->
-
-                </section>
-
-                <section class="columnrow" id="nostalgiareworked">
-                    <div class="title" id="title1">
-                        <img src="assets/png/nostalgia/interactive_title.png">
-                    </div>
-                    <div id="player">
-                        <iframe width="923" height="528" src="https://www.youtube.com/embed/jFp8Wff5Aug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                    <p id="p1">The exhibition installation includes a soundscape demonstrating the different reminiscences triggered by the nostalgic objects found. The video demonstration is a prototype solution for a speculative interactive component designed for the 
-                    soundscape. Visitors take on the role of 'the conductor' as they have control over the atmospheric landscape. I have selected a total of three nostalgic elements. </p>
-                    
-                    <p id="p1"> The first is a radio which corresponds to the audio broadcast of an old Singaporean 
-                    tune ("Bengawang Solo" by The Sundowners). Next, is one retro television, which triggers the sound of a Singaporean TV broadcast 50 years ago. Lastly, we have a traditional round marble table, which activates the sound from roadsides of old coffee 
-                    shops (or 'kopitiams') in the early morning. Through the gesture of pointing from one object to the next, visitors within the space can select and tune in to their desired soundscape. </p>
-                    
-                    <p id="p1"> This interaction prototype was programmed with Mediapipe Python, while the data training was done on Wekinator and TouchDesigner.</p> 
-                </section>
-            </section>
-
-            <section class="work1" id="work1">
-                <section class="columnrow" id="whackinator">
-                    <div class="title" id="title1">
-                       <img src="assets/png/whackinator_title.png">
-                    </div>
-                    <div id="player">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_8HH3o_IBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                <p id="p1">“Monkey See, Monkey Do” refers to the act of imitation with the limited knowledge of consequences or reason. Playing on the idea that a small ripple can create a tsunami, Whackinator serves as a commentary on the societal need for inclusion and the hive mind mentality. The hands are sets of servo motors programmed with Raspberry Pi computers while the hand sensing is through Python Mediapipe which communicates to the servos via OSC message.</p>                
-                </section>
-            </section>  
-
-            <section class="work2" id="work2">
-                <section class="columnrow" id="placetobe">
-                    <div class="title" id="title2"> 
-                        <img src="assets/png/placetobe_title.png"> 
-                    </div>
-                    <div id="player">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzF0XVROZ4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </section>
-                <section class="description">
-                    <p id="p2">"Paya Lebar Airbase: the place to be… but we can’t" is an interactive website entailing history and personal encounters within the location, Paya Lebar Airbase (PLAB) in Singapore. As usual protocols for high-security military airbases would suggest, PLAB is blocked from the public eye apart from open house event coverages and images posted on the internet (which are mostly given security clearance). Through this interactive narrative, I experiment with how one can experience a place that one cannot enter or see.</p>
-                    <p id="p2">This project pushes the boundaries of what we can find or document about disclosed locations. The entire website is developed and coded from scratch. Chapter 1 documents some of the histories of PLAB, chapter 2 is an imagining of the experience of the location as I narrate my personal experiences within the base, and lastly, chapter 3 is an interactive activity where I invite you to plan the future of PLAB.</p>              
-                </section>
-                <section class="columnrow">
-                    <div id="pic2" class="pic2">
-                        <a href="https://ehung001.github.io/" target="_blank">
-                        <img src="assets/png/THEPLACE/theplacetobe_p1.png" width="400" height="auto">
+                    <div id="frame"> 
+                        <a href="reverberation.html">
+                        <img src="assets/png/Reverberation/image5.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Reverberation</i></p>
                         </a>
-                            <!-- <div class="middle">
-                                <a href="https://ehung001.github.io/" target="_blank"> <div class="text"> Visit Site </div> </a>
-                            </div> -->
                     </div>
-                    <div id="pic2" class="pic2">
-                        <a href="https://ehung001.github.io/" target="_blank">
-                        <img src="assets/png/THEPLACE/theplacetobe_p2.png" width="400" height="auto">
+                    <div id="frame"> 
+                        <a href="retrofuture.html">
+                        <img src="assets/png/RetroFuture/RetroFutureScreen6.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Retro Future</i></p>
                         </a>
-                            <!-- <div class="middle2">
-                                <a href="https://ehung001.github.io/" target="_blank"> <div class="text1"> Visit Site </div> </a>
-                            </div> -->
                     </div>
-                </section>
+                    <div id="frame"> 
+                        <a href="ttmh.html">
+                        <img src="assets/png/ttmh/ttmh_cover.jpeg" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Talk To My Hands</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="everready.html">
+                        <img src="assets/png/everready/everready_cover.PNG" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Ever Ready With Our Lives</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="empathybot.html">
+                        <img src="assets/png/EmpathyBot/empathybot_cover.jpg" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Empathy Bot</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="placetobe.html">
+                        <img src="assets/png/THEPLACE/theplacetobe_p2.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>The Place To Be</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="thedaybefore.html">
+                        <img src="assets/png/thedaybefore/thedaybefore_p6ai.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>The Day Before</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="rehab.html">
+                        <img src="assets/png/rehab/IMG_1709 2.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>The Helping Hand</i></p>
+                        </a>
+                    </div>
+                    <div id="frame"> 
+                        <a href="https://www.behance.net/gallery/136296797/Explorer-User-Interface-Design" target="_blank">
+                        <img src="assets/png/interfacedesign.png" style="width: 400px; height: 400px; object-fit: cover;"> 
+                        <p class="p3"><i>Explorer</i></p>
+                        </a>
+                    </div>
+                </section> 
             </section>
-<!-- bottom content -->
-</div>
-        <!-- <footer>
-            <h4>Written and published by Elnathan Hung</h4>
-            <h4>Email: hung.chenen@gmail.com </h4>
-            <h4>Behance: <a href="https://www.behance.net/elnathanhung/" target="_blank">www.behance.net/elnathanhung</a></h4>
-            <h4>Instagram: <a href="https://www.instagram.com/outa_spa.ce/" target="_blank">@outa_spa.ce</a></h4>
-            <h4>Youtube: <a href="https://www.youtube.com/channel/UCi_e2kCkm_wCxrGtA7p4Ibw" target="_blank">Elnathan</a></h4>
-        </footer> -->
+ </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
 
         <script>
             /* When the user clicks on the button, 
@@ -488,8 +168,8 @@
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                height: '390',
-                width: '640',
+                height: '720',
+                width: '1280',
                 videoId: 'M7lc1UVf-VE',
                 playerVars: {
                     'playsinline': 1
@@ -565,450 +245,39 @@
               document.getElementById("mySidebar").style.display = "none";
             }
         </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal1");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg1");
-            var modalImg = document.getElementById("img02");
-            var captionText = document.getElementById("caption1");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close1")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal2");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg2");
-            var modalImg = document.getElementById("img03");
-            var captionText = document.getElementById("caption2");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close2")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal3");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg3");
-            var modalImg = document.getElementById("img04");
-            var captionText = document.getElementById("caption3");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close3")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal4");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg4");
-            var modalImg = document.getElementById("img05");
-            var captionText = document.getElementById("caption4");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close4")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal5");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg5");
-            var modalImg = document.getElementById("img06");
-            var captionText = document.getElementById("caption5");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close5")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal6");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg6");
-            var modalImg = document.getElementById("img07");
-            var captionText = document.getElementById("caption6");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close6")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal7");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg7");
-            var modalImg = document.getElementById("img08");
-            var captionText = document.getElementById("caption7");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close7")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
 
 <script>
     // Get the modal
-    var modal = document.getElementById("myModal8");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg8");
-    var modalImg = document.getElementById("img09");
-    var captionText = document.getElementById("caption8");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
+    var modal = document.getElementById("myModal");
+    
+    // Get all elements with class "gallery-img"
+    var galleryImages = document.getElementsByClassName("gallery-img");
+    
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close8")[0];
-
+    var span = document.getElementsByClassName("close")[0];
+    
+    // Loop through each gallery image
+    for (var i = 0; i < galleryImages.length; i++) {
+      galleryImages[i].onclick = function() {
+        // Set the modal to display
+        modal.style.display = "block";
+        
+        // Set the modal image and caption based on the clicked image
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+    }
+    
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
+    
+    // Get the modal content (image) and caption elements
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    </script>
+    
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal9");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg9");
-    var modalImg = document.getElementById("img10");
-    var captionText = document.getElementById("caption9");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close9")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal10");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg10");
-    var modalImg = document.getElementById("img11");
-    var captionText = document.getElementById("caption10");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close10")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal11");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg11");
-    var modalImg = document.getElementById("img12");
-    var captionText = document.getElementById("caption11");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close11")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal12");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg12");
-    var modalImg = document.getElementById("img13");
-    var captionText = document.getElementById("caption12");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close12")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal13");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg13");
-    var modalImg = document.getElementById("img14");
-    var captionText = document.getElementById("caption13");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close13")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal14");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg14");
-    var modalImg = document.getElementById("img15");
-    var captionText = document.getElementById("caption14");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close14")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal15");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg15");
-    var modalImg = document.getElementById("img16");
-    var captionText = document.getElementById("caption15");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close15")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal16");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg16");
-    var modalImg = document.getElementById("img17");
-    var captionText = document.getElementById("caption16");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close16")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal17");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg17");
-    var modalImg = document.getElementById("img18");
-    var captionText = document.getElementById("caption17");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close17")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal18");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg18");
-    var modalImg = document.getElementById("img19");
-    var captionText = document.getElementById("caption18");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close18")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal19");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg19");
-    var modalImg = document.getElementById("img20");
-    var captionText = document.getElementById("caption19");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close19")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
 </body>
 <html>

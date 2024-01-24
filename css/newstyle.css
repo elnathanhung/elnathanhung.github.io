@@ -1,453 +1,64 @@
+/* @import url(https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus);
+
+@font-face {
+    font-family: "Terminus";
+    src: url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.eot");
+    src: url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/99124d4dffc6c59dc2b766d539c2a75f.svg#Terminus")format("svg");
+} */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#myImg , #myImg1 , #myImg2 , #myImg3, #myImg4 , #myImg5 , 
-#myImg6 , #myImg7 , #myImg8 , #myImg9 , #myImg10 , #myImg11 ,
-#myImg12 , #myImg13 , #myImg14  , #myImg15 , #myImg16 , #myImg17,
-#myImg18 , #myImg19 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    }
+@media only screen and (max-width: 1680px) {
 
-#myImg:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg1:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg2:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg3:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg4:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg5:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg6:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg7:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg8:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg9:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg10:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg11:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg12:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg13:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg14:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg15:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg16:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg17:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg18:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
-#myImg19:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204))}
+/* side nav  */
 
-/* The Modal (background) */
-.modal , .modal1 , .modal2 , .modal3 , .modal4 , .modal5 , 
-.modal6 , .modal7 , .modal8 , .modal9 , .modal10 , .modal11 ,
-.modal12 , .modal13 , .modal14 , .modal15 , .modal16 , .modal17 , 
-.modal18 , .modal19 {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 5; /* Sit on top */
-    padding-top: 100px; /* Location of the 
-    box */
-    left: 0;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(24, 20, 45, 1); /* Fallback color */
-    background-color: rgba(24, 20, 45, 0.9); /* Black w/ opacity */
-    }
-
-    /* Modal Content (image) */
-.modal-content , .modal-content1 , .modal-content2 , .modal-content3 , 
-.modal-content4 , .modal-content5 , .modal-content6 , .modal-content7 , 
-.modal-content8 , .modal-content9 , .modal-content10 , .modal-content11 ,
-.modal-content12 , .modal-content13 , .modal-content14 , .modal-content15 , 
-.modal-content19 {
-    margin: auto;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
     display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content16 , .modal-content17 , .modal-content18 {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 100px;
-}
-  
-  /* Caption of Modal Image */
-  #caption , #caption1 , #caption2 ,  #caption3 , #caption4 , #caption5 , 
-  #caption6 , #caption7 , #caption8 , #caption9 , #caption10 , #caption11 ,
-  #caption12 , #caption13 , #caption14 , #caption15 , #caption16 , #caption17 ,
-  #caption18 , #caption19 {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: white;
-    font-style: italic;
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-
-    /* Add Animation */
-    .modal-content1, #caption1 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-    /* Add Animation */
-    .modal-content2, #caption2 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-    /* Add Animation */
-    .modal-content3, #caption3 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-    /* Add Animation */
-    .modal-content4, #caption4 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content5, #caption5 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content6, #caption6 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content7, #caption7 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content8, #caption8 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content9, #caption9 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content10, #caption10 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content11, #caption11 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-    /* Add Animation */
-    .modal-content12, #caption12 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content13, #caption13 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content14, #caption14 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content15, #caption15 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content16, #caption16 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content17, #caption17 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content18, #caption18 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-    /* Add Animation */
-    .modal-content19, #caption19 {  
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-        }
-
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close , .close1 , .close2 , .close3 , .close4 , .close5 , .close6 , 
-  .close7 , .close8 , .close9 , .close10 , .close11 , .close12 , .close13 , 
-  .close14 , .close15 , .close16 , .close17 , .close18 , .close19{
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    /* font-weight: bold; */
     transition: 0.3s;
   }
   
-  .close:hover,
-  .close:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close1:hover,
-  .close1:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close2:hover,
-  .close2:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close3:hover,
-  .close3:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close4:hover,
-  .close4:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  .sidenav a:hover {
+    color: #f1f1f1;
   }
   
-  .close5:hover,
-  .close5:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close6:hover,
-  .close6:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close7:hover,
-  .close7:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close8:hover,
-  .close8:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close9:hover,
-  .close9:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close10:hover,
-  .close10:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close11:hover,
-  .close11:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close12:hover,
-  .close12:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-
-  .close13:hover,
-  .close13:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close14:hover,
-  .close14:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close15:hover,
-  .close15:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close16:hover,
-  .close16:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .close17:hover,
-  .close17:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close18:hover,
-  .close18:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .close19:hover,
-  .close19:focus, {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-#floorplan img{
-    height: 40vh;
-    width: auto;
-}
-
-#pic1 , #pic2{
-    padding-left: 10vh;
-    padding-bottom: 7vh;
-}
-
-#pic1 img , #pic2 img{
-    border-radius: 5px;
-    height: 30vh;
-    width: auto;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
+  .sidenav .closebtn {
     position: absolute;
     top: 0;
-    left: 0    ;
-    transform: translate(155%, 155%);
-    /* -ms-transform: translate(-35%, -35%); */
-    text-align: center;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
+  
 
-.middle2 {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(155%, 655%);
-    /* -ms-transform: translate(-50%, -50%); */
-    text-align: center;
-    }
-
+  /* side nav  */
 
 .pic2:hover img {
     opacity: 0.5;
-    filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+    filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0));
 }  
 
 .pic2:hover .middle {
@@ -460,52 +71,29 @@
 
 #frame:hover img {
     opacity: 0.5;
-    filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+    filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0));
 }
 
-.text {
-background-color: rgba(24, 20, 45, 1);
-color: white;
-border-style: solid;
-border-color: white;
-font-size: 16px;
-padding: 16px 32px;
-}
-
-.text1 {
-    background-color: rgba(24, 20, 45, 1);
-    color: white;
-    border-style: solid;
-    border-color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    }
-
-#space {
- padding-top: 30vh;
-}
-
-footer {
-    padding: 9%;
-    background: rgba(24, 20, 45, 0.75);
-}
-h4{
-    padding-left: 20%;
-    font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
+.p3{
+    text-align: left;
+    /* background-color: red; */
 }
 
 h1{
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
     color: white;
-    padding: 3%;
-    padding-left: 37%;
+    text-align:right;
+    padding-top: 100px;
+    font-size: 60px;
+}
+h2{
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    padding-top: 30px;
 }
 
 h6{
     font-style: italic;
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
     color: white;
     font-weight:10;
     font-size: 12px;
@@ -514,17 +102,17 @@ h6{
 p{
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 20%;
+    /* padding-right: 20%; */
 }
 
 a:link {
-    color: rgb(204, 157, 204);
+    color: white;
     text-decoration: none;
 }
 
 a:visited 
 {
-    color: rgb(204, 157, 204);
+    color: white;
     text-decoration: none;
 }
 
@@ -543,27 +131,163 @@ a:hover {
 } */
 
 body {
-    /* width: 90%; */
-    background: #363636  
-    url(../assets/bg/BG_Graphic.png);
-    background-repeat: repeat;
-    background-size: auto 200px;
+    background: #121212;
+    background-size: 100% auto;
+    margin:0;
     color: white;
-    font-family: Open, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    min-width: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url("../assets/bg/Background.png");
+    padding-right:400px;
 }
+
+/* .wrap_scroll1{
+    padding-right:100px;
+    background-color: red;
+} */
+
+.gallery {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Use space-around for more even spacing */
+    margin: 0 -35px; /* Add negative margin to counteract spacing at the edges */
+    /* padding-left: 70px; */
+    /* background-color:red; */
+  }
+  
+  .gallery-img {
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: 0.3s;
+    width: calc(80% - 10px); /* Adjust the width, accounting for margins */
+    margin: 5px; /* Add some space around each image */
+    max-width: 500px;
+  }
+
+  /* #gallery-img:hover img {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0));
+} */
+
+/* #myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+} */
+
+
+/* #myImg:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 1))}
+#myImg1:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg2:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg3:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg4:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg5:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg6:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg7:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg8:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg9:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg10:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg11:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg12:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg13:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg14:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg15:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg16:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg17:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg18:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg19:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))}
+#myImg20:hover {opacity: 0.5; filter: drop-shadow(0 0 0.75rem rgba(204, 157, 204, 0))} */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    max-width: 100%; /* Set a maximum width for the modal */
+    text-align: center;
+  }
+
+    /* Modal Content (image) */
+    
+.modal-content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* width: 80%; */
+    max-width: 100%; /* Set a maximum width for the modal content (image) */
+    height: auto; /* Allow the height to adjust proportionally */
+    padding-top: 50px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    /* font-weight: bold; */
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+
 
 .nav {
     z-index: 3;
     position: fixed;
     width:100%;
-    height: 100px;
+    height: 50px;
     display: grid;
-    grid-template-columns: 0.75fr 3fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
-    padding-left: 5%;
-    background-color: rgba(24, 20, 45, 0.75);
+    background-color: rgba(11, 11, 11, 1);
+    padding: 30px;
 }
 
 .portfolio img {
@@ -581,8 +305,8 @@ body {
 }
 
 .home img{
-    padding-left: 20%;
-    height: 50%;
+    height: 100%;
+    height:75%;
 }
 
 .home img:hover {
@@ -604,7 +328,7 @@ body {
     opacity: 1;
     border: none;
     cursor: pointer;
-    background-color:rgba(24, 20, 45);
+    background-color:#221431;
     color: white;
   }
   
@@ -622,7 +346,7 @@ background-color:rgba(24, 20, 45);
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(24, 20, 45, 1);
+    background-color: #221431;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
@@ -630,7 +354,6 @@ background-color:rgba(24, 20, 45);
 }
 
 .dropdown-content a {
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -640,7 +363,7 @@ background-color:rgba(24, 20, 45);
     }
 
 .dropdown a:hover {
-    background-color: rgba(24, 20, 45);
+    background-color: #221431;
     border: 1px solid white;
 }
 
@@ -663,7 +386,8 @@ background-color:rgba(24, 20, 45);
 .grid img {
     padding-top:40px;
     width: 100%;
-    height: 300px;
+    height: 200PX;
+    opacity: 0%;
 }
 
 
@@ -671,14 +395,25 @@ background-color:rgba(24, 20, 45);
     position: relative;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     /* background-color:blue; */
+    justify-content: center;
+    align-content: center;
+    padding-bottom:10vh;
+}
+.columnrow1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    /* background-color:blue; */
+    justify-content: center;
     align-content: center;
     padding-bottom:10vh;
 }
 
 .title {
-    padding-left: 20vh;
+    /* padding-left: 20vh; */
     padding-bottom: 5vh;
     height: 50%;
 }
@@ -690,20 +425,25 @@ background-color:rgba(24, 20, 45);
 #player {
     z-index: 1;
     position: relative;
-    border: rgb(204, 157, 204);
+    /* border: rgb(204, 157, 204); */
+}
+
+.tooright{
+    /* background-color: red; */
+    padding-right: 43vh;
 }
 
 #frame {
     z-index: 1;
     position: relative;
-    border: rgb(204, 157, 204);
+    /* border: rgb(204, 157, 204); */
     padding-left: 10vh;
 }
 
 #frame1 {
     z-index: 1;
     position: relative;
-    border: rgb(204, 157, 204);
+    /* border: rgb(204, 157, 204); */
     padding-left:10vh;
     padding-top:10vh;
     
@@ -715,7 +455,7 @@ background-color:rgba(24, 20, 45);
 
 iframe {
     padding-left: 10vh;
-    filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204));
+    /* filter: drop-shadow(0 0 0.75rem rgb(204, 157, 204)); */
     width: 400px;
     height: 400px;
 }
@@ -725,7 +465,7 @@ p {
     padding-right: 50%;
     text-align: left;
     line-height: 1.6;
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrap_scroll {
@@ -733,21 +473,10 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto ;
     width: 100vh;
-    justify-content: center;
-    /* background-color: chocolate; */
-}
-
-.wrap_scroll1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto ;
-    width: 100vh;
-    justify-content: center;
     /* background-color: chocolate; */
 }
 
 .socialtitle {
-    font-family: Big Caslon, Arial, Helvetica, sans-serif;
     color: white;
     padding: 3%;
     padding-left: 25%;
@@ -779,53 +508,6 @@ p {
     z-index: 2;
 }
 
-@media only screen and (min-width: 650px){
-    .wrap_scroll{
-        padding-left: 10%;
-    }
-}
-
-@media only screen and (min-width: 800px){
-    .wrap_scroll{
-        padding-left: 15%;
-    }
-
-    #pic1 img , #pic2 img{
-        height: 30vh;
-        width: auto;
-    }
-
-    .middle {
-        transform: translate(202%, 235%);
-      }
-    
-    .middle2 {
-        transform: translate(202%, 855%);
-        }
-}
-
-@media only screen and (min-width: 900px){
-    .wrap_scroll{
-        padding-left: 25%;
-    }
-}
-
-@media only screen and (min-width: 1250px){
-
-/* For tablets: */
-/* .col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;} */
-
 .home img{
     padding-left: 25%;
 }
@@ -837,6 +519,24 @@ p {
     width: 100%;
     justify-content: center;
     /* background-color: chocolate; */
+}
+.columnrow1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: center;
+    /* background-color: chocolate; */
+}
+
+.columnrow_modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vh;
 }
 
 .title img {
@@ -860,46 +560,53 @@ p {
     width: auto;
 }
 
-/* 
-@media only screen and (min-width: 1400px){
-    .wrap_scroll{
-        padding-left: 25%;
-    }
-} */
 
 #frame1 img{
-    width: 500px;
+    width: 600px;
     height: auto;
 }
 
 .middle2 {
     transform: translate(652%, 235%);
-    }
 }
 
 .middle2 a {
 
 }
+}
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 700px) {
+/* .modal {
+max-width: 100%; 
+}
 
+.modal-content {
+max-width: 100%;  */
 
-/* @media only screen and (min-width: 1840px){
-
-    .columnrow {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    .wrap_scroll{
-        padding-left: 0%;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto;
-        width: 90%;
-        height: 100%;
-    }
-    .wrap_scroll1{
-        padding-left: 0%;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto;
-        width: 90%;
-        height: 100%;
-    } */
+.columnrow {
+    /* position: relative;
+    display: grid; */
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+}
+.columnrow1 {
+    /* position: relative;
+    display: grid; */
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    padding-right: 43vh;
+}
+/* #player{
+    padding-right: 43vh;
+} */
+.title {
+    padding-right: 43vh;
+}
+#frame {
+    padding-right: 43vh;
+}
+.gallery{
+    /* background-color: red; */
+    /* padding-right: 43vh; */
+}
+}

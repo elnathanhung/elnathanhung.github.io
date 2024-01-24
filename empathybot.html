@@ -2,54 +2,47 @@
     <head>
         <title>Elnathan Hung</title>
         <link rel="stylesheet" href="css/newstyle.css">
+        <link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <section class="nav">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">
-                    <div class = "ham">
-                    </div>
-                    <div class = "ham">
-                    </div>
-                    <div class = "ham">
-                    </div>  
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="About.html">About</a>
-                    <!-- <a href="social.html">Social</a>  -->
-                    <a href="retrofuture.html">Retro Future</a>
-                    <a href="empathybot.html">Empathy Bot</a>
-                    <a href="nostalgia.html"> Nostalgia Reworked</a>
-                    <a href="work1.html">Whackinator</a>
-                    <a href="work2.html">Place To Be</a> 
-                    <a href="https://www.behance.net/elnathanhung" target="_blank">UI/UX Projects</a>
-                    <a href="otherwork.html">Other Projects</a>
-                    <!-- <ul>
-                        <li> <a href="#Home">Home</a> </li>
-                        <li> <a href="#About">About</a> </li>
-                        <li> <a href="
-                        #Social">Social</a> </li>
-                        <li> <a href="#work1">Whackinator</a> </li>
-                        <li> <a href="#work2">Place To Be</a> </li>
-                        <li> <a href="#work3">Laser Graffiti</a> </li>
-                        <li> <a href="#work4">The Day Before</a> </li>
-                        <li> <a href="#work5">Terrain Project</a> </li>
-                    </ul> -->
-                </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">About me</a>
+                <a href="reverberation.html"><i>Reverberation</i></a>
+                <a href="retrofuture.html"><i>Retro Future</i></a>
+                <a href="ttmh.html"><i>Talk To My Hands</i></a>
+                <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
+                <a href="empathybot.html"><i>Empathy Bot</i></a>
+                <a href="placetobe.html"><i>The Place To Be</i></a>
+                <a href="thedaybefore.html"><i>The Day Before</i></a>
+                <a href="rehab.html"><i>The Helping Hand</i></a>
+                <a href="https://www.behance.net/gallery/136296797/Explorer-User-Interface-Design" target="_blank"><i>Explorer</i></a>
             </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
             <div class="home" id="home">
-                <a href="index.html"><img src="assets/png/Home_Button.png"> </a>
+                <a href="index.html">
+                    <img src="assets/png/Logo/Logo.png"> 
+                </a>
             </div>
         </section>
-        <div style="width:500px;height:170px;border:0px solid #000;"></div>
-        <div class="wrap_scroll">
+
+        <section class="grid">  
+            <img src="assets/png/Perspective_Grid.png"> 
+        </section>
+
+<div class="wrap_scroll">
+
             <section class="work1" id="work1">
                 <section class="columnrow" id="empathybot">
                     <div class="title" id="title1">
-                        <img src="assets/png/EmpathyBot_Title.png">
+                        <!-- <img src="assets/png/EmpathyBot_Title.png"> -->
+                        <h1><i>Empathy Bot</i></h1>
+                        <h2>Animatronic Robot Assistant</h2>
                     </div>
-                    <div id="player">
+                    <div class="tooright" id="player">
                         <iframe width="979" height="560" src="https://www.youtube.com/embed/y_UhiLHkuvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
@@ -57,98 +50,56 @@
                     <p id="p1">The Empathy Bot is an AI assistant that is able to detect human emotions based on facial expression. It is aware of presences and invites users to interact with it. A happy face would trigger cause the robot to dance and whistle mimicking a positive feeling. However, an upset expression causes the robot to bow its head, expressing sadness.</p>
                     <p>3D modeled parts were strategically designed and printed to stabilize and fit into the construction of the robot that functions as a simple pan and tilt mechanism. The robot is programmed to surveillance its surroundings through a webcam while reading information from the user's facial expression. The information is sent to a computer via OSC communication while the different detected emotional states are trained through software. An emotional state triggers a reaction from the robot, thus resiprocating an emotion to the user.</p>    
                 </section>
-            <section class="columnrow">
-                <div id="pic1">
-
-                    <img id="myImg15" src="assets/png/EmpathyBot/3DPrinted.png" alt="Rhino 3D renders of 3D printed parts."> 
-                    <div id="myModal15" class="modal15">
-                        <span class="close15">&times;</span>
-                        <img class="modal-content15" id="img16" style="width:1000px;height:auto">
-                        <div id="caption15"></div>
-                    </div>
-                    <h6>Rhino 3D renders of 3D printed parts.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg16" src="assets/png/EmpathyBot/FaceNeutral.png" alt="Face when neutral."> 
-                    <div id="myModal16" class="modal16">
-                        <span class="close16">&times;</span>
-                        <img class="modal-content16" id="img17" style="width:1000px;height:auto">
-                        <div id="caption16"></div>
-                    </div>
-                    <h6>Face when neutral.</h6>
-
-                </div>
-                <section class="columnrow">
-                <div id="pic1">
-
-                    <img id="myImg17" src="assets/png/EmpathyBot/FaceHappy.png" alt="Face when happy."> 
-                    <div id="myModal17" class="modal17">
-                        <span class="close17">&times;</span>
-                        <img class="modal-content17" id="img18" style="width:1000px;height:auto">
-                        <div id="caption17"></div>
-                    </div>
-                    <h6>Face when happy.</h6>
-
-                </div>
-                <div id="pic1">
-
-                    <img id="myImg18" src="assets/png/EmpathyBot/FaceSad.png" alt="Face when sad."> 
-                    <div id="myModal18" class="modal18">
-                        <span class="close18">&times;</span>
-                        <img class="modal-content18" id="img19" style="width:1000px;height:auto">
-                        <div id="caption18"></div>
-                    </div>
-                    <h6>Face when sad.</h6>
-
-                </div>
             </section>
-            <div id="pic1">
 
-                <img id="myImg19" src="assets/png/EmpathyBot/EmpathyBot_Thumbnail-768x432.jpeg" alt="Final Prototype."> 
-                <div id="myModal19" class="modal19">
-                    <span class="close19">&times;</span>
-                    <img class="modal-content19" id="img20" style="width:1000px;height:auto">
-                    <div id="caption19"></div>
-                </div>
-                <h6>Final Prototype.</h6>
+</div>
 
-            </div>
-            </section>
-            </section>
-        </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
 
         <script>
             /* When the user clicks on the button, 
             toggle between hiding and showing the dropdown content */
             function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+              document.getElementById("myDropdown").classList.toggle("show");
             }
             
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
+            if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
                     openDropdown.classList.remove('show');
-                    }
                 }
                 }
             }
+
+            }
         </script>
         <script>
+
             // 2. This code loads the IFrame Player API code asynchronously.
             var tag = document.createElement('script');
-        
+
+            tag.src ="https://www.youtube.com/embed/y_UhiLHkuvg";
+            tag.src = "https://www.youtube.com/embed/tiIzGKQIXjc";
             tag.src = "https://www.youtube.com/embed/_8HH3o_IBQQ";
             tag.src = "https://www.youtube.com/embed/SzF0XVROZ4E";
             tag.src = "https://www.youtube.com/embed/I36loD0bNf0";
             tag.src = "https://www.youtube.com/embed/Dzw0ydhDUGc";
             tag.src = "https://www.youtube.com/embed/5Jf_3CZ6rZ8";
+            tag.src = "www.youtube.com/watch?v=8FkmTAwkzvM";
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         
@@ -157,8 +108,8 @@
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
-                height: '390',
-                width: '640',
+                height: '720',
+                width: '1280',
                 videoId: 'M7lc1UVf-VE',
                 playerVars: {
                     'playsinline': 1
@@ -226,114 +177,16 @@
             }).scroll();
         </script>
         <script>
-            // Get the modal
-            var modal = document.getElementById("myModal15");
-        
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg15");
-            var modalImg = document.getElementById("img16");
-            var captionText = document.getElementById("caption15");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
+            function openSidebar() {
+              document.getElementById("mySidebar").style.display = "block";
             }
-        
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close15")[0];
-        
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
+            
+            function closeSidebar() {
+              document.getElementById("mySidebar").style.display = "none";
             }
         </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal16");
-        
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg16");
-            var modalImg = document.getElementById("img17");
-            var captionText = document.getElementById("caption16");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close16")[0];
-        
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal17");
-        
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg17");
-            var modalImg = document.getElementById("img18");
-            var captionText = document.getElementById("caption17");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close17")[0];
-        
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal18");
-        
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg18");
-            var modalImg = document.getElementById("img19");
-            var captionText = document.getElementById("caption18");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close18")[0];
-        
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal19");
-        
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg19");
-            var modalImg = document.getElementById("img20");
-            var captionText = document.getElementById("caption19");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close19")[0];
-        
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
-    </body>
+
+    
+
+</body>
 <html>
