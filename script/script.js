@@ -1,3 +1,20 @@
+// Function to check if the device is mobile
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Function to remove sidebar on mobile
+function removeSidebarOnMobile() {
+  if (isMobileDevice()) {
+      var sidebar = document.getElementById("mySidenav");
+      if (sidebar) {
+          sidebar.style.display = "none"; // Hide the sidebar on mobile devices
+      }
+  }
+}
+
+// Call removeSidebarOnMobile function when the page finishes loading
+window.onload = removeSidebarOnMobile;
 // Function to open the navigation sidebar
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
