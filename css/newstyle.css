@@ -287,9 +287,9 @@ text-decoration: none;
         text-align: center; /* Center-align content within frames */
     }
 
-    .sidenav {
-        display: none; /* Hide sidebar on tablets and smaller devices */
-    } 
+     .sidenav {
+        display: none; 
+    }  
 }
 
 /* Extra small devices (phones, 480px and down) */
