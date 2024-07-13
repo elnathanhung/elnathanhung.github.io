@@ -8,12 +8,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-// Function to toggle dropdown content visibility
+// Close sidebar by default on mobile devices
+function closeNavOnLoad() {
+  // Check if the screen width is less than or equal to a typical mobile width
+  if (window.innerWidth <= 768) { // Adjust this value based on your design's responsive breakpoints
+      closeNav(); // Close the sidebar if on a mobile device
+  }
+}
+
+// Call closeNavOnLoad function when the page finishes loading
+window.onload = closeNavOnLoad;
+
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close dropdown if user clicks outside of it
+// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
