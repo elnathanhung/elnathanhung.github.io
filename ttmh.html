@@ -553,6 +553,32 @@
       modal.style.display = "none";
     };
 </script>
+<script>
+    // Function to open the navigation sidebar
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    // Function to close the navigation sidebar
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    // Function to check if the device is mobile
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+
+    // Function to close sidebar on load if on mobile
+    function closeNavOnLoad() {
+        if (isMobileDevice()) {
+            closeNav();
+        }
+    }
+
+    // Call closeNavOnLoad function when the page finishes loading
+    window.onload = closeNavOnLoad;
+</script>
     
 <script src="script.js"></script>
 </body>

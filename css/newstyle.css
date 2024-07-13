@@ -286,10 +286,10 @@ text-decoration: none;
         width: 100%; /* Ensure frames fill their container */
         text-align: center; /* Center-align content within frames */
     }
-
+/* 
      .sidenav {
         display: none; 
-    }  
+    }   */
 }
 
 /* Extra small devices (phones, 480px and down) */
