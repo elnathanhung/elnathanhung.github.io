@@ -3,18 +3,20 @@ function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 }
 
-// Function to remove sidebar on mobile
-function removeSidebarOnMobile() {
-  if (isMobileDevice()) {
-      var sidebar = document.getElementById("mySidenav");
-      if (sidebar) {
-          sidebar.style.display = "none"; // Hide the sidebar on mobile devices
-      }
+// Function to close the sidebar on mobile devices
+function closeSidebarOnMobile() {
+  var sidebar = document.getElementById("mySidenav");
+  if (sidebar && isMobileDevice()) {
+    sidebar.style.width = "0"; // Ensure sidebar is closed on mobile
   }
 }
 
-// Call removeSidebarOnMobile function when the page finishes loading
-window.onload = removeSidebarOnMobile;
+// Call closeSidebarOnMobile function when the page finishes loading
+window.onload = function() {
+  closeSidebarOnMobile();
+  closeNavOnLoad();
+};
+
 // Function to open the navigation sidebar
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -25,16 +27,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-// Close sidebar by default on mobile devices
+// Function to close sidebar on page load if on mobile
 function closeNavOnLoad() {
-  // Check if the screen width is less than or equal to a typical mobile width
-  if (window.innerWidth <= 768) { // Adjust this value based on your design's responsive breakpoints
-      closeNav(); // Close the sidebar if on a mobile device
+  if (isMobileDevice()) {
+    closeNav();
   }
 }
-
-// Call closeNavOnLoad function when the page finishes loading
-window.onload = closeNavOnLoad;
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function myFunction() {
@@ -44,13 +42,13 @@ function myFunction() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-          }
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
+    }
   }
 }
 
@@ -66,16 +64,16 @@ var player;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-      height: '720',
-      width: '1280',
-      videoId: 'M7lc1UVf-VE', // Default video ID, replace with your own
-      playerVars: {
-          'playsinline': 1
-      },
-      events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-      }
+    height: '720',
+    width: '1280',
+    videoId: 'M7lc1UVf-VE', // Default video ID, replace with your own
+    playerVars: {
+      'playsinline': 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
   });
 }
 
@@ -91,8 +89,8 @@ var done = false;
 
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-      setTimeout(stopVideo, 6000); // Stop video after 6 seconds of playing
-      done = true;
+    setTimeout(stopVideo, 6000); // Stop video after 6 seconds of playing
+    done = true;
   }
 }
 
@@ -100,35 +98,32 @@ function stopVideo() {
   player.stopVideo(); // Function to stop the video
 }
 
-// Additional functions and event listeners can follow here
-// ...
-
 // Example: Smooth scrolling functionality
 $(document).ready(function() {
   var divs_class = "page-section";
   var id_offset_map = {};
 
   $('a').bind('click', function(e) {
-      e.preventDefault();
-      var target = $(this).attr("href");
-      $('.wrap_scroll').animate({
-          scrollTop: id_offset_map[target]
-      }, 'slow');
-      return false;
+    e.preventDefault();
+    var target = $(this).attr("href");
+    $('.wrap_scroll').animate({
+      scrollTop: id_offset_map[target]
+    }, 'slow');
+    return false;
   });
 
   $(".wrap_scroll").scroll(function() {
-      var scrollPos = $(".wrap_scroll").scrollTop();
-      $("." + divs_class).each(function(i) {
-          var sections = $("." + sections_class);
+    var scrollPos = $(".wrap_scroll").scrollTop();
+    $("." + divs_class).each(function(i) {
+      var sections = $("." + sections_class);
 
-          divs.each(function(idx) {
-              if (scrollPos >= id_offset_map["#" + this.id]) {
-                  $('.menu>ul> a.active').removeClass('active');
-                  $('.menu>ul> a').eq(idx).addClass('active');
-              }
-          });
+      divs.each(function(idx) {
+        if (scrollPos >= id_offset_map["#" + this.id]) {
+          $('.menu>ul> a.active').removeClass('active');
+          $('.menu>ul> a').eq(idx).addClass('active');
+        }
       });
+    });
   }).scroll();
 });
 
@@ -141,9 +136,9 @@ var captionText = document.getElementById("caption");
 
 for (var i = 0; i < galleryImages.length; i++) {
   galleryImages[i].onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
   };
 }
 
