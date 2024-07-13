@@ -286,6 +286,10 @@ text-decoration: none;
         width: 100%; /* Ensure frames fill their container */
         text-align: center; /* Center-align content within frames */
     }
+
+    .sidenav {
+        display: none; /* Hide sidebar on tablets and smaller devices */
+    } 
 }
 
 /* Extra small devices (phones, 480px and down) */
@@ -316,7 +320,7 @@ text-decoration: none;
 
     /* Adjust navigation styles for smaller screens */
     .sidenav {
-        width: 100%; /* Full width on smaller screens */
-        overflow-x: hidden; /* Hide horizontal scrollbar if necessary */
+        width: 250px; /* Full width on smaller screens */
+        overflow-x: hidden; /*Hide horizontal scrollbar if necessary */
     }
 }
