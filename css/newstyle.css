@@ -1,63 +1,60 @@
+:root {
+    --primary-bg: #121212;
+    --secondary-bg: #111;
+    --header-bg: #333;
+    --primary-text: #f1f1f1;
+    --accent: orange;
+    --link: #fff;
+    --link-hover: orange;
+    --sidenav-link: #818181;
+    --gap: 20px;
+    --profile-gap: 40px;
+    --frame-margin: 20px 10px;
+    --frame-padding: 10px;
+}
+
 body {
     margin: 0;
     padding-top: 150px;
-    font-family: 'Inter', sans-serif; /* Changing font-family to Inter */
-    background: #121212;
-    background-image: url("../assets/bg/Background.png");
+    font-family: 'Inter', sans-serif;
+    background: var(--primary-bg) url("../assets/bg/Background.png");
     background-size: 100% auto;
-    color: #f1f1f1;
-    overflow-x: hidden; /* Only hide horizontal overflow */
-    font-size: 1.25rem; /* Added for consistency */
+    color: var(--primary-text);
+    overflow-x: hidden;
+    font-size: 1.25rem;
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
 }
-
-body::-webkit-scrollbar { /*chrome*/
-    display: none;
-}
-
-body {
-    -ms-overflow-style: none; /*microsoft*/
-    scrollbar-width: none; /*firefox*/
-}
+body::-webkit-scrollbar { display: none; }
 
 .content {
-    height: 200vh; /* Making the content taller to test scrolling */
+    height: 200vh;
     background: linear-gradient(to bottom, #fff, #000);
 }
 
-/* Optional: Adding a simple style for the page content */
 .header {
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: var(--header-bg);
+    color: var(--primary-text);
     text-align: center;
 }
 
-/* unvisited link */
-a:link {
-    color: white;
+/* Unified link styles */
+a:link, a:visited, a:active {
+    color: var(--link);
     text-decoration: none;
-  }
-  
-/* visited link */
-a:visited {
-color: white;
-text-decoration: none;
 }
-
-/* mouse over link */
-a:hover {
-color: orange;
-text-decoration: none;
-}
-
-/* selected link */
-a:active {
-color: white;
-text-decoration: none;
+a:hover, a:focus {
+    color: var(--link-hover);
+    text-decoration: none;
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 .title {
     font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .nav {
@@ -65,9 +62,9 @@ text-decoration: none;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #111; /* Translucent grey background */
-    padding: 0px;
-    color: #fff;
+    background-color: var(--secondary-bg);
+    padding: 0;
+    color: var(--primary-text);
 }
 
 .sidenav {
@@ -77,25 +74,23 @@ text-decoration: none;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--secondary-bg);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--sidenav-link);
     display: block;
     transition: 0.3s;
+    text-decoration: none;
 }
-
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav a:hover, .sidenav a:focus {
+    color: var(--primary-text);
+    outline: none;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -106,24 +101,21 @@ text-decoration: none;
 
 /* Hamburger menu icon styling */
 .hamburger-icon {
-    padding: 20px; /* Increase padding as needed */
+    padding: 20px;
     cursor: pointer;
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 1000;
 }
-
 .hamburger-icon .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: var(--primary-text);
 }
-
-/* Optional: Add hover effect */
 .hamburger-icon:hover .bar {
     background-color: #ddd;
 }
@@ -133,10 +125,8 @@ text-decoration: none;
     justify-content: center;
     flex-grow: 1;
 }
-
 .home img {
-    height: 60px; /* Adjust the height as needed */
-    /* background: orangered; */
+    height: 60px;
     padding: 20px;
 }
 
@@ -145,7 +135,6 @@ text-decoration: none;
     height: auto;
 }
 
-/* Flexbox used for consistent centering and potential responsiveness */
 .wrap_scroll {
     display: flex;
     flex-direction: column;
@@ -156,18 +145,16 @@ text-decoration: none;
     overflow-x: hidden;
 }
 
+.frame {
+    text-align: center;
+    margin: var(--frame-margin);
+    padding: var(--frame-padding);
+    box-sizing: border-box;
+}
 .frame img {
     display: block;
     margin: 0 auto;
 }
-
-.frame {
-    text-align: center;
-    margin: 20px 10px; /* Add margin to create space between the frames */
-    padding: 10px; /* Optional: Add padding if you want some inner spacing within the frame */
-    box-sizing: border-box; /* Ensure padding doesn't affect the width and height */
-}
-
 .frame p {
     line-height: 8px;
 }
@@ -176,26 +163,21 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add gap for spacing between flex items */
+    gap: var(--gap);
 }
 
 .p3 {
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .work1 {
-    margin: 20px 20px;
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .description {
-    margin: 20px 0;
-    padding: 0 20px; /* Add padding on left and right */
+    margin: 20px 10px;
+    padding: 10px 60px 0 60px;
 }
 
 .profile-section {
@@ -204,123 +186,85 @@ text-decoration: none;
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    gap: 40px; /* Increase space between text and image */
+    gap: var(--profile-gap);
 }
-
 .profile-section .title-text {
-    font-size: 1.5em; /* Standardize font size */
-    line-height: 1.5; /* Adjust line spacing */
+    font-size: 1.5em;
+    line-height: 1.5;
 }
-
 .profile-section img {
     max-width: 100%;
     height: auto;
 }
-
 .profile-section .title-text p {
-    line-height: 1.2; /* Reduce line spacing */
-    font-size: 1.5em; /* Ensure font size is standardized */
-    margin: 0; /* Remove default margins */
+    line-height: 1.2;
+    font-size: 1.5em;
+    margin: 0;
 }
 
-/* Media Queries for Responsiveness */
+.responsive-video {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;   /* Larger max width */
+  min-width: 320px;
+  margin: 40px auto 40px auto; /* Center and add vertical space */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* --- Responsive Design --- */
 
 /* Large devices (desktops, 2560px and down) */
 @media only screen and (max-width: 2560px) {
-    .description {
-        padding: 0 100px; /* Adjust padding for large screens */
-    }
+    .description,
     .profile-section {
-        padding: 0 100px; /* Adjust padding for large screens */
+        padding: 0 100px;
     }
 }
 
 /* Medium devices (desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
-    .sidenav a {
-        font-size: 20px;
-    }
-    .frame img {
-        width: auto;
-        height: 300px;
-    }
-    .description {
-        padding: 0 50px; /* Adjust padding for medium screens */
-    }
-    .profile-section {
-        padding: 0 50px; /* Adjust padding for medium screens */
-    }
+    .sidenav a { font-size: 20px; }
+    .frame img { height: 300px; }
+    .description,
+    .profile-section { padding: 0 50px; }
 }
 
 /* Small devices (tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    .sidenav a {
-        font-size: 18px;
-    }
-    .frame img {
-        width: auto;
-        height: 250px;
-    }
+    .sidenav a { font-size: 18px; }
+    .frame img { height: 250px; }
     .columnrow {
         flex-direction: column;
         align-items: center;
     }
-    .description {
-        padding: 0 30px; /* Adjust padding for small screens */
-    }
-    .profile-section {
-        flex-direction: column;
-        padding: 0 30px; /* Adjust padding for small screens */
-    }
-    
-    .gallery-img {
-        width: 100%; /* Ensures images fill their container */
-        height: auto;
-    }
-
-    .wrap_scroll {
-        padding: 10px; /* Add padding or adjust layout */
-    }
-
-    .frame {
-        width: 100%; /* Ensure frames fill their container */
-        text-align: center; /* Center-align content within frames */
-    }
-/* 
-     .sidenav {
-        display: none; 
-    }   */
+    .description,
+    .profile-section { padding: 0 30px; }
+    .profile-section { flex-direction: column; }
+    .gallery-img { width: 100%; height: auto; }
+    .wrap_scroll { padding: 10px; }
+    .frame { width: 100%; text-align: center; }
 }
 
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
-    .sidenav a {
-        font-size: 16px;
-    }
-    .frame img {
-        width: auto;
-        height: 200px;
-    }
-    .title h1, .aboutme h2 {
-        font-size: 30px;
-    }
-    .description p {
-        font-size: 14px;
-    }
-    .description {
-        padding: 0 10px; /* Adjust padding for extra small screens */
-    }
-    .profile-section {
-        padding: 0 10px; /* Adjust padding for extra small screens */
-    }
-
-    .wrap_scroll {
-        padding: 5px; /* Further reduce padding for smaller screens */
-    }
-
-    /* Adjust navigation styles for smaller screens */
-    .sidenav {
-        width: 250px; /* Full width on smaller screens */
-        overflow-x: hidden; /*Hide horizontal scrollbar if necessary */
-    }
+    .sidenav a { font-size: 16px; }
+    .frame img { height: 200px; }
+    .title h1, .aboutme h2 { font-size: 30px; }
+    .description p { font-size: 14px; }
+    .description,
+    .profile-section { padding: 0 10px; }
+    .wrap_scroll { padding: 5px; }
+    .sidenav { width: 250px; overflow-x: hidden; }
 }
