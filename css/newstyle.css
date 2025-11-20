@@ -11,19 +11,20 @@
     --profile-gap: 40px;
     --frame-margin: 20px 10px;
     --frame-padding: 10px;
+    --nav-height: 120px; /* desktop default, adjust to taste */
 }
 
 body {
     margin: 0;
-    padding-top: 150px;
+    padding-top: var(--nav-height);
     font-family: 'Inter', sans-serif;
     background: var(--primary-bg) url("../assets/bg/Background.png");
     background-size: 100% auto;
     color: var(--primary-text);
     overflow-x: hidden;
     font-size: 1.25rem;
-    -ms-overflow-style: none; /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 body::-webkit-scrollbar { display: none; }
 
@@ -60,11 +61,13 @@ a:hover, a:focus {
 .nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: var(--nav-height);
     z-index: 1000;
     background-color: var(--secondary-bg);
-    padding: 0;
-    color: var(--primary-text);
+    display: flex;
+    align-items: center; /* vertically center logo & hamburger */
 }
 
 .sidenav {
@@ -223,6 +226,15 @@ a:hover, a:focus {
   display: block;
 }
 
+.gallery-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 800px;   /* or whatever your original width was */
+    margin: 0 auto;     /* center the image */
+}
+
+
 /* --- Responsive Design --- */
 
 /* Large devices (desktops, 2560px and down) */
@@ -231,30 +243,103 @@ a:hover, a:focus {
     .profile-section {
         padding: 0 100px;
     }
+    .gallery-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 800px;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
+    
 }
 
-/* Medium devices (desktops, 1024px and down) */
+
+/* Medium devices (tablets / small desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
+    :root {
+        --nav-height: 100px;           /* slightly shorter header */
+    }
+
+    body {
+        font-size: 1.1rem;             /* a bit smaller than desktop */
+    }
+
     .sidenav a { font-size: 20px; }
     .frame img { height: 300px; }
+
     .description,
-    .profile-section { padding: 0 50px; }
+    .profile-section {
+        padding: 0 40px;               /* comfortable tablet padding */
+    }
+
+    /* Stack title + video on tablet, center them */
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-section .title-text {
+        margin-bottom: 20px;
+    }
+
+    /* Tablet video size */
+    .responsive-video {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto 40px auto;
+    }
+    .gallery-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 800px;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
+    
 }
 
-/* Small devices (tablets, 768px and down) */
+/* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
+    :root {
+        --nav-height: 90px;            /* smaller header on mobile */
+    }
+
     .sidenav a { font-size: 18px; }
     .frame img { height: 250px; }
+
     .columnrow {
         flex-direction: column;
         align-items: center;
     }
+
     .description,
-    .profile-section { padding: 0 30px; }
-    .profile-section { flex-direction: column; }
-    .gallery-img { width: 100%; height: auto; }
+    .profile-section {
+        padding: 0 30px;
+    }
+
+    /* still stacked, just a bit tighter */
+    .profile-section {
+        flex-direction: column;
+    }
+    .gallery-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
+    
+
     .wrap_scroll { padding: 10px; }
     .frame { width: 100%; text-align: center; }
+
+    /* Phone video: full width */
+    .responsive-video {
+        max-width: 100%;
+        width: 100%;
+        margin: 20px auto 40px auto;
+    }
 }
 
 /* Extra small devices (phones, 480px and down) */
@@ -267,4 +352,12 @@ a:hover, a:focus {
     .profile-section { padding: 0 10px; }
     .wrap_scroll { padding: 5px; }
     .sidenav { width: 250px; overflow-x: hidden; }
+    .gallery-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
+    
 }
