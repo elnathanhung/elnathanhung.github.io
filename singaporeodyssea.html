@@ -49,13 +49,14 @@
                                 <p>Immersive Exhibition</p>
                             </div>
                         </div>
-                        <div class="responsive-video">
+                        <iframe width="560" height="360" src="https://www.youtube.com/embed/G8pXH_R7PRA" title="SINGAPORE ODYSSEA Full Immersive Walkthrough Tour | A Time-Travel Voyage for SG60" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- <div class="responsive-video">
                             <iframe src="https://player.vimeo.com/video/1108856886?h=b3e6b5d9e4"
                                     frameborder="0"
                                     allow="autoplay; fullscreen; picture-in-picture"
                                     allowfullscreen>
                             </iframe>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
                 </section>
@@ -66,27 +67,22 @@
                     <p id="p1">Commissioned to lead the multimedia production and interactive design, CraveFX worked closely with partners, Kin Productions, GSM Project, E&E and the museum team to bring this ambitious vision to life. The result is a multi-sensory experience that reimagines how history can be told through immersive visuals, evocative soundscapes and meaningful interaction.</p>
                     <p id="p1">Visitors embark on a digital voyage aboard a vessel, travelling through dynamically animated environments that reflect key moments in Singapore’s evolution from ancient shores and colonial encounters to modern day cityscapes. The narrative is shaped not by text, but by atmosphere and symbolism with water serving as both metaphor and medium.</p>
                     <p id="p1">At the heart of the experience is a reactive companion wristband, at the heart of the journey is an interactive companion, a creature inspired by Singapore’s native fauna designed not just to accompany visitors, but to subtly spark awareness of our fragile ecosystems and the deep ties between environment, identity, and memory.</p>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                    
                 </section>
             </section>
-
-            <section class="work1">
+            <!-- <section class="work1">
                 <section class="columnrow">
-                    <div class="frame"> 
-                        <section class="columnrow1">
-                            <div id="player1">
-                                <img class="gallery-img" src="assets/png/singaporeodyssea/IntroIMG.jpg" alt="Singapore Odyssea Image 1">
+                    <div class="frame">
+                                <img class="gallery-img" src="assets/png/singaporeodyssea/IntroIMG.jpg" width="auto" height="500" alt="Singapore Odyssea Image 1">
                                 <p class="p3">Exhibition Entrance</p>
-                        </section>
                     </div>
                     <div class="frame"> 
-                        <section class="columnrow1">
-                            <div id="player1">
-                                <img class="gallery-img" src="assets/png/singaporeodyssea/WristBands.png" alt="Singapore Odyssea Image 2">
+                                <img class="gallery-img" src="assets/png/singaporeodyssea/WristBands.png" width="auto" height="500" alt="Singapore Odyssea Image 2">
                                 <p class="p3">Companion Wristband</p>
-                        </section>
                     </div>
                 </section>
-            </section>
+            </section> -->
             <div class="profile-section">
                 <div class="title-text">
                     <p><b>The Lower Drum Experience</b></p>
@@ -97,30 +93,39 @@
                     <section class="description">
                         <p id="p1">As one of the developers assigned to this section of the project, Elnathan came on board mid-project to build the Unreal Engine + nDisplay system behind the virtual waterfall, comprising dynamic waterfall-opening interactions and real-time visitor tracking. The result was an immersive 360-degree cylindrical projection, where a towering waterfall encircles visitors from floor to ceiling. As they step closer, the water parts to reveal animated portals into four pivotal moments in Singapore’s history. A 10-meter LED floor reacts with ripples beneath their feet, transforming from ancient seas with floating coconuts to post-war puddles and cracked concrete.</p>
                     </section>
+                    <div class="frame"> 
+                                                <div class="responsive-video">
+                            <iframe src="https://player.vimeo.com/video/1108856886?h=b3e6b5d9e4"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
                     <div class="frame">
                         <img class="gallery-img" src="assets/png/singaporeodyssea/DJI_20250731181444_0110_D.jpg" alt="Singapore Odyssea Image 3">
-                        <!-- <p class="p3">Initial Prototype</p> -->
+                        <!-- <p class="p3">Episode 2</p> -->
                     </div>
                     <div class="frame"> 
                         <img class="gallery-img" src="assets/png/singaporeodyssea/DJI_20250731181606_0115_D.jpg" alt="Singapore Odyssea Image 4">
-                        <!-- <p class="p3">Final Prototype: Image 1</p> -->
                     </div>
                     <div class="frame"> 
                         <img class="gallery-img" src="assets/png/singaporeodyssea/DJI_20250731181615_0117_D.jpg" alt="Singapore Odyssea Image 5">
-                        <!-- <p class="p3">Final Prototype: Image 2</p> -->
                     </div>
                     <div class="frame"> 
                         <img class="gallery-img" src="assets/png/singaporeodyssea/DJI_20250731181652_0121_D.jpg" alt="Singapore Odyssea Image 6">
-                        <!-- <p class="p3">Final Prototype: Image 2</p> -->
                     </div>
                     <div class="frame"> 
                         <img class="gallery-img" src="assets/png/singaporeodyssea/DJI_20250731182200_0138_D.jpg" lt="Singapore Odyssea Image 7">
-                        <!-- <p class="p3">Final Prototype: Image 2</p> -->
                     </div>
                 </section>
             </section>
 
-
+        <!-- Image modal / lightbox -->
+        <div id="imgModal" class="img-modal">
+        <span class="img-modal-close">&times;</span>
+        <img class="img-modal-content" id="imgModalContent">
+        <div id="imgModalCaption"></div>
+        </div>
 
 
         <script>
@@ -253,40 +258,94 @@
             }
         </script>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+// <script>
+//     // Get the modal
+//     var modal = document.getElementById("myModal");
     
-    // Get all elements with class "gallery-img"
-    var galleryImages = document.getElementsByClassName("gallery-img");
+//     // Get all elements with class "gallery-img"
+//     var galleryImages = document.getElementsByClassName("gallery-img");
     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+//     // Get the <span> element that closes the modal
+//     var span = document.getElementsByClassName("close")[0];
     
-    // Get the modal content (image) and caption elements
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+//     // Get the modal content (image) and caption elements
+//     var modalImg = document.getElementById("img01");
+//     var captionText = document.getElementById("caption");
 
-    // Loop through each gallery image
-    for (var i = 0; i < galleryImages.length; i++) {
-      galleryImages[i].onclick = function() {
-        // Set the modal to display
-        modal.style.display = "block";
+//     // Loop through each gallery image
+//     for (var i = 0; i < galleryImages.length; i++) {
+//       galleryImages[i].onclick = function() {
+//         // Set the modal to display
+//         modal.style.display = "block";
         
-        // Set the modal image and caption based on the clicked image
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+//         // Set the modal image and caption based on the clicked image
+//         modalImg.src = this.src;
+//         captionText.innerHTML = this.alt;
 
-        // Adjust the width of the modalImg (you can adjust the percentage)
-        modalImg.style.width = "60%"; // Set the desired width percentage
-      };
-    }
+//         // Adjust the width of the modalImg (you can adjust the percentage)
+//         modalImg.style.width = "60%"; // Set the desired width percentage
+//       };
+//     }
     
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+//     // When the user clicks on <span> (x), close the modal
+//     span.onclick = function() {
+//       modal.style.display = "none";
+//     };
+// </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Modal elements
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("imgModalContent");
+    var captionText = document.getElementById("imgModalCaption");
+    var closeBtn = document.querySelector(".img-modal-close");
+
+    // All gallery images with class "gallery-imgt"
+    var galleryImages = document.getElementsByClassName("gallery-img");
+
+    // Attach click handler to each image
+    for (var i = 0; i < galleryImages.length; i++) {
+      galleryImages[i].addEventListener("click", function () {
+        modal.style.display = "flex";     // show modal (flex for centering)
+        modalImg.src = this.src;
+
+        // Use alt text or the <p> next to the image as caption
+        var caption = this.alt || "";
+        if (!caption && this.nextElementSibling && this.nextElementSibling.tagName === "P") {
+          caption = this.nextElementSibling.textContent;
+        }
+        captionText.textContent = caption;
+
+        // Prevent background scroll on mobile
+        document.body.style.overflow = "hidden";
+      });
+    }
+
+    // Close when clicking the X
+    closeBtn.addEventListener("click", function () {
       modal.style.display = "none";
-    };
+      document.body.style.overflow = ""; // restore scroll
+    });
+
+    // Close when clicking outside the image
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+
+    // Close with ESC key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+  });
 </script>
+
 <script>
     // Function to open the navigation sidebar
     function openNav() {

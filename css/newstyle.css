@@ -153,6 +153,7 @@ a:hover, a:focus {
     margin: var(--frame-margin);
     padding: var(--frame-padding);
     box-sizing: border-box;
+    cursor: pointer; /* Hand cursor on hover */
 }
 .frame img {
     display: block;
@@ -160,6 +161,12 @@ a:hover, a:focus {
 }
 .frame p {
     line-height: 8px;
+}
+
+/* Change caption colour on hover, just like index */
+.frame:hover p,
+.frame:hover .p3 {
+  color: orange; /* match your existing hover colour */
 }
 
 .columnrow {
@@ -234,6 +241,56 @@ a:hover, a:focus {
     margin: 0 auto;     /* center the image */
 }
 
+/* Fullscreen image modal */
+.img-modal {
+  display: none;               /* Hidden by default */
+  position: fixed;
+  z-index: 9999;               /* Above everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  padding: 16px;
+}
+
+/* Modal image */
+.img-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Caption below the image */
+#imgModalCaption {
+  margin-top: 12px;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 0px;
+}
+
+/* Close button (X) */
+.img-modal-close {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  color: #f1f1f1;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.img-modal-close:hover,
+.img-modal-close:focus {
+  color: #ccc;
+}
 
 /* --- Responsive Design --- */
 
@@ -358,6 +415,15 @@ a:hover, a:focus {
         height: auto;
         max-width: 100%;   /* or whatever your original width was */
         margin: 0 auto;     /* center the image */
+    }
+
+    .img-modal-content {
+    max-width: 95vw;
+    max-height: 70vh;
+    }
+
+    #imgModalCaption {
+        font-size: 0px;
     }
     
 }

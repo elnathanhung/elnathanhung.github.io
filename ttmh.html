@@ -83,23 +83,22 @@
             <section class="work1">
                 <section class="columnrow">
                     <div class="frame">
-                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9292.PNG"  alt="Starting page" height="500" width="auto">
+                        <iframe width="315" height="576" src="https://www.youtube.com/embed/axV1DP2dnik" title="TTMH playthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="frame">
+                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9292.PNG"  alt="Starting page" height="575" width="auto">
                         <p>Starting Page</p>
                     </div>
                     <div class="frame">
-                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9294.PNG" alt="Game 1" height="500" width="auto">
-                        <p>Game 1</p>
-                    </div>
-                    <div class="frame">
-                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9293.PNG"  alt="Launch game 1" height="500" width="auto">
+                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9293.PNG"  alt="Launch game 1" height="575" width="auto">
                         <p>Launch Game 1</p>
                     </div>
                     <div class="frame">
-                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9295.PNG"  alt="Suggestive gesture" height="500" width="auto">
+                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9295.PNG"  alt="Suggestive gesture" height="575" width="auto">
                         <p>Suggestive gesture</p>
                     </div>
                     <div class="frame">
-                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9296.PNG" alt="Game 1 match UI" height="500" width="auto">
+                        <img class="gallery-imgt" src="assets/png/ttmh/IMG_9296.PNG" alt="Game 1 match UI" height="575" width="auto">
                         <p>Game 1 Match UI</p>
                     </div>
                 </section>
@@ -118,8 +117,12 @@
                 </section> -->
             </section>
 
-
-
+            <!-- Image modal / lightbox -->
+            <div id="imgModal" class="img-modal">
+                <span class="img-modal-close">&times;</span>
+                <img class="img-modal-content" id="imgModalContent">
+                <div id="imgModalCaption"></div>
+            </div>
 
         <script>
             function openNav() {
@@ -252,7 +255,7 @@
             }
         </script>
 
-<script>
+<!-- <script>
     // Get the modal
     var modal = document.getElementById("myModal");
     
@@ -285,7 +288,7 @@
     span.onclick = function() {
       modal.style.display = "none";
     };
-</script>
+</script> -->
 <script>
     // Function to open the navigation sidebar
     function openNav() {
@@ -312,6 +315,60 @@
     // Call closeNavOnLoad function when the page finishes loading
     window.onload = closeNavOnLoad;
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Modal elements
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("imgModalContent");
+    var captionText = document.getElementById("imgModalCaption");
+    var closeBtn = document.querySelector(".img-modal-close");
+
+    // All gallery images with class "gallery-imgt"
+    var galleryImages = document.getElementsByClassName("gallery-imgt");
+
+    // Attach click handler to each image
+    for (var i = 0; i < galleryImages.length; i++) {
+      galleryImages[i].addEventListener("click", function () {
+        modal.style.display = "flex";     // show modal (flex for centering)
+        modalImg.src = this.src;
+
+        // Use alt text or the <p> next to the image as caption
+        var caption = this.alt || "";
+        if (!caption && this.nextElementSibling && this.nextElementSibling.tagName === "P") {
+          caption = this.nextElementSibling.textContent;
+        }
+        captionText.textContent = caption;
+
+        // Prevent background scroll on mobile
+        document.body.style.overflow = "hidden";
+      });
+    }
+
+    // Close when clicking the X
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // restore scroll
+    });
+
+    // Close when clicking outside the image
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+
+    // Close with ESC key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+  });
+</script>
+
     
 <script src="script.js"></script>
 </body>
