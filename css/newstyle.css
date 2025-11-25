@@ -418,7 +418,9 @@ a:hover, a:focus {
     .description,
     .profile-section { padding: 0 10px; }
     .wrap_scroll { padding: 5px; }
-    .sidenav { width: 250px; overflow-x: hidden; }
+     /* Keep sidenav closed by default on very small screens to avoid
+         it appearing briefly before JS runs. Open with `openNav()` only. */
+     .sidenav { width: 0; overflow-x: hidden; }
     .gallery-img {
         display: block;
         width: 100%;
