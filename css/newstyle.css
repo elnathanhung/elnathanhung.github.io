@@ -401,6 +401,12 @@ a:hover, a:focus {
         width: 100%;
         margin: 20px auto 40px auto;
     }
+    /* Make slideshow iframe smaller on mobile */
+    .slideshow iframe {
+        width: 400px;
+        max-width: 100%;
+        height: 500px;
+    }
 }
 
 /* Extra small devices (phones, 480px and down) */
