@@ -189,10 +189,25 @@ a:hover, a:focus {
     margin: 20px 0px;
 }
 
-.description {
+/* .description {
     margin: 20px 10px;
     padding: 10px 60px 0 60px;
+} */
+
+.description {
+    /* center the block */
+    margin: 20px auto;
+
+    /* give it a comfortable max width */
+    max-width: 52rem;              /* ~830px, tweak to taste */
+
+    /* side padding that scales with screen size */
+    padding-inline: clamp(16px, 6vw, 80px);
+
+    /* keep your top padding if you want a bit of space above */
+    padding-top: 10px;
 }
+
 
 .profile-section {
     display: flex;
@@ -328,9 +343,14 @@ a:hover, a:focus {
     .sidenav a { font-size: 20px; }
     .frame img { height: 300px; }
 
+    /* .description,
+    .profile-section {
+        padding: 0 40px;              
+    } */
+
     .description,
     .profile-section {
-        padding: 0 40px;               /* comfortable tablet padding */
+        padding: 0 40px;
     }
 
     /* Stack title + video on tablet, center them */
@@ -374,6 +394,11 @@ a:hover, a:focus {
         align-items: center;
     }
 
+    /* .description,
+    .profile-section {
+        padding: 0 30px;
+    } */
+
     .description,
     .profile-section {
         padding: 0 30px;
@@ -415,8 +440,12 @@ a:hover, a:focus {
     .frame img { height: 200px; }
     .title h1, .aboutme h2 { font-size: 30px; }
     .description p { font-size: 14px; }
+    /* .description,
+    .profile-section { padding: 0 10px; } */
+
     .description,
     .profile-section { padding: 0 10px; }
+
     .wrap_scroll { padding: 5px; }
      /* Keep sidenav closed by default on very small screens to avoid
          it appearing briefly before JS runs. Open with `openNav()` only. */
