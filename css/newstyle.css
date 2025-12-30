@@ -74,6 +74,15 @@ a:hover, a:focus {
     font-size: 1.5rem;
 }
 
+.spaced-list li {
+  margin-bottom: 1.25rem; /* adjust as needed */
+}
+
+.spaced-list li > ul {
+  margin-top: 0.75rem; /* space between parent li text and nested list */
+}
+
+
 .sidenav {
     height: 100%;
     width: 0;
