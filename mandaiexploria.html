@@ -12,6 +12,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">About me</a>
         <a href="singaporeodyssea.html"><i>Singapore Odyssea</i></a>
+        <a href="mandaiexploria.html"><i>Mandai Exploria</i></a>
         <a href="analogdream.html">Analog Dreams<i></i>
         <a href="TWP.html"><i>Together We Play</i></a>
         <a href="reverberation.html"><i>Reverberation</i></a>
@@ -53,7 +54,7 @@
                                 <p>Entrance Globe Interactive System</p>
                             </div>
                         </div>
-                       <iframe width="550" height="450" src="https://www.youtube.com/embed/8ohsTw-mmOA" title="Perlin Noise Shader Overlay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                       <iframe width="550" height="450" src="https://www.youtube.com/embed/byegmwKE1pM" title="INSIDE EXPLORIA: Singapore’s Massive New Attraction Unveils Hidden Worlds!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <!-- <div class="responsive-video">
                             <iframe src="https://player.vimeo.com/video/1108856886?h=b3e6b5d9e4"
                                     frameborder="0"
@@ -68,10 +69,11 @@
                 <section class="columnrow" id="empathybot">           
                 <section class="description">
                 <p>
-                A centre-piece installation at
-                <a href="https://www.mandai.com/en/exploria.html" target="_blank" rel="noopener" style="text-decoration: underline;">Mandai Exploria</a>,
-                the Entrance Globe is a large-scale LED installation that visualises real-time visitor activity across the gallery as a living neural network.
-                Elnathan was the lead developer behind the robust Unity Engine system powering the globe’s behaviour, translating cross-world interaction signals
+                <a href="https://www.timeout.com/singapore/news/mandai-wildlife-reserve-launches-exploria-a-new-indoor-multimedia-nature-experience-on-march-3-022326" target="_blank" rel="noopener" style="text-decoration: underline;">Mandai Exploria</a> 
+                is an indoor, nature-themed edutainment attraction at the Mandai Wildlife Reserve that lets visitors explore real-world natural phenomena and ecosystems through immersive and interactive digital experiences.
+                The Entrance Globe (a centre-piece installation) is a large-scale LED installation that visualises real-time visitor activity across the gallery as a living neural network.
+                </p>
+                <p>Elnathan is the lead developer behind the robust Unity Engine system powering the globe’s behaviour, translating cross-world interaction signals
                 into dynamic colour activations across an interconnected neuron scene, and architecting the state-driven control system that manages both live
                 activity states and scheduled Light Show and Disruption sequences.
                 </p>
@@ -154,9 +156,13 @@
                 </div>
                 <section class="columnrow">
                     <section class="description">
+                    <section class="columnrow">
+                    <div class="frame">
+                        <img class="gallery-img" src="assets/png/mandai-exploria/mandai-exploria-globe-diagram.png" alt="Singapore Odyssea UDP Diagram">
+                    </div>
+                    </section>
                         <p id="p1">The Globe system operates on a state-driven TCP protocol pipeline with two parallel data paths: a discrete show trigger command and a continuous activity-level data stream. By default, the system runs in Globe Idle, rendering ambient visuals while listening for incoming TCP messages and applying real-time activity data to modulate behaviour. When Show Control sends a show trigger command, the system transitions deterministically from Idle to Globe Show, where the designated show sequence plays without interference from activity updates. </p>
                         <p>Upon video completion, an internal end event automatically returns the system to Idle, ensuring a stable fallback state without requiring an external reset. This architecture ensures clean state transitions, reliable playback control, and continuous data-driven interactivity within the ambient mode.</p>
-                        <img class="gallery-img" src="assets/png/mandai-exploria/mandai-exploria-globe-diagram.png" alt="Singapore Odyssea UDP Diagram">
                     </section>
                 </section>
             </section>
