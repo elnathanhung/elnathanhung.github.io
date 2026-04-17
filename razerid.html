@@ -40,18 +40,11 @@
 <div class="wrap_scroll">
     <section class="work1" id="work1">
         <section class="columnrow" id="empathybot">
-            <!-- <div class="title" id="title1">
-                <p><i>Reverberation</i></p>
-                <p>An Audio Sensory Experience</p>
-            </div>
-            <div class="tooright" id="player">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8FkmTAwkzvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div> -->
             <div class="profile-section">
                 <div class="title-text">
                     <p><b><i>Razer ID</i></b> </p>
                     <div class="aboutme">
-                        <p>User Flow Redesign</p>
+                        <p>UI/UX Case Study &mdash; User Flow Redesign</p>
                     </div>
                 </div>
                 <div class="frame">
@@ -62,11 +55,17 @@
             </div>
         </section>
         <section class="description">
-            <p id="p1">During his internship at Razer, Elnathan was tasked with prototyping a revamped user flow for creating a Razer ID. Given a blue-sky scope, he explored ways to deliver the most frictionless and intuitive onboarding experience possible, while remaining mindful of real-world technical and platform limitations.</p>
-            <p id="p1">The design process was driven by internal user testing, involving participants across multiple departments—including marketing, HR, software development, and members of the UI/UX team. These sessions provided diverse perspectives on usability, clarity, and user expectations.</p>
-            <p id="p1">Research was guided by a mix of qualitative and quantitative questions, allowing insights from user behaviour, feedback, and measurable patterns to collectively inform design decisions. This research-driven approach helped refine assumptions and validate design directions.</p>
-            <p id="p1"></p>
-    
+            <p id="p1"><b>Overview</b></p>
+            <p id="p1">During his internship at Razer, Elnathan led the end-to-end UX redesign of the Razer ID account creation flow &mdash; the unified onboarding system used across Razer&rsquo;s global product ecosystem. Given a blue-sky brief, the goal was to deliver the most frictionless and intuitive onboarding experience possible, without losing sight of real-world technical and platform constraints.</p>
+
+            <p id="p1"><b>The Problem</b></p>
+            <p id="p1">The existing Razer ID creation flow placed too many decisions in front of users too early, creating unnecessary cognitive load at the point of first commitment. Drop-off and hesitation during the verification step indicated a structural problem with the flow&rsquo;s sequencing &mdash; not just its visual design.</p>
+
+            <p id="p1"><b>Research Approach</b></p>
+            <p id="p1">Rather than relying on a single user group, Elnathan planned and ran moderated usability testing sessions with participants drawn from five departments &mdash; marketing, HR, software development, and the UI/UX team &mdash; to surface a diverse range of mental models and expectations. Sessions combined qualitative observation with quantitative task-completion tracking, ensuring findings were both behaviourally grounded and defensible to stakeholders.</p>
+
+            <p id="p1"><b>Key Insight</b></p>
+            <p id="p1">Users were most likely to abandon the flow when asked to create a username and password before their email had been verified. Resequencing these steps &mdash; asking for email first, completing verification, then proceeding to account setup &mdash; significantly reduced early friction and improved perceived clarity of the process.</p>
         </section>
     </section>
     <section class="work1">
@@ -74,7 +73,7 @@
         <div class="title-text">
         <p><b>Final Prototype</b> </p> </div> </div>
         <section class="description">
-            <!-- <p id="p1">Below showcases the research done beforehand, including both primary and secondary findings that shaped the direction of the application.</p>     -->
+            <p id="p1">The final prototype reflects the validated flow: email entry and verification as a dedicated first step, followed by account setup with progressive disclosure of optional fields. The design reduces perceived commitment at the point of entry and guides users through a clear, paced sequence.</p>
         </section>
 
         <section class="columnrow">
@@ -92,37 +91,31 @@
 
         <p><b>Design Iterations &amp; Testing</b> </p> </div> </div>
         <section class="description">
-            <p>Before arriving at the final prototype, the flow went through several iterative cycles of testing and refinement:</p>
+            <p>The design went through three structured rounds of iteration, each informed directly by usability findings:</p>
             <ol class="spaced-list">
             <li>
-                <strong>User Testing 1</strong> focused on early experimentation with accordion-based layouts to
-                explore information grouping and the use of progressive disclosure.
+                <strong>Round 1 &mdash; Accordion Layouts</strong>: Early experimentation with accordion-based progressive disclosure to test whether grouping related fields reduced the feeling of a long, overwhelming form. Users found the accordion transitions unfamiliar and hesitated at state changes.
             </li>
 
             <li>
-                <strong>User Testing 2</strong> validated a revised flow structure, with emphasis on clarity,
-                pacing, and the reduction of perceived friction.
+                <strong>Round 2 &mdash; Flow Resequencing</strong>: Based on Round 1 findings, the flow was restructured to lead with email entry and verification before any account details were requested. This change addressed the root cause of early abandonment behaviour observed in testing and significantly improved user confidence in completing the flow.
             </li>
 
             <li>
-                <strong>Post-UT2 Refinement (v1)</strong> introduced a reordered flow where users entered their
-                email first, completed verification, and then created their username and password, helping to
-                reduce early cognitive load.
-            </li>
-
-            <li>
-                <strong>Post-UT2 Refinement (v2)</strong> explored multiple alternative approaches through
-                iterative prototyping and user testing to further refine early-stage commitment and clarity.
-                The approaches tested included:
+                <strong>Round 3 &mdash; Parallel Concept Testing</strong>: Five alternative approaches were prototyped and tested side by side to converge on the optimal solution through evidence rather than preference:
                 <ul>
-                <li>Double accordion layouts</li>
+                <li>Double accordion layout</li>
                 <li>Scrollable container design (version 1)</li>
                 <li>Scrollable container design (version 2)</li>
-                <li>A flow where Step 1 focused solely on email verification</li>
-                <li>A combined Step 1 approach that merged verification and user ID creation</li>
+                <li>Email verification as a standalone first step</li>
+                <li>Combined verification and user ID creation in a single step</li>
                 </ul>
+                Testing identified the email-first, step-by-step flow as the clearest path across the broadest range of user types.
             </li>
             </ol>
+
+            <p id="p1"><b>Outcome</b></p>
+            <p id="p1">The final prototype received stakeholder sign-off as the recommended direction for implementation. Usability testing demonstrated measurably reduced hesitation at the verification step compared to the original flow. The process established a reusable research-to-prototype framework applicable to future account flow improvements across the Razer ecosystem.</p>
 
         </section>
         <section class="columnrow">
@@ -279,41 +272,6 @@
     }
 </script>
 
-<!-- <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get all elements with class "gallery-img"
-    var galleryImages = document.getElementsByClassName("gallery-img");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // Get the modal content (image) and caption elements
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-
-    // Loop through each gallery image
-    for (var i = 0; i < galleryImages.length; i++) {
-      galleryImages[i].onclick = function() {
-        // Set the modal to display
-        modal.style.display = "block";
-        
-        // Set the modal image and caption based on the clicked image
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-
-        // Adjust the width of the modalImg (you can adjust the percentage)
-        modalImg.style.width = "60%"; // Set the desired width percentage
-      };
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    };
-</script> -->
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Modal elements
@@ -397,4 +355,3 @@
 <script src="script.js"></script>
 </body>
 <html>
-
