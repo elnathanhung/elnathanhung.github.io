@@ -1,0 +1,357 @@
+<!doctype html>
+<head>
+<title>LifeSG Service Finder</title>
+<link rel="stylesheet" href="css/newstyle.css">
+<link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+        <section class="nav">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About me</a>
+        <a href="singaporeodyssea.html"><i>Singapore Odyssea</i></a>
+        <a href="mandaiexploria.html"><i>Mandai Exploria</i></a>
+        <a href="analogdream.html"><i>Analog Dreams</i></a>
+        <a href="TWP.html"><i>Together We Play</i></a>
+        <a href="reverberation.html"><i>Reverberation</i></a>
+        <a href="retrofuture.html"><i>Retro Future</i></a>
+        <a href="lifesghome.html"><i>LifeSG Service Finder</i></a>
+        <a href="explorer.html"><i>Explorer</i></a>
+        <a href="razerid.html"><i>Razer ID</i></a>
+        <a href="lifesg.html"><i>LifeSG Service Finder</i></a>
+        <a href="ttmh.html"><i>Talk To My Hands</i></a>
+        <a href="FrisoMinigame.html"><i>Friso Minigame</i></a>
+        <a href="findmybalance.html"><i>Find My Balance</i></a>
+        <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
+        <a href="empathybot.html"><i>Empathy Bot</i></a>
+        </div>
+    <span style="font-size:30px;cursor:pointer;color:white; position: absolute; top: 20px; left: 20px;" onclick="openNav()">&#9776; </span>
+
+    <div class="home" id="home">
+        <a href="index.html">
+            <img src="assets/png/Logo/Logo.png">
+        </a>
+    </div>
+</section>
+
+<div class="wrap_scroll">
+    <section class="work1" id="work1">
+        <section class="columnrow" id="lifesg">
+            <div class="profile-section">
+                <div class="title-text">
+                    <p><b><i>LifeSG Service Finder</i></b> </p>
+                    <div class="aboutme">
+                        <p>UI/UX Case Study &mdash; Information Architecture Redesign</p>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="slideshow">
+                    <!-- TODO: Replace with LifeSG hero image -->
+                    <img src="assets/png/LifeSG/cover.jpg" alt="LifeSG Service Finder Cover Image" width="500px" height="auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="description">
+            <p id="p1"><b>Overview</b></p>
+            <p id="p1">LifeSG is Singapore&rsquo;s flagship digital service for citizens &mdash; the public face of how residents access government schemes, benefits, and information online. It evolved from an earlier product called <i>Moments of Life</i>, which was built around a life-event framing: services organised by what is happening in a user&rsquo;s life rather than by which agency runs them.</p>
+
+            <p id="p1">In this self-initiated case study, Elnathan redesigned the information architecture of LifeSG&rsquo;s logged-out mobile web landing to resolve a specific tension observed in the live product. It is a concept project, not a commissioned redesign. No work was done with the LifeSG team, no formal user research was conducted, and no analytics data was accessed. Every observation is based on directly using life.gov.sg in April 2026, and every recommendation is positioned as the kind of decision that would be validated with data and testing in a real engagement.</p>
+
+            <p id="p1">The aim was to demonstrate information architecture thinking &mdash; diagnosing structural problems, proposing calibrated solutions, and reasoning through tradeoffs &mdash; rather than visual design or interaction polish.</p>
+            <img src="assets/png/LifeSG/CurrentFlow.png" alt="Current home page flow" width="800px" height="auto">
+            <p id="p1"><b>The Problem</b></p>
+            <p id="p1">Opening LifeSG as a first-time visitor, Elnathan observed that four distinct navigation systems coexist on the landing page: a flat, task-based list of <i>Services and tools</i> (&ldquo;View your benefits statement,&rdquo; &ldquo;Register your child&rsquo;s birth,&rdquo; &ldquo;Apply for Baby Bonus&rdquo;); thematic category cards under <i>Topics</i> (&ldquo;Family and parenting,&rdquo; &ldquo;Benefits and support&rdquo;); narrative, life-event-framed cards under <i>Guides</i> (&ldquo;Preparing for National Service,&rdquo; &ldquo;Marriage support&rdquo;); and trending topical pills near the top of the page (&ldquo;Budget 2026,&rdquo; &ldquo;Child LifeSG Credits,&rdquo; &ldquo;NS Pre-enlistment&rdquo;).</p>
+
+            <p id="p1">Each navigation system is well-designed in isolation. The problem is that they coexist without hierarchy. No primary entry is declared, and the four systems overlap in what they cover. A user looking for Baby Bonus can reach it via search, via the Services list, via the Family and parenting topic, or via a Guide &mdash; each path with different scaffolding and different downstream context.</p>
+
+            <p id="p1">This is not a flaw. It is a tradeoff problem. The platform is trying to serve two distinct user intents simultaneously: high-intent users who know what they need and want to complete a specific task quickly, and low-intent users who are navigating a life transition without the vocabulary of government schemes. LifeSG&rsquo;s current IA biases toward high-intent users. Life-event framing does exist &mdash; in the Topics section, in Guides, and in the brand&rsquo;s heritage as <i>Moments of Life</i> &mdash; but it sits below the action-first list. A low-intent user scrolls past the content designed for them before they encounter it.</p>
+
+            <p id="p1"><b>Users</b></p>
+            <p id="p1">Three user segments are relevant to service discovery. <b>High-intent users</b> know the specific scheme or service they need; they want to bypass discovery and go straight to the task, and they are well-served by the existing search bar and action shortcuts. <b>Low-intent, exploratory users</b> are in a life transition &mdash; a new baby, a job loss, caring for an elderly parent, approaching retirement &mdash; and do not yet have the vocabulary of schemes, agencies, or policy terms; they need a navigable starting point that matches how they understand their own situation. <b>Accessibility-first users</b> include significant Singapore demographics: elderly users, non-English primary speakers, and users accessing government services infrequently, who may fall into either intent group but experience higher friction at every choice point.</p>
+
+            <p id="p1">The redesign targets low-intent users as the primary audience, on the reasoning that high-intent users can navigate any interface with a functional search bar. Low-intent users are the group underserved by the current IA hierarchy.</p>
+
+            <p id="p1"><b>Design Approach</b></p>
+            <p id="p1">Elnathan started from a principle that matters more in public-sector design than commercial design: intervene on what is broken, preserve what is working. LifeSG&rsquo;s content, visual system, and underlying IA pieces are each individually reasonable. The problem is hierarchy and primary-entry ambiguity. So rather than proposing a full redesign, the intervention focused on consolidating the existing life-event framing into the primary entry point, demoting (not removing) action-first shortcuts and search, and preserving the existing Topics, Guides, and content layers &mdash; subordinated to the new hierarchy rather than replaced.</p>
+
+            <p id="p1">The intervention is structural, not visual. The redesign uses the existing SGDS design language &mdash; Inter typography, the red-and-white palette, familiar card patterns &mdash; so the change reads as evolution of the product&rsquo;s existing direction, not as a replacement of it.</p>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>Revamping the IA</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1"><b>Before</b></p>
+            <p id="p1">On the current landing, the user encounters, in order: the hero search bar, trending topical chips, the <i>Services and tools</i> flat list, the <i>Topics</i> cards, the <i>Guides</i> cards, the app download promo, and the news feed. Life-event framing exists at positions 4 and 5 on the page. The flat action list occupies position 3.</p>
+
+            <p id="p1"><b>After</b></p>
+            <p id="p1">The new landing promotes a <i>Life events</i> grid to the primary position below the search bar. Actions, Topics, and Guides are not removed &mdash; they are accessed through the life event the user selects, rather than competing for attention at the top level. Search is preserved for high-intent users; trending chips are preserved but repositioned as secondary entry.</p>
+
+            <p id="p1">The new content hierarchy becomes: <b>Life event &rarr; [curated actions, or stage filter] &rarr; Actions.</b> Each life event has a dedicated destination with the relevant actions, and users can reach the existing Topics and Guides content from within the life event context via a &ldquo;Browse all services by topic&rdquo; link &mdash; honouring the existing IA rather than discarding it.</p>
+        </section>
+
+        <section class="columnrow">
+            <div class="frame">
+                <div class="slideshow">
+                    <!-- TODO: Replace with IA diagram showing Before / After structure -->
+                    <img src="assets/png/LifeSG/ia-before-after.png" alt="Information architecture — before and after" width="800px" height="auto">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>Two Proposed Options</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1">Designing the destination for each life event, Elnathan identified two viable patterns. Both solve the same problem: a single life event like <i>Having a child</i> could have 15+ relevant services, and showing them as a flat list would recreate the original problem. The two options reduce that list to a manageable set through different mechanisms.</p>
+
+            <p id="p1"><b>Option A &mdash; Editorial Curation</b></p>
+            <p id="p1">The platform editorially curates the three to five most commonly used actions for each life event. These appear as an inline expansion when the user taps the life event tile on the listing page. Sibling life events remain visible, preserving list context and supporting course-correction. For users whose needs fall outside the curated set, a &ldquo;Browse all services by topic&rdquo; link leads to a second page that groups the full service catalogue by service type.</p>
+
+            <p id="p1"><i>Flow:</i> Life events &rarr; tap &ldquo;Having a child&rdquo; &rarr; inline expansion shows curated actions and a &ldquo;Browse all services by topic&rdquo; link &rarr; (optionally) a topic-grouped detail page.</p>
+        </section>
+
+        <section class="columnrow">
+            <div class="frame">
+                <div class="slideshow">
+                    <!-- TODO: Replace with Option A wireframe flow (Search / Life events / Having a child inline expansion / Services and tools for having a child) -->
+                    <img src="assets/png/LifeSG/OptionA.png" alt="Option A flow &mdash; editorial curation with inline expansion" width="1200px" height="auto">
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <p id="p1"><b>Option B &mdash; User Self-Segmentation</b></p>
+            <p id="p1">When the user taps a life event tile, a modal interrupts: <i>&ldquo;What best describes your situation?&rdquo;</i> The user selects their segment (for example, <i>I am expecting a child</i> / <i>My child is below 12 months</i> / <i>My child is above 12 months</i>) and lands on a stage-filtered destination page. Each stage shows only the actions relevant to that point in the user&rsquo;s journey.</p>
+
+            <p id="p1"><i>Flow:</i> Life events &rarr; tap &ldquo;Having a child&rdquo; &rarr; modal asks for situation &rarr; tap &ldquo;I am expecting a child&rdquo; &rarr; &ldquo;Before Birth&rdquo; page with stage-filtered actions.</p>
+        </section>
+
+        <section class="columnrow">
+            <div class="frame">
+                <div class="slideshow">
+                    <!-- TODO: Replace with Option B wireframe flow (Search / Life events / Having a child modal / Before Birth stage page) -->
+                    <img src="assets/png/LifeSG/OptionB.png" alt="Option B flow &mdash; user self-segmentation via modal" width="1200px" height="auto">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>Pros and Cons</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1"><b>Option A &mdash; Editorial Curation</b></p>
+            <p id="p1"><i>Pros.</i> Fastest path to action: two taps from landing to a relevant action. Preserves list context &mdash; sibling life events stay visible, supporting course-correction. Low cognitive load; no decisions beyond tapping a life event. Mirrors LifeSG&rsquo;s existing <i>Services and tools</i> pattern, reducing retraining.</p>
+
+            <p id="p1"><i>Cons.</i> Curation is a platform decision, not a user decision. Users whose situation falls outside the curated top actions need to notice and click &ldquo;Browse all services by topic&rdquo; to find what they need. The inline expansion pattern works for small action lists but does not adapt when user needs genuinely differ across stages of the same life event. Requires usage analytics and search-query data to justify the curated ranking in a real deployment.</p>
+
+            <p id="p1"><b>Option B &mdash; User Self-Segmentation</b></p>
+            <p id="p1"><i>Pros.</i> Content is personalised to the user&rsquo;s declared context. Reduces irrelevant actions &mdash; a parent of a toddler does not see &ldquo;register your child&rsquo;s birth.&rdquo; Makes the taxonomic decision the user&rsquo;s rather than the platform&rsquo;s, respecting user agency. Scales well for life events with meaningfully different content across stages.</p>
+
+            <p id="p1"><i>Cons.</i> Adds a tap and a decision point users cannot skip. Forces commitment: users exploring across segments (a second-trimester parent researching post-birth support early) must pick one before seeing content. The modal pattern conflicts with a principle applied elsewhere &mdash; that accordions hide content &mdash; and a modal is more aggressive than an accordion. The justification is that the modal is a decision gate, not concealment: it earns its friction by unlocking personalised content downstream. Requires more upfront editorial effort, as each stage needs its own content collection.</p>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>Recommendation</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1">Rather than choosing one pattern globally, the recommendation is to treat the choice as an editorial decision made per life event.</p>
+
+            <ol class="spaced-list">
+                <li><b>Option B</b> for life events where user needs differ sharply by stage:
+                    <ul>
+                        <li><i>Having a child</i> &mdash; pregnancy vs. newborn vs. toddler</li>
+                        <li><i>Caring for an elderly parent</i> &mdash; planning, active care, bereavement</li>
+                        <li><i>Preparing for retirement</i> &mdash; pre-retirement vs. active retirement</li>
+                    </ul>
+                </li>
+                <li><b>Option A</b> for life events where the action set is largely homogeneous:
+                    <ul>
+                        <li><i>Getting married</i> &mdash; register marriage, housing grants, joint tax filing apply to most couples</li>
+                        <li><i>Looking for work</i> &mdash; SkillsFuture, Workfare, WSG portal apply regardless of career stage</li>
+                        <li><i>Buying a home</i> &mdash; BTO, grants, legal steps are mostly common across buyer profiles</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p id="p1">The underlying claim is that <b>IA depth should match content variance.</b> Where user needs genuinely diverge by segment, the extra personalisation step repays its friction cost. Where needs converge, the simpler pattern wins. This is an editorial judgment made per life event, not a platform-wide rule &mdash; which reflects how real public-sector design teams (OGP, GDS) calibrate user experiences to the shape of the content they serve.</p>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>What This Case Study Demonstrates</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <ol class="spaced-list">
+                <li><b>Diagnostic observation before designing.</b> The problem named is specific to what was observed on the live product in April 2026, not hypothesised. Every wireframe is grounded in an actual LifeSG page.</li>
+                <li><b>Working with the existing system.</b> The redesign preserves LifeSG&rsquo;s visual language, Topics, Guides, and search. It restructures rather than replaces, honouring the <i>Moments of Life</i> heritage the product was built on.</li>
+                <li><b>Tradeoff-based reasoning.</b> The case study does not assert that one pattern is better. It argues that the right pattern depends on content variance, and makes the argument explicit so it can be examined.</li>
+                <li><b>Self-awareness about scope.</b> This is concept work, not validated work. The recommendation is positioned as what would be proposed to test in a real engagement &mdash; not as a finished answer.</li>
+            </ol>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p><b>Next Steps</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1">In a real engagement, the work does not end here:</p>
+            <ol class="spaced-list">
+                <li><b>Usability testing</b> with five to seven users across the three intent segments, observing the modal friction point in Option B directly.</li>
+                <li><b>Analytics review</b> of LifeSG&rsquo;s real traffic to validate the curated top actions in Option A. Which schemes are applied for most frequently, and how does that vary by user segment?</li>
+                <li><b>Per-life-event editorial audit</b> to determine which life events have enough stage variance to justify Option B over Option A.</li>
+                <li><b>Prototype in React and TypeScript</b> for interaction validation &mdash; stage-filtered content routing is the kind of decision that benefits from being touched, not just viewed in Figma. This prototype is currently in development as a follow-up to this case study.</li>
+            </ol>
+        </section>
+    </section>
+
+    <section class="work1">
+        <div class="profile-section">
+            <div class="title-text">
+                <p>&nbsp;&nbsp;&nbsp;</p>
+                <p><b>Figma Prototype</b> </p>
+            </div>
+        </div>
+        <section class="description">
+            <p id="p1">The wireframes below document both proposed flows in low fidelity. Annotations on each frame explain the design decisions behind the pattern choices and the IA hierarchy.</p>
+        </section>
+        <section class="columnrow">
+            <div class="frame">
+                <div class="slideshow">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1500" height="800" src="https://embed.figma.com/proto/iVzIHoQwq2bzaJSjV9cUIk/LifeSG-Case-Study?node-id=7-256&p=f&viewport=953%2C175%2C0.43&scaling=scale-down&content-scaling=fixed&page-id=7%3A66&starting-point-node-id=7%3A256&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Image modal / lightbox -->
+    <div id="imgModal" class="img-modal">
+    <span class="img-modal-close">&times;</span>
+    <img class="img-modal-content" id="imgModalContent">
+    <div id="imgModalCaption"></div>
+    </div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+
+    }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Modal elements
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("imgModalContent");
+    var captionText = document.getElementById("imgModalCaption");
+    var closeBtn = document.querySelector(".img-modal-close");
+
+    // All gallery images with class "gallery-img"
+    var galleryImages = document.getElementsByClassName("gallery-img");
+
+    // Attach click handler to each image
+    for (var i = 0; i < galleryImages.length; i++) {
+      galleryImages[i].addEventListener("click", function () {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+
+        var caption = this.alt || "";
+        if (!caption && this.nextElementSibling && this.nextElementSibling.tagName === "P") {
+          caption = this.nextElementSibling.textContent;
+        }
+        captionText.textContent = caption;
+
+        document.body.style.overflow = "hidden";
+      });
+    }
+
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+    });
+
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+  });
+</script>
+
+<script>
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+
+    function closeNavOnLoad() {
+        if (isMobileDevice()) {
+            closeNav();
+        }
+    }
+
+    window.onload = closeNavOnLoad;
+</script>
+
+<script src="script.js"></script>
+</body>
+<html>
