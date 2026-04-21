@@ -176,6 +176,12 @@ a:hover, a:focus {
     line-height: 8px;
 }
 
+.frame img,
+.slideshow img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Change caption colour on hover, just like index */
 .frame:hover p,
 .frame:hover .p3 {
@@ -195,7 +201,9 @@ a:hover, a:focus {
 }
 
 .work1 {
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
+    max-width: 100%;
+    height: auto;
 }
 
 /* .description {
