@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Spatial Experience Design — Elnathan Hung</title>
+        <link rel="stylesheet" href="css/newstyle.css">
+        <link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .category-hero {
+                width: 100%;
+                max-width: 1100px;
+                margin: 60px auto 0;
+                padding: 0 clamp(16px, 6vw, 80px);
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .category-hero-eyebrow {
+                font-size: 0.7rem;
+                letter-spacing: 0.22em;
+                text-transform: uppercase;
+                color: #555;
+                margin-bottom: 16px;
+                font-family: 'Terminus', monospace;
+            }
+            .category-hero-eyebrow a {
+                color: #555;
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+            .category-hero-eyebrow a:hover {
+                color: orange;
+                outline: none;
+            }
+            .category-hero h1 {
+                font-size: clamp(1.8rem, 4vw, 3rem);
+                font-weight: 700;
+                line-height: 1.15;
+                margin: 0 0 16px;
+                color: #f1f1f1;
+            }
+            .category-hero h1 span { color: orange; }
+            .category-hero-rule {
+                width: 48px;
+                height: 2px;
+                background: orange;
+                margin: 0 auto 40px;
+            }
+            .projects-divider {
+                width: 100%;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 0 clamp(16px, 6vw, 80px);
+                box-sizing: border-box;
+            }
+            .projects-divider-inner {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+            .projects-divider-label {
+                font-size: 0.72rem;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: #555;
+                white-space: nowrap;
+            }
+            .projects-divider-line {
+                flex: 1;
+                height: 1px;
+                background: #2a2a2a;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">About me</a>
+                <a href="singaporeodyssea.html"><i>Singapore Odyssea</i></a>
+                <a href="mandaiexploria.html"><i>Mandai Exploria</i></a>
+                <a href="analogdream.html"><i>Analog Dreams</i></a>
+                <a href="TWP.html"><i>Together We Play</i></a>
+                <a href="reverberation.html"><i>Reverberation</i></a>
+                <a href="retrofuture.html"><i>Retro Future</i></a>
+                <a href="lifesghome.html"><i>LifeSG Service Finder</i></a>
+                <a href="explorer.html"><i>Explorer</i></a>
+                <a href="razerid.html"><i>Razer ID</i></a>
+                <a href="lifesg.html"><i>LifeSG Service Finder</i></a>
+                <a href="ttmh.html"><i>Talk To My Hands</i></a>
+                <a href="FrisoMinigame.html"><i>Friso Minigame</i></a>
+                <a href="findmybalance.html"><i>Find My Balance</i></a>
+                <a href="breakfastclub.html"><i>Breakfast Club</i></a>
+                <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
+                <a href="empathybot.html"><i>Empathy Bot</i></a>
+                <a href="nostalgia-reworked.html"><i>Nostalgia Reworked</i></a>
+            </div>
+            <span style="font-size:30px;cursor:pointer;color:white; position: absolute; top: 20px; left: 20px;" onclick="openNav()">&#9776;</span>
+            <div class="home" id="home">
+                <a href="index.html">
+                    <img src="assets/png/Logo/Logo.png">
+                </a>
+            </div>
+        </section>
+
+        <div class="wrap_scroll">
+
+            <div class="category-hero">
+                <p class="category-hero-eyebrow"><a href="index.html">Home</a> &nbsp;/&nbsp; Discipline 03</p>
+                <h1>Spatial Experience<br><span>Design</span></h1>
+                <div class="category-hero-rule"></div>
+            </div>
+
+            <div class="projects-divider">
+                <div class="projects-divider-inner">
+                    <span class="projects-divider-label">Projects</span>
+                    <span class="projects-divider-line"></span>
+                </div>
+            </div>
+
+            <section class="work1">
+                <section class="columnrow">
+                    <!-- Add/remove project frames here to match this discipline -->
+                    <div class="frame">
+                        <a href="breakfastclub.html">
+                            <img src="assets/png/breakfastclub/sccc_main.png" style="width: 300px; height: 400px; object-fit: cover;">
+                            <p class="p3">Breakfast Club</p>
+                        </a>
+                    </div>
+                    <div class="frame">
+                        <a href="nostalgia-reworked.html">
+                            <img src="assets/png/nostalgia/frame1.png" style="width: 300px; height: 400px; object-fit: cover;">
+                            <p class="p3">Nostalgia Reworked</p>
+                        </a>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+
+        <script>
+            function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+            function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+            function isMobileDevice() { return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1); }
+            window.onload = function() { if (isMobileDevice()) closeNav(); };
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

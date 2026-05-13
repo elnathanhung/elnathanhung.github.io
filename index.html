@@ -6,53 +6,203 @@
         <link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            /* ── Category Tiles ────────────────────────────────────────── */
+            .category-section {
+                width: 100%;
+                max-width: 1100px;
+                margin: 48px auto 20px;
+                padding: 0 clamp(16px, 6vw, 80px);
+                box-sizing: border-box;
+            }
+
+            .category-label {
+                font-size: 0.75rem;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: #666;
+                margin-bottom: 20px;
+            }
+
+            .category-tiles {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+
+            .category-tile {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 24px 20px 20px;
+                border: 1px solid #2a2a2a;
+                background: #161616;
+                text-decoration: none;
+                color: #f1f1f1;
+                cursor: pointer;
+                overflow: hidden;
+                transition: border-color 0.3s ease, background 0.3s ease;
+                min-height: 140px;
+            }
+
+            .category-tile::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(135deg, rgba(255,165,0,0.06) 0%, transparent 60%);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .category-tile:hover,
+            .category-tile:focus {
+                border-color: orange;
+                background: #1a1a1a;
+                outline: none;
+                color: #f1f1f1;
+            }
+
+            .category-tile:hover::before,
+            .category-tile:focus::before {
+                opacity: 1;
+            }
+
+            .tile-number {
+                font-size: 0.65rem;
+                letter-spacing: 0.2em;
+                color: #444;
+                margin-bottom: 28px;
+                font-family: 'Terminus', monospace;
+            }
+
+            .tile-title {
+                font-size: 0.95rem;
+                font-weight: 700;
+                line-height: 1.35;
+                margin: 0 0 6px;
+                transition: color 0.3s ease;
+            }
+
+            .category-tile:hover .tile-title,
+            .category-tile:focus .tile-title {
+                color: orange;
+            }
+
+            .tile-arrow {
+                font-size: 0.8rem;
+                color: #444;
+                transition: color 0.3s ease, transform 0.3s ease;
+                display: inline-block;
+            }
+
+            .category-tile:hover .tile-arrow,
+            .category-tile:focus .tile-arrow {
+                color: orange;
+                transform: translateX(4px);
+            }
+
+            .tile-accent-line {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: orange;
+                transition: width 0.35s ease;
+            }
+
+            .category-tile:hover .tile-accent-line,
+            .category-tile:focus .tile-accent-line {
+                width: 100%;
+            }
+
+            /* Divider before the full project grid */
+            .projects-divider {
+                width: 100%;
+                max-width: 1100px;
+                margin: 48px auto 0;
+                padding: 0 clamp(16px, 6vw, 80px);
+                box-sizing: border-box;
+            }
+
+            .projects-divider-inner {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .projects-divider-label {
+                font-size: 0.75rem;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: #666;
+                white-space: nowrap;
+            }
+
+            .projects-divider-line {
+                flex: 1;
+                height: 1px;
+                background: #2a2a2a;
+            }
+
+            /* ── Responsive ────────────────────────────────────────────── */
+            @media only screen and (max-width: 768px) {
+                .category-tiles {
+                    grid-template-columns: 1fr;
+                }
+                .category-tile {
+                    min-height: 100px;
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+                .category-tile {
+                    padding: 20px 16px 16px;
+                }
+                .tile-title {
+                    font-size: 0.88rem;
+                }
+            }
+        </style>
     </head>
     <body>
         <section class="nav">
-        <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">About me</a>
-        <a href="singaporeodyssea.html"><i>Singapore Odyssea</i></a>
-        <a href="mandaiexploria.html"><i>Mandai Exploria</i></a>
-        <a href="analogdream.html"><i>Analog Dreams</i></a>
-        <a href="TWP.html"><i>Together We Play</i></a>
-        <a href="reverberation.html"><i>Reverberation</i></a>
-        <a href="retrofuture.html"><i>Retro Future</i></a>
-        <a href="lifesghome.html"><i>LifeSG Service Finder</i></a>
-        <a href="explorer.html"><i>Explorer</i></a>
-        <a href="razerid.html"><i>Razer ID</i></a>
-        <a href="lifesg.html"><i>LifeSG Service Finder</i></a>
-        <a href="ttmh.html"><i>Talk To My Hands</i></a>
-        <a href="FrisoMinigame.html"><i>Friso Minigame</i></a>
-        <a href="findmybalance.html"><i>Find My Balance</i></a>
-        <a href="breakfastclub.html"><i>Breakfast Club</i></a>
-        <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
-        <a href="empathybot.html"><i>Empathy Bot</i></a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">About me</a>
+                <a href="singaporeodyssea.html"><i>Singapore Odyssea</i></a>
+                <a href="mandaiexploria.html"><i>Mandai Exploria</i></a>
+                <a href="analogdream.html"><i>Analog Dreams</i></a>
+                <a href="TWP.html"><i>Together We Play</i></a>
+                <a href="reverberation.html"><i>Reverberation</i></a>
+                <a href="retrofuture.html"><i>Retro Future</i></a>
+                <a href="lifesghome.html"><i>LifeSG Service Finder</i></a>
+                <a href="explorer.html"><i>Explorer</i></a>
+                <a href="razerid.html"><i>Razer ID</i></a>
+                <a href="lifesg.html"><i>LifeSG Service Finder</i></a>
+                <a href="ttmh.html"><i>Talk To My Hands</i></a>
+                <a href="FrisoMinigame.html"><i>Friso Minigame</i></a>
+                <a href="findmybalance.html"><i>Find My Balance</i></a>
+                <a href="breakfastclub.html"><i>Breakfast Club</i></a>
+                <a href="everready.html"><i>Ever Ready With Our Lives</i></a>
+                <a href="empathybot.html"><i>Empathy Bot</i></a>
                 <a href="nostalgia-reworked.html"><i>Nostalgia Reworked</i></a>
-        </div>
-            <span style="font-size:30px;cursor:pointer;color:white; position: absolute; top: 20px; left: 20px;" onclick="openNav()">&#9776; </span>
-
-
+            </div>
+            <span style="font-size:30px;cursor:pointer;color:white; position: absolute; top: 20px; left: 20px;" onclick="openNav()">&#9776;</span>
             <div class="home" id="home">
                 <a href="index.html">
-                    <img src="assets/png/Logo/Logo.png"> 
+                    <img src="assets/png/Logo/Logo.png">
                 </a>
             </div>
         </section>
 
         <div class="wrap_scroll">
+
+            <!-- ── Bio ──────────────────────────────────────────────────── -->
             <section class="work1" id="profile-section">
                 <section class="columnrow">
-                    <!-- <div class="title" id="title1">
-                        <p>Hi, I'm a creative technologist!</p>
-                        <div class="aboutme">
-                            <h2><i>I design. I code. I build.</i></h2>
-                            <h2>Scroll down to see my work!</h2>
-                        </div>
-                    </div>
-                    <div id="frame-profile"> 
-                        <img src="assets/png/Profile.png" width="400" height="auto"> 
-                    </div> -->
                     <div class="profile-section">
                         <div class="title-text">
                             <p>My name is <b style="color:orange">Elnathan</b> &mdash;</p>
@@ -60,187 +210,160 @@
                                 <p><i>Experience Engineer</i></p>
                             </div>
                         </div>
-                        <img src="assets/png/Profile.png" width="400" height="auto" alt="profile image"> 
+                        <img src="assets/png/Profile.png" width="400" height="auto" alt="profile image">
                     </div>
-                </section> 
+                </section>
                 <section class="description">
                     <p id="p1">I design experience systems that translate complex and creative ideas into clear, scalable, and human-centered solutions, working at the intersection of user-centered design, creative technology, and engineering. My focus is on shaping user journeys that are intuitive, resilient, and grounded in real-world constraints.</p>
                     <p id="p1">With a background spanning UI/UX design, games, web applications, immersive installations, and creative robotics, I bridge vision and execution—aligning design intent with technical feasibility to deliver experiences that are coherent, purposeful, and built to last.</p>
                 </section>
             </section>
 
+            <!-- ── Category Tiles ───────────────────────────────────────── -->
+            <div class="category-section">
+                <p class="category-label">Browse by discipline</p>
+                <div class="category-tiles">
+
+                    <a href="category-uiux.html" class="category-tile">
+                        <span class="tile-number">01</span>
+                        <p class="tile-title">UI/UX Design &amp;<br>Engineering</p>
+                        <span class="tile-arrow">→</span>
+                        <span class="tile-accent-line"></span>
+                    </a>
+
+                    <a href="category-imd.html" class="category-tile">
+                        <span class="tile-number">02</span>
+                        <p class="tile-title">Interactive Multi-media<br>Design &amp; Development</p>
+                        <span class="tile-arrow">→</span>
+                        <span class="tile-accent-line"></span>
+                    </a>
+
+                    <a href="category-spatial.html" class="category-tile">
+                        <span class="tile-number">03</span>
+                        <p class="tile-title">Spatial Experience<br>Design</p>
+                        <span class="tile-arrow">→</span>
+                        <span class="tile-accent-line"></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- ── All Projects ──────────────────────────────────────────── -->
+            <div class="projects-divider">
+                <div class="projects-divider-inner">
+                    <span class="projects-divider-label">All projects</span>
+                    <span class="projects-divider-line"></span>
+                </div>
+            </div>
+
             <section class="work1">
                 <section class="columnrow">
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="singaporeodyssea.html">
-                            <img src="assets/png/singaporeodyssea/DJI_20250731181652_0121_D.jpg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/singaporeodyssea/DJI_20250731181652_0121_D.jpg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Singapore Odyssea</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="mandaiexploria.html">
-                            <img src="assets/png/mandai-exploria/exploria-globe-tn.jpg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/mandai-exploria/exploria-globe-tn.jpg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Mandai Exploria</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="reverberation.html">
-                            <img src="assets/png/Reverberation/image5.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/Reverberation/image5.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Reverberation</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="analogdream.html">
-                            <img src="assets/png/analogdreams/IMG_2054.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/analogdreams/IMG_2054.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Analog Dreams</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="retrofuture.html">
-                            <img src="assets/png/RetroFuture/RetroFutureScreen6.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/RetroFuture/RetroFutureScreen6.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Retro Future</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="TWP.html">
-                            <img src="assets/png/twp.jpg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/twp.jpg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Together We Play</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="lifesghome.html">
-                            <img src="assets/png/LifeSG/cover.jpg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/LifeSG/cover.jpg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">LifeSG Service Finder</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="explorer.html">
-                            <img src="assets/png/Explorer/Thumbnail.PNG" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/Explorer/Thumbnail.PNG" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Explorer</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="razerid.html">
-                            <img src="assets/png/RazerID/Create-Email.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/RazerID/Create-Email.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Razer ID</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="ttmh.html">
-                            <img src="assets/png/ttmh/ttmh_cover.jpeg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/ttmh/ttmh_cover.jpeg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Talk To My Hands</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="FrisoMinigame.html">
-                            <img src="assets/png/Friso/Screenshot 2025-12-09 at 5.15.49 PM.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/Friso/Screenshot 2025-12-09 at 5.15.49 PM.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Friso Minigame</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="findmybalance.html">
-                            <img src="assets/png/findmybalance/ClickHere.PNG" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/findmybalance/ClickHere.PNG" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Find My Balance</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="breakfastclub.html">
-                            <img src="assets/png/breakfastclub/sccc_main.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/breakfastclub/sccc_main.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Breakfast Club</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="everready.html">
-                            <img src="assets/png/everready/everready_cover.PNG" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/everready/everready_cover.PNG" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Ever Ready With Our Lives</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="empathybot.html">
-                            <img src="assets/png/EmpathyBot/empathybot_cover.jpg" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/EmpathyBot/empathybot_cover.jpg" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Empathy Bot</p>
                         </a>
                     </div>
-                    <div class="frame"> 
+                    <div class="frame">
                         <a href="nostalgia-reworked.html">
-                            <img src="assets/png/nostalgia/frame1.png" style="width: 300px; height: 400px; object-fit: cover;"> 
+                            <img src="assets/png/nostalgia/frame1.png" style="width: 300px; height: 400px; object-fit: cover;">
                             <p class="p3">Nostalgia Reworked</p>
                         </a>
                     </div>
-                    <!-- <div class="frame"> 
-                        <a href="thedaybefore.html">
-                            <img src="assets/png/thedaybefore/thedaybefore_p6ai.png" style="width: 300px; height: 400px; object-fit: cover;"> 
-                            <p class="p3">The Day Before</p>
-                        </a>
-                    </div> -->
-                    <!-- <div class="frame"> 
-                        <a href="rehab.html">
-                            <img src="assets/png/rehab/IMG_1709 2.png" style="width: 400px; height: 400px; object-fit: cover;"> 
-                            <p class="p3">The Helping Hand</p>
-                        </a>
-                    </div>
-                    <div class="frame"> 
-                        <a href="https://www.behance.net/gallery/136296797/Explorer-User-Interface-Design" target="_blank">
-                            <img src="assets/png/interfacedesign.png" style="width: 400px; height: 400px; object-fit: cover;"> 
-                            <p class="p3">Explorer</p>
-                        </a>
-                    </div> -->
-                </section> 
+                </section>
             </section>
+
         </div>
 
         <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-            
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-        <script>
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    for (var i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }
-        </script>
-
-        <script>
-            // Function to open the navigation sidebar
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            // Function to close the navigation sidebar
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-            // Function to check if the device is mobile
-            function isMobileDevice() {
-                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-            }
-
-            // Function to close sidebar on load if on mobile
-            function closeNavOnLoad() {
-                if (isMobileDevice()) {
-                    closeNav();
-                }
-            }
-
-            // Call closeNavOnLoad function when the page finishes loading
+            function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+            function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+            function isMobileDevice() { return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1); }
+            function closeNavOnLoad() { if (isMobileDevice()) closeNav(); }
             window.onload = closeNavOnLoad;
         </script>
         <script src="script.js"></script>
