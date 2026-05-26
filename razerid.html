@@ -198,10 +198,40 @@
     <section class="work1">
         <div class="profile-section">
         <div class="title-text" style="padding-top: 50px;">
-        <p><b>Key Screens</b> </p> </div> </div>
+        <p><b>Initial Wireframe Design for UT1 Iteractions</b> </p> </div> </div>
         <section class="description">
-            <p id="p1">Three screens that illustrate the core design journey &mdash; from early experimentation through to the final validated flow.</p>
+            <p id="p1">These iterations explore different approaches to progressive disclosure as a way of reducing visual clutter and improving clarity throughout the onboarding flow.</p>
+            <p id="p1">Initial usability testing findings indicated that the double-accordion approach provided a cleaner and more digestible experience, while also increasing the likelihood of users opting into Razer&rsquo;s communication subscriptions.</p>
         </section>
+        <section class="columnrow">
+            <div class="frame"> 
+                <img class="gallery-img" src="assets/png/RazerID/Double Accordion Wireframe Design.png" 
+                     style="display:block; width:auto; height:300px; max-width:480px; object-fit:contain; margin:0 auto;" 
+                     alt="Double Accordion Wireframe Design">
+                <p class="p3">Double Accordion Wireframe Design</p>
+            </div>
+            <div class="frame">
+                <img class="gallery-img" src="assets/png/RazerID/Single Accordion Wireframe Design.png" 
+                     style="display:block; width:auto; height:300px; max-width:480px; object-fit:contain; margin:0 auto;" 
+                     alt="Single Accordion Wireframe Design">
+                <p class="p3">Single Accordion Wireframe Design</p>
+            </div>
+            </div>
+        </section>
+
+    </section>
+    <section class="work1">
+        <div class="profile-section">
+        <div class="title-text" style="padding-top: 50px;">
+        <p><b>Post UT1 Iterations</b> </p> </div> </div>
+        <section class="description">
+            <p id="p1">Three screens illustrating the core design journey &mdash; from early experimentation to the final validated onboarding flow.</p>
+
+            <p id="p1">Further testing of the double-accordion design revealed that email verification needed to occur either before or after account setup. In response, Round 3 explored an &ldquo;email-first&rdquo; approach, removing the need for users to create an ID and password at the initial stage of account creation.</p>
+
+            <p id="p1">However, findings from Round 3 showed that users still expected an explicit ID and password setup step to feel confident that their account had been properly created. The final design therefore adopts a more balanced approach, prioritising account credential creation while positioning communication preferences as a secondary step.</p>
+        </section>
+
         <section class="columnrow">
             <div class="frame">
                 <img class="gallery-img" src="assets/png/RazerID/1. Double Accordian.png" 
@@ -222,6 +252,19 @@
                 <p class="p3">Final Design &mdash; Email Verification</p>
             </div>
         </section>
+        <section class="columnrow">
+            <section class="description">
+                <p id="p1">This Figma prototype showcases the user flows explored during Round 2 of testing. Navigate through the different prototype options to see how participants interacted with and responded to each flow.</p>
+                <p style="color:rgb(197, 197, 255);"> <i>Expand the prototype to optimize your experience</i></p>
+            </section>
+        </section>
+        <section class="columnrow">
+            <div class="frame">
+                <div class="slideshow">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="400" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-27207&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A26511&starting-point-node-id=1%3A27207&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                </div> 
+            </div>
+        </section>
     </section>
 
     <!-- FINAL PROTOTYPE -->
@@ -230,12 +273,13 @@
         <div class="title-text" style="padding-top: 50px;">
         <p><b>Final Prototype</b> </p> </div> </div>
         <section class="description">
-            <p id="p1">The final prototype reflects the validated flow: email entry and verification as a dedicated first step, followed by account setup with progressive disclosure of optional fields. The design reduces perceived commitment at the point of entry and guides users through a clear, paced sequence.</p>
+            <p id="p1">The final prototype reflects the validated flow: ID and password creation, in conjunction with email entry and verification as a dedicated first step, followed by the disclosure of optional fields (email subscriptions). The design reduces perceived commitment at the point of entry and guides users through a clear, paced sequence.</p>
+            <p style="color:rgb(197, 197, 255);"> <i>Expand the prototype to optimize your experience</i></p>
         </section>
         <section class="columnrow">
             <div class="frame">
                 <div class="slideshow">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1500" height="800" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-35385&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A35032&starting-point-node-id=1%3A35373&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="400" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-35385&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A35032&starting-point-node-id=1%3A35373&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -286,7 +330,7 @@
     </section>
 
     <!-- WHAT I WOULD MEASURE -->
-    <section class="work1">
+    <section class="work1" style="padding-bottom: 50px;">
         <div class="accordion-header" onclick="toggleAccordion(this)">
         <div class="accordion-title-text">
             <p><b>What I Would Measure in Production</b></p>
@@ -301,23 +345,26 @@
     </section>
 
     <!-- POST UT2 -->
-    <section class="work1" style="padding-bottom: 50px;">
+    <!-- <section class="work1" style="padding-bottom: 50px;">
         <section class="columnrow">
             <div class="profile-section">
                 <div class="title-text" style="padding-top: 50px;">
             <p>&nbsp;&nbsp;&nbsp;</p> 
-                <p><b>Post UT2 Refinement (V2)</b> </p>
+                <p><b>Post UT2 Refinement</b> </p>
                 </div>
             </div>
+        </section>
+        <section class="description">
+            <p id="p1">This Figma prototype showcases the user flows used in round 2 onwards. Run through the prototype options to see how the user testers explored them.</p>
         </section>
         <section class="columnrow">
             <div class="frame">
                 <div class="slideshow">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1500" height="800" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-27207&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A26511&starting-point-node-id=1%3A27207&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="800" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-27207&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A26511&starting-point-node-id=1%3A27207&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
                 </div> 
             </div>
         </section>
-    </section>
+    </section> -->
 
     <!-- Image modal / lightbox -->
     <div id="imgModal" class="img-modal">
