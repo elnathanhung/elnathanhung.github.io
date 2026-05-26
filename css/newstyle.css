@@ -277,6 +277,14 @@ a:hover, a:focus {
     margin: 0 auto;     /* center the image */
 }
 
+.gallery-img1 {
+    display: block;
+    width: 50%;
+    height: auto;
+    max-width: 800px;   /* or whatever your original width was */
+    margin: 0 auto;     /* center the image */
+}
+
 /* Fullscreen image modal */
 .img-modal {
   display: none;               /* Hidden by default */
@@ -343,6 +351,13 @@ a:hover, a:focus {
         max-width: 800px;   /* or whatever your original width was */
         margin: 0 auto;     /* center the image */
     }
+    .gallery-img1 {
+        display: block;
+        width: 50%;
+        height: auto;
+        max-width: 800px;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
     
 }
 
@@ -394,6 +409,13 @@ a:hover, a:focus {
         max-width: 800px;   /* or whatever your original width was */
         margin: 0 auto;     /* center the image */
     }
+    .gallery-img1 {
+        display: block;
+        width: 50%;
+        height: auto;
+        max-width: 800px;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
     
 }
 
@@ -432,7 +454,15 @@ a:hover, a:focus {
         max-width: 100%;   /* or whatever your original width was */
         margin: 0 auto;     /* center the image */
     }
+
     
+    .gallery-img1 {
+        display: block;
+        width: 50%;
+        height: auto;
+        max-width: 800px;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
 
     .wrap_scroll { padding: 10px; }
     .frame { width: 100%; text-align: center; }
@@ -468,6 +498,13 @@ a:hover, a:focus {
          it appearing briefly before JS runs. Open with `openNav()` only. */
      .sidenav { width: 0; overflow-x: hidden; }
     .gallery-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;   /* or whatever your original width was */
+        margin: 0 auto;     /* center the image */
+    }
+    .gallery-img1 {
         display: block;
         width: 100%;
         height: auto;
