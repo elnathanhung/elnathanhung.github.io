@@ -1,10 +1,50 @@
 <!doctype html>
 <head>
-<title>Explorer</title>
+<title>Razer ID</title>
 <link rel="stylesheet" href="css/newstyle.css">
 <link href="https://db.onlinewebfonts.com/c/99124d4dffc6c59dc2b766d539c2a75f?family=Terminus" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<style>
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 100px;
+    border-bottom: 1px solid #2a2a2a;
+    box-sizing: border-box;
+}
+.accordion-header:hover .accordion-toggle { color: orange; }
+.accordion-title-text {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.accordion-title-text p {
+    font-size: 1.25rem !important;
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.5;
+}
+.accordion-toggle {
+    font-size: 1.2rem;
+    color: #94A3B8;
+    transition: transform 0.3s ease;
+    padding: 0;
+    flex-shrink: 0;
+    line-height: 1;
+}
+.accordion-toggle.open { transform: rotate(45deg); color: orange; }
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+.accordion-content.open { max-height: 99999px; }
+</style>
 </head>
 <body>
         <section class="nav">
@@ -59,34 +99,105 @@
         </section>
 
         <section class="description">
-
             <p id="p1"><b>My Role</b></p>
             <p id="p1">End-to-end UX designer for the duration of my internship at Razer Inc. I scoped the research, planned and facilitated all usability testing sessions across three iterative rounds, produced every design iteration, synthesised findings into design decisions, and presented the validated prototype to stakeholders. I was the sole designer on this project.</p>
-
-            <p id="p1"><b>What I Noticed Before I Started Designing</b></p>
-            <p id="p1">In my first week at Razer, I created my own Razer ID account. Before I had received a brief or opened Figma, I noticed something: I hesitated at the password creation step. I had not yet confirmed my email &mdash; I had not made any real commitment to the platform &mdash; and I was already being asked to invest effort in creating a password for an account I had not decided to complete. That moment of friction became the hypothesis I spent the internship testing: that the flow&rsquo;s sequencing, not its visual design, was causing users to abandon.</p>
-
-            <p id="p1"><b>Overview</b></p>
-            <p id="p1">Razer ID is the unified onboarding system used across Razer&rsquo;s global product ecosystem &mdash; every device, every service, every purchase passes through it. Friction in the creation flow means fewer accounts completed, fewer users retained, and a first impression of the brand that works against everything downstream. Given a blue-sky brief, my goal was to identify the structural cause of that friction and redesign the flow to address it.</p>
-
-            <p id="p1"><b>The Problem</b></p>
-            <p id="p1">The existing Razer ID creation flow placed too many decisions in front of users too early, creating unnecessary cognitive load at the point of first commitment. Drop-off and hesitation during the verification step indicated a structural problem with the flow&rsquo;s sequencing &mdash; not just its visual design. A user who has not yet verified their email has no reason to invest effort in choosing a username and password. The flow was asking for commitment before establishing trust.</p>
-
-            <p id="p1"><b>Research Approach</b></p>
-            <p id="p1">Rather than relying on a single user group, I planned and ran moderated usability testing sessions with participants drawn from five internal departments &mdash; marketing, HR, software development, and the UI/UX team &mdash; to surface a diverse range of mental models and expectations. Sessions combined qualitative observation with quantitative task-completion tracking, ensuring findings were both behaviourally grounded and defensible to stakeholders across three iterative rounds.</p>
-
-            <p id="p1"><b>Key Insight</b></p>
-            <p id="p1">Users were most likely to abandon the flow when asked to create a username and password before their email had been verified. Resequencing these steps &mdash; asking for email first, completing verification, then proceeding to account setup &mdash; significantly reduced early friction and improved perceived clarity of the process. This became the structural principle that every subsequent design iteration built on.</p>
-
-            <p id="p1"><b>The Decision That Changed Everything</b></p>
-            <p id="p1">After Round 1 testing, I made one structural call that shaped every iteration that followed: move email verification to Step 1, before any other account detail is requested. This was not a visual change &mdash; it was a sequencing change. The reasoning: a user who has verified their email has made a commitment. A user who has not has every reason to abandon. Every subsequent design approach I tested built on this resequencing. The question shifted from &ldquo;should we resequence?&rdquo; to &ldquo;how do we best handle what comes after verification?&rdquo;</p>
-
         </section>
     </section>
 
+    <!-- WHAT I NOTICED -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>What I Noticed Before I Started Designing</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">In my first week at Razer, I created my own Razer ID account. Before I had received a brief or opened Figma, I noticed something: I hesitated at the password creation step. I had not yet confirmed my email &mdash; I had not made any real commitment to the platform &mdash; and I was already being asked to invest effort in creating a password for an account I had not decided to complete. That moment of friction became the hypothesis I spent the internship testing: that the flow&rsquo;s sequencing, not its visual design, was causing users to abandon.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>Overview</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">Razer ID is the unified onboarding system used across Razer&rsquo;s global product ecosystem &mdash; every device, every service, every purchase passes through it. Friction in the creation flow means fewer accounts completed, fewer users retained, and a first impression of the brand that works against everything downstream. Given a blue-sky brief, my goal was to identify the structural cause of that friction and redesign the flow to address it.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>The Problem</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">The existing Razer ID creation flow placed too many decisions in front of users too early, creating unnecessary cognitive load at the point of first commitment. Drop-off and hesitation during the verification step indicated a structural problem with the flow&rsquo;s sequencing &mdash; not just its visual design. A user who has not yet verified their email has no reason to invest effort in choosing a username and password. The flow was asking for commitment before establishing trust.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- RESEARCH APPROACH -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>Research Approach</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">Rather than relying on a single user group, I planned and ran moderated usability testing sessions with participants drawn from five internal departments &mdash; marketing, HR, software development, and the UI/UX team &mdash; to surface a diverse range of mental models and expectations. Sessions combined qualitative observation with quantitative task-completion tracking, ensuring findings were both behaviourally grounded and defensible to stakeholders across three iterative rounds.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- KEY INSIGHT -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>Key Insight</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">Users were most likely to abandon the flow when asked to create a username and password before their email had been verified. Resequencing these steps &mdash; asking for email first, completing verification, then proceeding to account setup &mdash; significantly reduced early friction and improved perceived clarity of the process. This became the structural principle that every subsequent design iteration built on.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- THE DECISION -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>The Decision That Changed Everything</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">After Round 1 testing, I made one structural call that shaped every iteration that followed: move email verification to Step 1, before any other account detail is requested. This was not a visual change &mdash; it was a sequencing change. The reasoning: a user who has verified their email has made a commitment. A user who has not has every reason to abandon. Every subsequent design approach I tested built on this resequencing. The question shifted from &ldquo;should we resequence?&rdquo; to &ldquo;how do we best handle what comes after verification?&rdquo;</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- KEY SCREENS -->
     <section class="work1">
         <div class="profile-section">
-        <div class="title-text">
+        <div class="title-text" style="padding-top: 50px;">
         <p><b>Key Screens</b> </p> </div> </div>
         <section class="description">
             <p id="p1">Three screens that illustrate the core design journey &mdash; from early experimentation through to the final validated flow.</p>
@@ -113,25 +224,27 @@
         </section>
     </section>
 
+    <!-- FINAL PROTOTYPE -->
     <section class="work1">
         <div class="profile-section">
-        <div class="title-text">
+        <div class="title-text" style="padding-top: 50px;">
         <p><b>Final Prototype</b> </p> </div> </div>
         <section class="description">
             <p id="p1">The final prototype reflects the validated flow: email entry and verification as a dedicated first step, followed by account setup with progressive disclosure of optional fields. The design reduces perceived commitment at the point of entry and guides users through a clear, paced sequence.</p>
         </section>
-
         <section class="columnrow">
             <div class="frame">
                 <div class="slideshow">
                     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1500" height="800" src="https://embed.figma.com/proto/sBlCTKrSpBIDuaYj3aqE9m/Razer-Internship-Archive?node-id=1-35385&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A35032&starting-point-node-id=1%3A35373&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
-        </div>  
+                </div>
+            </div>
         </section>
     </section>
 
+    <!-- DESIGN ITERATIONS -->
     <section class="work1">
         <div class="profile-section">
-        <div class="title-text">
+        <div class="title-text" style="padding-top: 50px;">
         <p><b>Design Iterations &amp; Testing</b> </p> </div> </div>
         <section class="description">
             <p>The design went through three structured rounds of iteration, each informed directly by usability findings:</p>
@@ -139,11 +252,9 @@
             <li>
                 <strong>Round 1 &mdash; Accordion Layouts</strong>: Early experimentation with accordion-based progressive disclosure to test whether grouping related fields reduced the feeling of a long, overwhelming form. Users found the accordion transitions unfamiliar and hesitated at state changes. This round confirmed that the problem was sequencing, not layout.
             </li>
-
             <li>
                 <strong>Round 2 &mdash; Flow Resequencing</strong>: Based on Round 1 findings, the flow was restructured to lead with email entry and verification before any account details were requested. This change addressed the root cause of early abandonment behaviour observed in testing and significantly improved user confidence in completing the flow.
             </li>
-
             <li>
                 <strong>Round 3 &mdash; Parallel Concept Testing</strong>: Five alternative approaches were prototyped and tested side by side to converge on the optimal solution through evidence rather than preference:
                 <ul>
@@ -156,17 +267,44 @@
                 Testing identified the email-first, step-by-step flow as the clearest path across the broadest range of user types.
             </li>
             </ol>
-
-            <p id="p1"><b>Outcome</b></p>
-            <p id="p1">The final prototype received stakeholder sign-off as the recommended direction for implementation. Usability testing demonstrated measurably reduced hesitation at the verification step compared to the original flow. The process established a reusable research-to-prototype framework applicable to future account flow improvements across the Razer ecosystem.</p>
-
-            <p id="p1"><b>What I Would Measure in Production</b></p>
-            <p id="p1">Three metrics matter most for validating this design in a live environment: email verification completion rate at Step 1 &mdash; the primary indicator of whether reduced early friction is working; time-to-complete the full creation flow; and drop-off rate at the subscription step, to validate that decoupling account creation from marketing opt-in does not hurt subscription rates. If verification completion improves but subscription opt-in drops, the decoupling worked &mdash; and that is a separate problem to solve with better subscription value communication, not by re-coupling the flows.</p>
-
         </section>
+    </section>
+
+    <!-- OUTCOME -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>Outcome</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">The final prototype received stakeholder sign-off as the recommended direction for implementation. Usability testing demonstrated measurably reduced hesitation at the verification step compared to the original flow. The process established a reusable research-to-prototype framework applicable to future account flow improvements across the Razer ecosystem.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- WHAT I WOULD MEASURE -->
+    <section class="work1">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div class="accordion-title-text">
+            <p><b>What I Would Measure in Production</b></p>
+        </div>
+        <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-content">
+        <section class="description">
+            <p id="p1">Three metrics matter most for validating this design in a live environment: email verification completion rate at Step 1 &mdash; the primary indicator of whether reduced early friction is working; time-to-complete the full creation flow; and drop-off rate at the subscription step, to validate that decoupling account creation from marketing opt-in does not hurt subscription rates. If verification completion improves but subscription opt-in drops, the decoupling worked &mdash; and that is a separate problem to solve with better subscription value communication, not by re-coupling the flows.</p>
+        </section>
+        </div>
+    </section>
+
+    <!-- POST UT2 -->
+    <section class="work1" style="padding-bottom: 50px;">
         <section class="columnrow">
             <div class="profile-section">
-                <div class="title-text">
+                <div class="title-text" style="padding-top: 50px;">
             <p>&nbsp;&nbsp;&nbsp;</p> 
                 <p><b>Post UT2 Refinement (V2)</b> </p>
                 </div>
@@ -188,117 +326,22 @@
     <div id="imgModalCaption"></div>
     </div>
 
+</div>
+
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
     }
-    
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
-</script>
-
-<script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     }
-    
-    window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-        }
-        }
+    function closeNavOnLoad() {
+        if (isMobileDevice()) { closeNav(); }
     }
-    }
-</script>
-
-<script>
-    var tag = document.createElement('script');
-    tag.src ="https://www.youtube.com/embed/y_UhiLHkuvg";
-    tag.src = "https://www.youtube.com/embed/tiIzGKQIXjc";
-    tag.src = "https://www.youtube.com/embed/_8HH3o_IBQQ";
-    tag.src = "https://www.youtube.com/embed/SzF0XVROZ4E";
-    tag.src = "https://www.youtube.com/embed/I36loD0bNf0";
-    tag.src = "https://www.youtube.com/embed/Dzw0ydhDUGc";
-    tag.src = "https://www.youtube.com/embed/5Jf_3CZ6rZ8";
-    tag.src = "www.youtube.com/watch?v=8FkmTAwkzvM";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-        height: '720',
-        width: '1280',
-        videoId: 'M7lc1UVf-VE',
-        playerVars: { 'playsinline': 1 },
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-        });
-    }
-
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-    var done = false;
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-        }
-    }
-    function stopVideo() {
-        player.stopVideo();
-    }
-</script>
-
-<script>
-    var div_parent_class_name;
-    var divs_class;
-    var id_offset_map = {};
-    $(document).ready(function() {
-    div_parent_class_name = "wrap_scroll";
-    divs_class = "page-section";
-    $('a').bind('click', function(e) {
-        e.preventDefault();
-        var target = $(this).attr("href")
-        $('.wrap_scroll').animate({
-        scrollTop: id_offset_map[target]
-        }, ('slow'), 600, function() {});
-        return false;
-    });
-    });
-
-    $(".wrap_scroll").scroll(function() {
-    var scrollPos = $(".wrap_scroll").scrollTop();
-    $("." + divs_class).each(function(i) {
-        var sections = $("." + sections_class);
-        divs.each(function(idx) {
-        if (scrollPos >= id_offset_map["#" + this.id]) {
-            $('.menu>ul> a.active').removeClass('active');
-            $('.menu>ul> a').eq(idx).addClass('active');
-        }
-        });
-    });
-    }).scroll();
-</script>
-
-<script>
-    function openSidebar() {
-        document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function closeSidebar() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
+    window.onload = closeNavOnLoad;
 </script>
 
 <script>
@@ -314,26 +357,20 @@
         modal.style.display = "flex";
         modalImg.src = this.src;
         var caption = this.alt || "";
-        if (!caption && this.nextElementSibling && this.nextElementSibling.tagName === "P") {
-          caption = this.nextElementSibling.textContent;
-        }
         captionText.textContent = caption;
         document.body.style.overflow = "hidden";
       });
     }
-
     closeBtn.addEventListener("click", function () {
       modal.style.display = "none";
       document.body.style.overflow = "";
     });
-
     modal.addEventListener("click", function (e) {
       if (e.target === modal) {
         modal.style.display = "none";
         document.body.style.overflow = "";
       }
     });
-
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && modal.style.display === "flex") {
         modal.style.display = "none";
@@ -344,27 +381,16 @@
 </script>
 
 <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
-    function isMobileDevice() {
-        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-    }
-
-    function closeNavOnLoad() {
-        if (isMobileDevice()) {
-            closeNav();
-        }
-    }
-
-    window.onload = closeNavOnLoad;
+function toggleAccordion(header) {
+    var content = header.nextElementSibling;
+    var toggle = header.querySelector(".accordion-toggle");
+    if (!content || !content.classList.contains("accordion-content")) return;
+    var isOpen = content.classList.contains("open");
+    content.classList.toggle("open", !isOpen);
+    toggle.classList.toggle("open", !isOpen);
+}
 </script>
-    
+
 <script src="script.js"></script>
 </body>
-<html>
+</html>
