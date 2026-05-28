@@ -285,6 +285,20 @@ a:hover, a:focus {
     margin: 0 auto;     /* center the image */
 }
 
+/* Landscape gallery images: constrained on desktop/tablet, full-width on mobile.
+   Double-class selector (specificity 0,2,0) beats the single-class media query
+   rules further down the file. */
+.gallery-img.gallery-img--half {
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery-img.gallery-img--half {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 /* Fullscreen image modal */
 .img-modal {
   display: none;               /* Hidden by default */
